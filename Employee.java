@@ -1,7 +1,5 @@
 public class Employee extends User {
-    private int clientID;
-    private String membership;
-
+    private int employeeID;
     void calculateRevenue(){}
     void listServices(){}
 }
