@@ -1,14 +1,14 @@
 public class Manager extends User {
     private int managerID;
-    void calculateRevenue(){}
-    void listCarSold(){}
-    void listServices(){}
-    void calculateCarSoldMonth(){}
-    void calculateMechanicRevenue(){}
-    void listTransaction(){}
-    void listAutoPart(){}
-    void removeCar(){}
-    void removeCarParts(){}
-    void removeEmployees(){}
-    void removeClients(){}
+    public void calculateRevenue(){}
+    public void listCarSold(){}
+    public void listServices(){}
+    public void calculateCarSoldMonth(){}
+    public void calculateMechanicRevenue(){}
+    public void listTransaction(){}
+    public void listAutoPart(){}
+    public void removeCar(){}
+    public void removeCarParts(){}
+    public void removeEmployees(){}
+    public void removeClients(){}
 }
