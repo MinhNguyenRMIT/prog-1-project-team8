@@ -3,13 +3,13 @@ import java.util.List;
 
 public class SalesTransaction {
 
-    private String transactionID;
+    private int transactionID;
 
     private LocalDate transactionDate;
 
-    private String clientID;
+    private int clientID;
 
-    private String salespersonID;
+    private int salesID;
 
     private List<String> purchasedItems;
 
@@ -18,6 +18,6 @@ public class SalesTransaction {
     private double totalAmount;
 
     // Additional notes about the transaction
-    private String notes;
+    private String additionalNotes;
 
 }
