@@ -29,7 +29,7 @@ public class Main {
             }
         }while (choice !=0);
     }
-    public static void manager(CarList carList) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
+    public static void manager(CarList carList) {
         int choice = -1;
         Scanner s = new Scanner(System.in);
         do{
