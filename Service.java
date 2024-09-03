@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.List;
+
 public class Service{
     private String serviceId;        // Unique ID for the service (formatted as s-number)
     private String serviceDate;      // Date of the service
@@ -17,7 +19,7 @@ public class Service{
         this.clientId = clientId;
         this.mechanicId = mechanicId;
         this.serviceType = serviceType;
-        this.replacedParts = replacedParts;
+        this.replacedParts = replacedParts != null ? replacedParts : new ArrayList<>();
         this.serviceCost = serviceCost;
         this.notes = notes;
     }
@@ -83,5 +85,47 @@ public class Service{
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public double calculateTotalCost() {
+        double totalCost = this.serviceCost; // Start with the base service cost
+
+        // Add the cost of each replaced part to the total cost
+        for (AutoPart part : replacedParts) {
+            totalCost += part.getCost();
+        }
+
+        return totalCost; // Return the total cost of the service
+    }
+    public String getServiceSummary() {
+        StringBuilder summary = new StringBuilder();
+
+        summary.append("Service ID: ").append(serviceId).append("\n")
+                .append("Service Date: ").append(serviceDate).append("\n")
+                .append("Client ID: ").append(clientId).append("\n")
+                .append("Mechanic ID: ").append(mechanicId).append("\n")
+                .append("Service Type: ").append(serviceType).append("\n")
+                .append("Service Cost: ").append(serviceCost).append("\n");
+
+        // Append replaced parts details if any
+        if (replacedParts != null && !replacedParts.isEmpty()) {
+            summary.append("Replaced Parts:\n");
+            for (AutoPart part : replacedParts) {
+                summary.append("  - ").append(part.getPartName())
+                        .append(" (ID: ").append(part.getPartId()).append("), ")
+                        .append("Cost: ").append(part.getCost()).append("\n");
+            }
+        } else {
+            summary.append("Replaced Parts: None\n");
+        }
+
+        // Append additional notes if any
+        if (notes != null && !notes.isEmpty()) {
+            summary.append("Notes: ").append(notes).append("\n");
+        } else {
+            summary.append("Notes: None\n");
+        }
+
+        return summary.toString();
     }
 }
