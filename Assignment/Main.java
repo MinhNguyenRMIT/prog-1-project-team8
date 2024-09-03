@@ -1,8 +1,16 @@
+package Assignment;
+
+
+import Assignment.Users.Manager;
+import Assignment.Object.CarList;
+import Assignment.Object.Car;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import Assignment.Object.CarList;
+
 
 public class Main {
     public static void main(String[] args) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
@@ -29,7 +37,7 @@ public class Main {
             }
         }while (choice !=0);
     }
-    public static void manager(CarList carList) {
+    public static void manager(CarList carList) throws IOException, ClassNotFoundException {
         int choice = -1;
         Scanner s = new Scanner(System.in);
         do{
@@ -50,21 +58,20 @@ public class Main {
             choice = s.nextInt();
             switch (choice){
                 case 1 -> {
-//                    Manager.addCar(carList);
-//                    carList.saveToCSV();
+                    Manager.addCar(carList);
+                    carList.saveToCSV();
                 }
                 case 2 -> {
-//                    Manager.viewCar(carList);
+                    Manager.viewCar(carList);
                 }case 3 -> {
-//                    Manager.updateCarPrice(carList);
+                    Manager.updateCarPriceByID(carList);
                 }
                 case 4 -> {
-//                    Manager.deletedCar(carList);
-//                    carList.saveToCSV();
+                    Manager.deletedCar(carList);
+                    carList.saveToCSV();
                 }
                 case 5 -> {
-//                    Manager.getByID((carList));
-//                    carList.saveToCSV();
+                    Manager.getByID((carList));
                   ;
                 }
                 case 6 -> {
@@ -80,6 +87,7 @@ public class Main {
                 }
                 case 10 -> {
                     ;
+
                 }case 11 -> {
                     ;
                 }

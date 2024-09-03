@@ -1,13 +1,19 @@
-import com.opencsv.exceptions.CsvException;
+package Assignment.Users;
+import Assignment.Users.User;
+import Assignment.Object.Car;
+import Assignment.Object.CarList;
+import Assignment.Object.CarList;
+
+
+
+
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Date;
-import java.util.List;
 import java.util.Scanner;
 
-class Manager extends User {
+
+public class Manager extends User {
     private final int managerID;
 //    private SalesTransaction transaction;
     public Manager(int managerID,String fullName, Date date, String address, int phoneNo, String email, String userType, String status){
@@ -15,30 +21,58 @@ class Manager extends User {
         this.managerID = managerID;
     }
 
-    public int getManagerID(){
-        return managerID;
-    }
+
     //CRUD operations
-    public static void addCar(CarList carList){
-        carList.addedCar();
+
+    //Created
+    public static void addCar(CarList carList) throws IOException {
+//        carList.addedCar();
+//        carList.saveToCSV();
+        carList.create();
+
     }
-    public static void viewCar(CarList carList) throws IOException {
-        carList.displayListCar();
+    //CRead
+    public static void viewCar(CarList carList) throws IOException, ClassNotFoundException {
+//        carList.displayListCar();
+//        carList.headers();
+        carList.view();
+
     }
+    //Update
+    public static void updateCarPriceByID(CarList carList) throws IOException{
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter CAR ID: ");
+        int ID = s.nextInt();
+        System.out.println("Enter CAR PRICE: ");
+        double price = s.nextInt();
+        carList.updateCarByID(ID, price);
+
+    }
+
+    //Delete
+    public static void deletedCar(CarList carList) throws IOException {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter CAR ID: ");
+        int ID = s.nextInt();
+        carList.delete(ID);
+
+
+    } //This will need to first list the car. After words chose the Car ID to delete
+
 
     public static void getByID(CarList carList){
         Scanner s = new Scanner(System.in);
-        System.out.println("ID: ");
-        String cnum = s.next();
-        carList.returnByID(cnum);
+        System.out.println("Enter CAR ID: ");
+        int ID = s.nextInt();
+        carList.searchCar(ID);
     }
 
-    public static void deletedCar(CarList carList){
-    } //This will need to first list the car. After words chose the Car ID to delete
-    //Statistic operations
 
-    public static void updateCarPrice(CarList carList) throws IOException{
+
+
+    public static void getID(CarList carList) throws IOException {
     }
+
 //    public void calculateRevenue(){}
     public void listCarSold(){
         String file = ""; //Replace this wil the folder
