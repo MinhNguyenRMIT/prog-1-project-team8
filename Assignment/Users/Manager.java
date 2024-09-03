@@ -1,11 +1,5 @@
 package Assignment.Users;
-import Assignment.Users.User;
-import Assignment.Object.Car;
-import Assignment.Object.CarList;
-import Assignment.Object.CarList;
-
-
-
+import Assignment.Object.Car.CarList;
 
 
 import java.io.*;
@@ -48,7 +42,6 @@ public class Manager extends User {
         carList.updateCarByID(ID, price);
 
     }
-
     //Delete
     public static void deletedCar(CarList carList) throws IOException {
         Scanner s = new Scanner(System.in);
@@ -58,8 +51,7 @@ public class Manager extends User {
 
 
     } //This will need to first list the car. After words chose the Car ID to delete
-
-
+    //Return Car by its ID
     public static void getByID(CarList carList){
         Scanner s = new Scanner(System.in);
         System.out.println("Enter CAR ID: ");
@@ -70,27 +62,9 @@ public class Manager extends User {
 
 
 
-    public static void getID(CarList carList) throws IOException {
-    }
-
 //    public void calculateRevenue(){}
-    public void listCarSold(){
-        String file = ""; //Replace this wil the folder
-        BufferedReader reader = null;
-        String line = "";
-        try{
-            reader = new BufferedReader(new FileReader(file));
-            while((line = reader.readLine())!= null){
-                String[] row = line.split(",");
-                for (String index: row){
-                    System.out.printf("%-10s",index);
-                }
-                System.out.println();
-            }
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
+    public static void listCarSold(CarList carList){
+        carList.listSold();
     }
     public void listServices(){
         String file = ""; //Replace this wil the folder

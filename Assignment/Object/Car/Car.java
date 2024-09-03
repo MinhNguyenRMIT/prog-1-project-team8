@@ -1,39 +1,35 @@
-package Assignment.Object;
+package Assignment.Object.Car;
 
 import java.io.Serializable;
 
 public class Car implements Serializable {
     private int cNumber;
-    private String make;
     private String model;
     private int year;
     private double milage;
     private String color;
     private String status;
     private double price;
-    private String notes = "";
 
-    public Car(int cNumber, String model, int year, double milage, String color, double price){
+    public Car(int cNumber, String model, int year, double milage, String color, String status, double price){
         this.cNumber = cNumber;
-        this.make = make;
         this.model = model;
         this.year = year;
         this.milage = milage;
         this.color = color;
         this.status = status ;
         this.price = price;
-        this.notes = notes;
     }
 
     public String convertToString(){
-        return getCNumber()+getModel()+getYear()+getMileage()+getColor()+getPrice();
+        return getCNumber()+getModel()+getYear()+getMileage()+getColor()+getStatus()+getPrice();
     }
 
 
     @Override
     public String toString(){
 //        return  cNumber + " " + model + " " + year + " "+ milage + " "+ color + " " + price + " " + notes;
-        return String.format("%-10s %-10s %-10s %-10s %-10s %-10s ",cNumber, model, year, milage, color,price) ;
+        return String.format("%-10s %-10s %-10s %-10s %-10s %-10s %-10s \n ",cNumber, model, year, milage, color,status, price) ;
     }
     // Getter for cNumber
     public int getCNumber() {
@@ -43,15 +39,6 @@ public class Car implements Serializable {
     // Setter for cNumber
     public void setCNumber(int cNumber) {
         this.cNumber = cNumber;
-    }
-    // Getter for make
-    public String getMake() {
-        return make;
-    }
-
-    // Setter for make
-    public void setMake(String make) {
-        this.make = make;
     }
 
     // Getter for model
@@ -113,16 +100,6 @@ public class Car implements Serializable {
     // Setter for price
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    // Getter for notes
-    public String getNotes() {
-        return notes;
-    }
-
-    // Setter for notes
-    public void setNotes(String notes) {
-        this.notes = notes;
     }
 
 }
