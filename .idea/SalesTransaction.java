@@ -97,5 +97,11 @@ public class SalesTransaction {
         this.additionalNotes = additionalNotes;
     }
 
+    // Method to calculate the final total amount after applying the discount
+    public double calculateFinalAmount() {
+        return totalAmount - (totalAmount * discount / 100);
+    }
+
+    
 
 }
