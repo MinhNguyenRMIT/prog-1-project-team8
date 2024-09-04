@@ -107,6 +107,17 @@ public class SalesTransaction {
         this.purchasedItems.add(itemID);
     }
 
-
+    // Method to display transaction details
+    public void displayTransactionDetails() {
+        System.out.println("Transaction ID: " + transactionID);
+        System.out.println("Transaction Date: " + transactionDate);
+        System.out.println("Client ID: " + clientID);
+        System.out.println("Sales ID: " + salesID);
+        System.out.println("Purchased Items: " + purchasedItems);
+        System.out.println("Discount: " + discount + "%");
+        System.out.println("Total Amount (before discount): " + totalAmount);
+        System.out.println("Final Amount (after discount): " + calculateFinalAmount());
+        System.out.println("Additional Notes: " + additionalNotes);
+    }
 
 }
