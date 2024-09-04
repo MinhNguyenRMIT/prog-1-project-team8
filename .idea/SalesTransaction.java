@@ -102,6 +102,11 @@ public class SalesTransaction {
         return totalAmount - (totalAmount * discount / 100);
     }
 
-    
+    // Method to add an item to the list of purchased items
+    public void addPurchasedItem(String itemID) {
+        this.purchasedItems.add(itemID);
+    }
+
+
 
 }
