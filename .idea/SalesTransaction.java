@@ -10,7 +10,7 @@ public class SalesTransaction {
 
     private int clientID;
 
-    private int salesID;
+    private int salespersonID;
 
     private List<String> purchasedItems;
 
@@ -20,12 +20,12 @@ public class SalesTransaction {
 
     private String additionalNotes;
 
-    public SalesTransaction(int transactionID, LocalDate transactionDate, int clientID, int salesID,
+    public SalesTransaction(int transactionID, LocalDate transactionDate, int clientID, int salespersonID,
                             List<String> purchasedItems, double discount, double totalAmount, String notes) {
         this.transactionID = transactionID;
         this.transactionDate = transactionDate;
         this.clientID = clientID;
-        this.salesID = this.salesID;
+        this.salespersonID = this.salespersonID;
         this.purchasedItems = purchasedItems != null ? purchasedItems : new ArrayList<>();
         this.discount = discount;
         this.totalAmount = totalAmount;
@@ -58,11 +58,11 @@ public class SalesTransaction {
     }
 
     public int getSalespersonID() {
-        return salesID;
+        return salespersonID;
     }
 
-    public void setSalespersonID(int salesID) {
-        this.salesID = salesID;
+    public void setSalespersonID(int salespersonID) {
+        this.salespersonID = salespersonID;
     }
 
     public List<String> getPurchasedItems() {
@@ -112,7 +112,7 @@ public class SalesTransaction {
         System.out.println("Transaction ID: " + transactionID);
         System.out.println("Transaction Date: " + transactionDate);
         System.out.println("Client ID: " + clientID);
-        System.out.println("Sales ID: " + salesID);
+        System.out.println("Sales ID: " + salespersonID);
         System.out.println("Purchased Items: " + purchasedItems);
         System.out.println("Discount: " + discount + "%");
         System.out.println("Total Amount (before discount): " + totalAmount);
