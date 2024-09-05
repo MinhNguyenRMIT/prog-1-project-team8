@@ -4,9 +4,10 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAdjusters;
+import java.time.DayOfWeek;
 import java.util.List;
 import java.util.stream.Collectors;
-
 
 public class SalesTransaction {
 
@@ -112,6 +113,36 @@ public class SalesTransaction {
             e.printStackTrace();
         }
     }
+
+    // Method to filter transactions by day
+    public static List<SalesTransaction> filterTransactionsByDay(List<SalesTransaction> transactions, LocalDate date) {
+        return transactions.stream()
+                .filter(transaction -> transaction.getTransactionDate().isEqual(date))
+                .collect(Collectors.toList());
+    }
+
+    // Corrected method to filter transactions by week
+    public static List<SalesTransaction> filterTransactionsByWeek(List<SalesTransaction> transactions, LocalDate date) {
+        LocalDate startOfWeek = date.with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY)); // Start of the week (Monday)
+        LocalDate endOfWeek = startOfWeek.plusDays(6); // End of the week (Sunday)
+
+        return transactions.stream()
+                .filter(transaction -> !transaction.getTransactionDate().isBefore(startOfWeek) &&
+                        !transaction.getTransactionDate().isAfter(endOfWeek))
+                .collect(Collectors.toList());
+    }
+
+    // Method to filter transactions by month
+    public static List<SalesTransaction> filterTransactionsByMonth(List<SalesTransaction> transactions, LocalDate date) {
+        int month = date.getMonthValue();
+        int year = date.getYear();
+
+        return transactions.stream()
+                .filter(transaction -> transaction.getTransactionDate().getMonthValue() == month &&
+                        transaction.getTransactionDate().getYear() == year)
+                .collect(Collectors.toList());
+    }
+
 
     // Method to display transaction details
     public void displayTransactionDetails() {
