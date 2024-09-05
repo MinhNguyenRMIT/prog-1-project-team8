@@ -12,19 +12,12 @@ import java.util.stream.Collectors;
 public class SalesTransaction {
 
     private int transactionID;
-
     private LocalDate transactionDate;
-
     private int clientID;
-
     private int salespersonID;
-
     private List<String> purchasedItems;
-
     private double discount;
-
     private double totalAmount;
-
     private String additionalNotes;
 
     // Constructor
@@ -43,58 +36,58 @@ public class SalesTransaction {
     public int getTransactionID() {
         return transactionID;
     }
-
     public void setTransactionID(int transactionID) {
         this.transactionID = transactionID;
     }
 
+
     public LocalDate getTransactionDate() {
         return transactionDate;
     }
-
     public void setTransactionDate(LocalDate transactionDate) {
         this.transactionDate = transactionDate;
     }
 
+    
     public int getClientID() {
         return clientID;
     }
-
     public void setClientID(int clientID) {
         this.clientID = clientID;
     }
 
+
     public int getSalespersonID() {
         return salespersonID;
     }
-
     public void setSalespersonID(int salespersonID) {
         this.salespersonID = salespersonID;
     }
 
+
     public double getDiscount() {
         return discount;
     }
-
     public void setDiscount(double discount) {
         this.discount = discount;
     }
 
+
     public double getTotalAmount() {
         return totalAmount;
     }
-
     public void setTotalAmount(double totalAmount) {
         this.totalAmount = totalAmount;
     }
 
+
     public String getAdditionalNotes() {
         return additionalNotes;
     }
-
     public void setAdditionalNotes(String additionalNotes) {
         this.additionalNotes = additionalNotes;
     }
+
 
     // Method to calculate the final total amount after applying the discount
     public double calculateFinalAmount() {
@@ -143,6 +136,10 @@ public class SalesTransaction {
                 .collect(Collectors.toList());
     }
 
+    // Method to display a list of transactions
+    public static void displayTransactions(List<SalesTransaction> transactions) {
+        transactions.forEach(SalesTransaction::displayTransactionDetails);
+    }
 
     // Method to display transaction details
     public void displayTransactionDetails() {
