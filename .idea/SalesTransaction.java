@@ -1,6 +1,12 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.time.LocalDate;
-import java.util.ArrayList;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
+import java.util.stream.Collectors;
+
 
 public class SalesTransaction {
 
@@ -20,13 +26,13 @@ public class SalesTransaction {
 
     private String additionalNotes;
 
+    // Constructor
     public SalesTransaction(int transactionID, LocalDate transactionDate, int clientID, int salespersonID,
-                            List<String> purchasedItems, double discount, double totalAmount, String notes) {
+                            double discount, double totalAmount, String additionalNotes) {
         this.transactionID = transactionID;
         this.transactionDate = transactionDate;
         this.clientID = clientID;
-        this.salespersonID = this.salespersonID;
-        this.purchasedItems = purchasedItems != null ? purchasedItems : new ArrayList<>();
+        this.salespersonID = salespersonID;
         this.discount = discount;
         this.totalAmount = totalAmount;
         this.additionalNotes = additionalNotes;
@@ -65,14 +71,6 @@ public class SalesTransaction {
         this.salespersonID = salespersonID;
     }
 
-    public List<String> getPurchasedItems() {
-        return purchasedItems;
-    }
-
-    public void setPurchasedItems(List<String> purchasedItems) {
-        this.purchasedItems = purchasedItems;
-    }
-
     public double getDiscount() {
         return discount;
     }
@@ -102,9 +100,17 @@ public class SalesTransaction {
         return totalAmount - (totalAmount * discount / 100);
     }
 
-    // Method to add an item to the list of purchased items
+    // Method to add an item to the list of purchased items and save it to a text file
     public void addPurchasedItem(String itemID) {
-        this.purchasedItems.add(itemID);
+        String filename = transactionID + "_purchasedItems.txt"; // Each transaction has its own file
+        try {
+            // Append the purchased item to the text file
+            Files.write(Paths.get(filename), (itemID + System.lineSeparator()).getBytes(), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+            System.out.println("Item " + itemID + " added to " + filename);
+        } catch (IOException e) {
+            System.err.println("An error occurred while writing to the file.");
+            e.printStackTrace();
+        }
     }
 
     // Method to display transaction details
