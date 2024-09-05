@@ -17,22 +17,21 @@ public class Manager extends User {
 
 
     //CRUD operations
-
-    //Created
+    //Create
     public static void addCar(CarList carList) throws IOException {
 //        carList.addedCar();
 //        carList.saveToCSV();
         carList.create();
 
     }
-    //CRead
+    //Read
     public static void viewCar(CarList carList) throws IOException, ClassNotFoundException {
 //        carList.displayListCar();
 //        carList.headers();
         carList.view();
 
     }
-    //Update
+    //Update car by ID
     public static void updateCarPriceByID(CarList carList) throws IOException{
         Scanner s = new Scanner(System.in);
         System.out.println("Enter CAR ID: ");
@@ -41,6 +40,14 @@ public class Manager extends User {
         double price = s.nextInt();
         carList.updateCarByID(ID, price);
 
+    }
+    public static void updateStatus(CarList carList) throws IOException {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter CAR ID: ");
+        int ID = s.nextInt();
+        System.out.println("Change the Car Status: ");
+        String status = s.next();
+        carList.updateStatusByID(ID, status);
     }
     //Delete
     public static void deletedCar(CarList carList) throws IOException {
@@ -59,13 +66,15 @@ public class Manager extends User {
         carList.searchCar(ID);
     }
 
+    //List CarSold
+    public static void listCarSold(CarList carList){
+        carList.listSold();
+    }
 
 
 
 //    public void calculateRevenue(){}
-    public static void listCarSold(CarList carList){
-        carList.listSold();
-    }
+
     public void listServices(){
         String file = ""; //Replace this wil the folder
         BufferedReader reader = null;
@@ -85,8 +94,12 @@ public class Manager extends User {
         }
     }
 //    public void calculateCarSoldMonth(){}
+    /*To find the amount of CarSold. Look at the SalesTransaction, if purchased items is Car. Then write the code where
+    * it will return salesTransaction that listOfItem is car. Then add in parameter of Month and Year. Next just get the total sum
+    * amount per Month. Which then will give me CarSoldPerMonth. */
+
 //    public void calculateMechanicRevenue(){}
-    public void listTransaction(){
+    public void listSalesTransaction(){
         String file = ""; //Replace this wil the folder
         BufferedReader reader = null;
         String line = "";
@@ -104,6 +117,10 @@ public class Manager extends User {
             e.printStackTrace();
         }
     }
+    /*For this is a lot easier, just list out all Sales Transaction made, and create a method where it Transaction for
+    * Day/Week/Month */
+
+
     public void listAutoPart(){
         String file = ""; //Replace this wil the folder
         BufferedReader reader = null;

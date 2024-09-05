@@ -24,6 +24,9 @@ public class Car implements Serializable {
     public String convertToString(){
         return getCNumber()+getModel()+getYear()+getMileage()+getColor()+getStatus()+getPrice();
     }
+    public String convertToStringForCSV(){
+        return getCNumber()+","+getModel()+","+getYear()+","+getMileage()+","+getColor()+","+getStatus()+","+getPrice();
+    }
 
 
     @Override

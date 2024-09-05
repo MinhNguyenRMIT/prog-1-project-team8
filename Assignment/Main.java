@@ -43,9 +43,10 @@ public class Main {
             System.out.println("1: Add Cars");
             System.out.println("2: View All Cars");
             System.out.println("3: Update Car Price");
-            System.out.println("4: Delete Cars");
-            System.out.println("5: Get By ID");
-            System.out.println("6: List Car Sold");
+            System.out.println("4: Update Car Status");
+            System.out.println("5: Delete Cars");
+            System.out.println("6: Get By ID");
+            System.out.println("7: List Car Sold");
 //            System.out.println("7: Calculate Mechanic Revenue");
 //            System.out.println("8: List Transaction");
 //            System.out.println("9: List Auto part");
@@ -63,19 +64,22 @@ public class Main {
                     Manager.viewCar(carList);
                 }case 3 -> {
                     Manager.updateCarPriceByID(carList);
-                }
-                case 4 -> {
-                    Manager.deletedCar(carList);
                     carList.saveToCSV();
                 }
-                case 5 -> {
-                    Manager.getByID((carList));
+                case 4 -> {
+                    Manager.updateStatus(carList);
+                    carList.saveToCSV();
+
+                }
+                case 5 -> {Manager.deletedCar(carList);
+                    carList.saveToCSV();
+
                   ;
                 }
-                case 6 -> {
-                    Manager.listCarSold(carList);
+                case 6 -> {Manager.getByID((carList));
+
                     ;
-                }case 7 -> {
+                }case 7 -> {Manager.listCarSold(carList);
                    ;
                 }
                 case 8 -> {
