@@ -3,6 +3,7 @@ package Assignment;
 
 import Assignment.Users.Manager;
 import Assignment.Object.Car.CarList;
+import Assignment.Transaction.SalesTransactionList;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -13,9 +14,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
         CarList carList = new CarList();
-        start(carList);
+        SalesTransactionList salesTransactionList = new SalesTransactionList();
+        start(carList, salesTransactionList);
     }
-    public static void start(CarList carList) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
+    public static void start(CarList carList, SalesTransactionList salesTransactionList) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
         int choice = -1;
         Scanner s = new Scanner(System.in);
         System.out.println("WELCOME TO THE HOMEPAGE");
@@ -28,14 +30,14 @@ public class Main {
             System.out.println("3. CLIENT");
             choice = s.nextInt();
             switch (choice){
-                case 1 -> manager(carList);
+                case 1 -> manager(carList, salesTransactionList);
                 case 2 -> employee();
                 case 3 -> client();
 
             }
         }while (choice !=0);
     }
-    public static void manager(CarList carList) throws IOException, ClassNotFoundException {
+    public static void manager(CarList carList, SalesTransactionList salesTransactionList) throws IOException, ClassNotFoundException {
         int choice = -1;
         Scanner s = new Scanner(System.in);
         do{
@@ -47,13 +49,17 @@ public class Main {
             System.out.println("5: Delete Cars");
             System.out.println("6: Get By ID");
             System.out.println("7: List Car Sold");
-//            System.out.println("7: Calculate Mechanic Revenue");
-//            System.out.println("8: List Transaction");
+            System.out.println("8: Add transaction");
+            System.out.println("9: List Transaction");
+            System.out.println("10: Delete Transaction");
+            System.out.println("11: Revenue by Week");
+            System.out.println("12: Revenue by Week");
+            System.out.println("13: Revenue by Month");
 //            System.out.println("9: List Auto part");
 //            System.out.println("10: Remove Car Parts");
 //            System.out.println("11: Remove Employees");
 //            System.out.println("12: Remove Client");
-            System.out.println("13. Logout ");
+//            System.out.println("13. Logout ");
             choice = s.nextInt();
             switch (choice){
                 case 1 -> {
@@ -74,28 +80,33 @@ public class Main {
                 case 5 -> {Manager.deletedCar(carList);
                     carList.saveToCSV();
 
-                  ;
                 }
                 case 6 -> {Manager.getByID((carList));
 
-                    ;
                 }case 7 -> {Manager.listCarSold(carList);
                    ;
                 }
-                case 8 -> {
-                    ;
+                case 8 -> {Manager.addTransaction(salesTransactionList);
+
                 }
-                case 9 -> {
-                    ;
+                case 9 -> {Manager.viewTransaction(salesTransactionList);
+//                    salesTransactionList.saveTransactionCSV();
+
                 }
                 case 10 -> {
-                    ;
+                    Manager.deleteTransactionByID(salesTransactionList);
+
 
                 }case 11 -> {
-                    ;
+                    Manager.revenueByDay(salesTransactionList);
+
+                }case 12 -> {
+                    Manager.revenuePerWeek(salesTransactionList);
+
                 }
                 case 13 -> {
-                   ;
+                    Manager.revenuePerMonth(salesTransactionList);
+
                 }
             }
         }while (choice !=0);
@@ -105,10 +116,16 @@ public class Main {
         Scanner s = new Scanner(System.in);
         do {
             System.out.println("You are log in as an Employee");
-            System.out.println("1: ");
-            System.out.println("2: ");
-            System.out.println("3: ");
-            System.out.println("4: ");
+            System.out.println("1: Calculate revenue in day ");
+            System.out.println("2: Calculate revenue in week ");
+            System.out.println("3: Calculate revenue in month ");
+            System.out.println("4: List the number of services in days");
+            System.out.println("5: List the number of services in weeks ");
+            System.out.println("6: List the number of services in month ");
+            System.out.println("7: List the number of cars in days ");
+            System.out.println("8: List the number of cars in weeks ");
+            System.out.println("9: List the number of cars in month ");
+            System.out.println("10: LOGOUT");
 
             choice = s.nextInt();
             switch (choice) {

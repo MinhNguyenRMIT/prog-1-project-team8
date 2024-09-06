@@ -1,3 +1,5 @@
+package Assignment.AutoPart;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,7 +10,7 @@ public class PartManager {
         this.partMap = new HashMap<>();
     }
 
-    // 1. Create or Add an AutoPart
+    // 1. Create or Add an Assignment.Assignment.AutoPart.AutoPart
     public void addPart(AutoPart part) {
         if (!partMap.containsKey(part.getPartId())) {
             partMap.put(part.getPartId(), part);
@@ -18,7 +20,7 @@ public class PartManager {
         }
     }
 
-    // 2. Retrieve or Get an AutoPart
+    // 2. Retrieve or Get an Assignment.Assignment.AutoPart.AutoPart
     public AutoPart getPart(String partId) {
         AutoPart part = partMap.get(partId);
         if (part != null) {
@@ -29,7 +31,7 @@ public class PartManager {
         }
     }
 
-    // 3. Update an AutoPart
+    // 3. Update an Assignment.Assignment.AutoPart.AutoPart
     public void updatePart(String partId, AutoPart updatedPart) {
         if (partMap.containsKey(partId)) {
             partMap.put(partId, updatedPart);
@@ -39,7 +41,7 @@ public class PartManager {
         }
     }
 
-    // 4. Delete an AutoPart (soft delete by removing from the list)
+    // 4. Delete an Assignment.Assignment.AutoPart.AutoPart (soft delete by removing from the list)
     public void deletePart(String partId) {
         if (partMap.containsKey(partId)) {
             partMap.remove(partId);

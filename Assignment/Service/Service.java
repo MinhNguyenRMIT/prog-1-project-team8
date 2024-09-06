@@ -1,3 +1,7 @@
+package Assignment.Service;
+
+import Assignment.AutoPart.AutoPart;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -100,12 +104,12 @@ public class Service{
     public String getServiceSummary() {
         StringBuilder summary = new StringBuilder();
 
-        summary.append("Service ID: ").append(serviceId).append("\n")
-                .append("Service Date: ").append(serviceDate).append("\n")
+        summary.append("Assignment.Assignment.Service.Service ID: ").append(serviceId).append("\n")
+                .append("Assignment.Assignment.Service.Service Date: ").append(serviceDate).append("\n")
                 .append("Client ID: ").append(clientId).append("\n")
                 .append("Mechanic ID: ").append(mechanicId).append("\n")
-                .append("Service Type: ").append(serviceType).append("\n")
-                .append("Service Cost: ").append(serviceCost).append("\n");
+                .append("Assignment.Assignment.Service.Service Type: ").append(serviceType).append("\n")
+                .append("Assignment.Assignment.Service.Service Cost: ").append(serviceCost).append("\n");
 
         // Append replaced parts details if any
         if (replacedParts != null && !replacedParts.isEmpty()) {

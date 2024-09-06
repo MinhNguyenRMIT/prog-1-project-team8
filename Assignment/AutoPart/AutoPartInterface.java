@@ -1,3 +1,5 @@
+package Assignment.AutoPart;
+
 import java.util.List;
 
 public interface AutoPartInterface {

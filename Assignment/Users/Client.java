@@ -10,6 +10,9 @@ public class Client extends User {
         super(fullName, date, address, phoneNo, email, userType, status);
         this.clientID = clientID;
         this.membership = membership;
+    }
 
+    public int getClientID(){
+        return clientID;
     }
 }

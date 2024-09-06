@@ -1,3 +1,5 @@
+package Assignment.AutoPart;
+
 public class AutoPart {
     private String partId;          // Unique ID for the part (formatted as p-number)
     private String partName;        // Name of the part

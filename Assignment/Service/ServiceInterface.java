@@ -1,3 +1,5 @@
+package Assignment.Service;
+
 import java.util.List;
 
 public interface ServiceInterface {

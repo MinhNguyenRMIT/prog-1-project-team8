@@ -11,10 +11,9 @@ public class CarList implements Serializable{
 
     //Create Car
     public static void create() throws IOException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\cars.txt";
+        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Car\\cars.txt";
         File newFile = new File(file);
         Scanner s = new Scanner(System.in);
-//        System.out.println("Enter the carID");
         int cNum;
 
         //Validation if CNUM already exist, to prevent duplicate IDs
@@ -57,7 +56,7 @@ public class CarList implements Serializable{
     }
     //View Car details
     public static void view() throws IOException, ClassNotFoundException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\cars.txt";
+        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Car\\cars.txt";
         File newFile = new File(file);
         ObjectInputStream ois = null;
         if (newFile.isFile()){
@@ -74,7 +73,7 @@ public class CarList implements Serializable{
     }
     //Delete Car by ID
     public static void delete(int carID) throws IOException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\cars.txt";
+        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Car\\cars.txt";
         File newFile = new File(file);
         boolean found = false;
         ListIterator<Car> li= carList.listIterator();
@@ -170,9 +169,9 @@ public class CarList implements Serializable{
 
 
 
-
+    //Save Cars
     public static void save() throws IOException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\cars.txt";
+        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Car\\cars.txt";
         File newFile = new File(file);
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile, true));
         oos.writeObject(carList);
