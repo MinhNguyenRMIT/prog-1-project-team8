@@ -7,6 +7,7 @@ import java.nio.file.StandardOpenOption;
 import java.time.LocalDate;
 import java.time.temporal.TemporalAdjusters;
 import java.time.DayOfWeek;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -15,18 +16,19 @@ public class SalesTransaction implements Serializable{
     private LocalDate transactionDate;
     private int clientID;
     private int salespersonID;
-    private List<String> purchasedItems;
+    private ArrayList<String> purchasedItems;
     private double discount;
     private double totalAmount;
     private String additionalNotes;
 
     // Constructor
-    public SalesTransaction(int transactionID, LocalDate transactionDate,int clientID, int salespersonID,double discount, double totalAmount
+    public SalesTransaction(int transactionID, LocalDate transactionDate,int clientID, int salespersonID,ArrayList<String> purchasedItems, double discount, double totalAmount
                             ) {
         this.transactionID = transactionID;
         this.transactionDate = transactionDate;
         this.clientID = clientID;
         this.salespersonID = salespersonID;
+        this.purchasedItems = purchasedItems;
         this.discount = discount;
         this.totalAmount = totalAmount;
 //        this.additionalNotes = additionalNotes;

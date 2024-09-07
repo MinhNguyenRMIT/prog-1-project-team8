@@ -50,12 +50,20 @@ public class SalesTransactionList implements Serializable {
         int clientID = s.nextInt();
         System.out.println("Enter SalesPerson ID. ");
         int salesID = s.nextInt();
+        System.out.println("Enter the Item label Cars/Part. ");
+        String items = s.nextLine();
+        s.nextLine();
+        ArrayList<String> purchasedItems = new ArrayList<>();
+        for (int i = 0; i < items.length(); i++){
+            String item = s.nextLine();
+            purchasedItems.add(item);
+        }
         System.out.println("Enter discount. ");
         int discount = s.nextInt();
         System.out.println("Enter total amount spend. ");
         double amount = s.nextDouble();
 
-        transactionList.add(new SalesTransaction(tID, transactionDate,clientID, salesID, discount, amount));
+        transactionList.add(new SalesTransaction(tID, transactionDate,clientID,salesID, purchasedItems, discount, amount));
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile));
         oos.writeObject(transactionList);
         saveTransaction();
