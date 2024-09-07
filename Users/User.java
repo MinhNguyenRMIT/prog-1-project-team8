@@ -13,7 +13,7 @@ public class User {
     private final String fullName;
     private final Date dob;
     private final String address;
-    private final int phoneNumber;
+    private final int phoneNo;
     private final String email;
     private final String userType;
     private final String status;
