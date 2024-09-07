@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Service{
-    private String serviceId;        // Unique ID for the service (formatted as s-number)
+    private int serviceId;        // Unique ID for the service (formatted as s-number)
     private String serviceDate;      // Date of the service
     private String clientId;         // ID of the client who received the service
     private String mechanicId;       // ID of the mechanic who performed the service
@@ -12,7 +13,7 @@ public class Service{
     private String notes;            // Additional notes or details about the service
 
     // Constructor
-    public Service(String serviceId, String serviceDate, String clientId, String mechanicId,
+    public Service(int serviceId, String serviceDate, String clientId, String mechanicId,
                    String serviceType, List<AutoPart> replacedParts, double serviceCost, String notes) {
         this.serviceId = serviceId;
         this.serviceDate = serviceDate;
@@ -23,11 +24,11 @@ public class Service{
         this.serviceCost = serviceCost;
         this.notes = notes;
     }
-    public String getServiceId() {
+    public int getServiceId() {
         return serviceId;
     }
 
-    public void setServiceId(String serviceId) {
+    public void setServiceId(int serviceId) {
         this.serviceId = serviceId;
     }
 
