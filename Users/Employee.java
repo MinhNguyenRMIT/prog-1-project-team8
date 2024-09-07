@@ -14,9 +14,39 @@ public class Employee extends User {
         return position;
     }
 
-    public void calculateRevenue(String period) {
-        // calculate revenue (day/week/month)
-        System.out.println("Calculating revenue for " + getFullName() + " for the period: " + period);
+    public void calculateRevenue(List<SalesTransaction> transactions, String period) {
+        Date now = new Date();
+        long timeLimit = 0;
+
+        // Predefined values for day, month, and year in milliseconds
+        switch (period.toLowerCase()) {
+            case "day":
+                timeLimit = 86400000L; // 1 day = 86,400,000 ms
+                break;
+            case "month":
+                timeLimit = (long) 2.628E9; // 1 month = 2.628E+9 ms (30 days)
+                break;
+            case "year":
+                timeLimit = (long) 3.1536E10; // 1 year = 3.1536E+10 ms (365 days)
+                break;
+            default:
+                System.out.println("Invalid period. Please enter 'day', 'month', or 'year'.");
+                return;
+        }
+
+        // Calculate total revenue for the selected period
+        double totalRevenue = 0;
+        for (SalesTransaction transaction : transactions) {
+            Date transactionDate = transaction.getTransactionDate();
+            long timeDifference = now.getTime() - transactionDate.getTime(); // Time difference in ms
+
+            if (timeDifference <= timeLimit) {
+                totalRevenue += transaction.getTotalAmount();
+            }
+        }
+
+        // Display the total revenue
+        System.out.println("The total revenue in the past " + period + " is: " + totalRevenue);
     }
 
     public void listServices() {
