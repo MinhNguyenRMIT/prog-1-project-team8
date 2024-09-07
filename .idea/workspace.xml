@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39b00c64-6249-4408-9307-ba072dcf519b" name="Changes" comment="Updated with User methods">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/users.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tempMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarParts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/users.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempMain.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +44,25 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MinhNguyenRMIT"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MinhNguyenRMIT&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MinhNguyenRMIT/prog-1-project-team8.git",
-    "accountId": "06797606-4db9-4c13-9916-3eb5019d5a0d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MinhNguyenRMIT/prog-1-project-team8.git&quot;,
+    &quot;accountId&quot;: &quot;06797606-4db9-4c13-9916-3eb5019d5a0d&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2lbgJDYAhTj3Q7LuDBBd6yRrBvU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,7 +70,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Minh",
+    "git-widget-placeholder": "thinh-branch",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -108,8 +108,20 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated with User methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated with User methods" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/thinh-branch' into thinh-branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/thinh-branch' into thinh-branch" />
   </component>
 </project>
