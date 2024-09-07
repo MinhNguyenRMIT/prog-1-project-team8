@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39b00c64-6249-4408-9307-ba072dcf519b" name="Changes" comment="Updated with User methods">
-      <change beforePath="$PROJECT_DIR$/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarParts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/users.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tempMain.java" beforeDir="false" />
-    </list>
+    <list default="true" id="39b00c64-6249-4408-9307-ba072dcf519b" name="Changes" comment="Merge remote-tracking branch 'origin/Minh' into thinh-branch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,12 +44,12 @@
     &quot;assignee&quot;: &quot;MinhNguyenRMIT&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/MinhNguyenRMIT/prog-1-project-team8.git&quot;,
-    &quot;accountId&quot;: &quot;06797606-4db9-4c13-9916-3eb5019d5a0d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MinhNguyenRMIT/prog-1-project-team8",
+    "accountId": "73d78500-d5f8-42c3-9eee-14aeedfe78cd"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -69,6 +63,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "thinh-branch",
     "kotlin-language-version-configured": "true",
@@ -85,14 +80,6 @@
       <recent name="C:\Users\nminh\IdeaProjects\prog-1-project-team8\Users" />
     </key>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -103,6 +90,31 @@
       <updated>1725454115348</updated>
       <workItem from="1725454116789" duration="1317000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
+      <option name="closed" value="true" />
+      <created>1725720091350</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725720091350</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
+      <option name="closed" value="true" />
+      <created>1725720103531</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725720103531</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
+      <option name="closed" value="true" />
+      <created>1725720169873</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725720169873</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,15 +125,28 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/AnhHuynh" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated with User methods" />
     <MESSAGE value="Merge remote-tracking branch 'origin/thinh-branch' into thinh-branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/thinh-branch' into thinh-branch" />
+    <MESSAGE value="Updated with User methods" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/Minh' into thinh-branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/Minh' into thinh-branch" />
   </component>
 </project>
