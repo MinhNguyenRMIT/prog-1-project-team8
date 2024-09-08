@@ -11,7 +11,7 @@ public class CarList implements Serializable{
 
     //Create Car
     public static void create() throws IOException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Car\\cars.txt";
+        String file = "Assignment/Data/Car/cars.txt";
         File newFile = new File(file);
         Scanner s = new Scanner(System.in);
         int cNum;
@@ -56,7 +56,7 @@ public class CarList implements Serializable{
     }
     //View Car details
     public static void view() throws IOException, ClassNotFoundException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Car\\cars.txt";
+        String file = "Assignment/Data/Car/cars.txt";
         File newFile = new File(file);
         ObjectInputStream ois = null;
         if (newFile.isFile()){
@@ -171,7 +171,7 @@ public class CarList implements Serializable{
 
     //Save Cars
     public static void save() throws IOException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Car\\cars.txt";
+        String file = "Assignment/Data/Car/cars.txt";
         File newFile = new File(file);
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile, true));
         oos.writeObject(carList);

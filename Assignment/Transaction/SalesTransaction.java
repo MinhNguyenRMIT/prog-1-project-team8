@@ -35,9 +35,6 @@ public class SalesTransaction implements Serializable{
     }
 
 
-//    public String convertTransactionToCSV(){
-//        return getTransactionID()+","+getTransactionDate()+","+getClientID()+","+getSalespersonID()+","+getDiscount();
-//    }
     public String toString(){
         return String.format("%-10s %-10s %-10s %-10s %-10s %-10s \n",transactionID, transactionDate, clientID, salespersonID, discount, totalAmount);
     }

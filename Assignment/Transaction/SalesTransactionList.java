@@ -22,7 +22,7 @@ public class SalesTransactionList implements Serializable {
     //CRUD for Manager
     //Create
     public static void addTransaction() throws IOException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Transaction\\transaction.txt";
+        String file = "Assignment/Data/Transaction/transaction.txt";
         File newFile = new File(file);
         Scanner s = new Scanner(System.in);
         int tID;
@@ -72,7 +72,7 @@ public class SalesTransactionList implements Serializable {
     }
     //View Transaction
     public static void viewTransaction() throws IOException, ClassNotFoundException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Transaction\\transaction.txt";
+        String file = "Assignment/Data/Transaction/transaction.txt";
         File newFile = new File(file);
         ObjectInputStream ois = null;
         if (newFile.isFile()){
@@ -89,7 +89,7 @@ public class SalesTransactionList implements Serializable {
     }
     //Delete Transaction
     public static void deleteTransaction(int transacID) throws IOException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Transaction\\transaction.txt";
+        String file = "Assignment/Data/Transaction/transaction.txt";
         File newFile = new File(file);
         boolean found = false;
 
@@ -111,7 +111,7 @@ public class SalesTransactionList implements Serializable {
     }
     //Save Transaction
     public static void saveTransaction() throws IOException {
-        String file = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Transaction\\transaction.txt";
+        String file = "Assignment/Data/Transaction/transaction.txt";
         File newFile = new File(file);
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile, true));
         oos.writeObject(transactionList);
@@ -209,29 +209,6 @@ public class SalesTransactionList implements Serializable {
         System.out.println(total);
 
     }
-
-//    // Corrected method to filter transactions by week
-//    public static List<SalesTransaction> filterTransactionsByWeek(List<SalesTransaction> transactions, LocalDate date) {
-//        LocalDate startOfWeek = date.with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY)); // Start of the week (Monday)
-//        LocalDate endOfWeek = startOfWeek.plusDays(6); // End of the week (Sunday)
-//
-//        return transactions.stream()
-//                .filter(transaction -> !transaction.getTransactionDate().isBefore(startOfWeek) &&
-//                        !transaction.getTransactionDate().isAfter(endOfWeek))
-//                .collect(Collectors.toList());
-//    }
-
-//    // Method to filter transactions by month
-//    public static List<SalesTransaction> filterTransactionsByMonth(List<SalesTransaction> transactions, LocalDate date) {
-//        int month = date.getMonthValue();
-//        int year = date.getYear();
-//
-//        return transactions.stream()
-//                .filter(transaction -> transaction.getTransactionDate().getMonthValue() == month &&
-//                        transaction.getTransactionDate().getYear() == year)
-//                .collect(Collectors.toList());
-//    }
-
 
 //    public void saveTransactionCSV() throws IOException {
 //        File fileSrc = new File("C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\transaction.csv");

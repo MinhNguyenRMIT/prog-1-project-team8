@@ -12,6 +12,7 @@ public class Client extends User {
         this.membership = membership;
     }
 
+
     public int getClientID(){
         return clientID;
     }

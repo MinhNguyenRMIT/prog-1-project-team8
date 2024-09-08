@@ -1,5 +1,6 @@
 package Assignment.Users;
 import Assignment.Object.Car.CarList;
+import Assignment.Services.ServiceManager;
 import Assignment.Transaction.SalesTransaction;
 import Assignment.Transaction.SalesTransactionList;
 
@@ -73,7 +74,12 @@ public class Manager extends User {
     }
 
 
+
+
+
+
     //Sales Transaction
+    //Create
     public static void addTransaction(SalesTransactionList salesTransactionList) throws IOException {
         salesTransactionList.addTransaction();
     }
@@ -81,7 +87,6 @@ public class Manager extends User {
     public static void viewTransaction(SalesTransactionList salesTransactionList) throws IOException, ClassNotFoundException {
         salesTransactionList.viewTransaction();
     }
-
 
     //Delete byID
     public static void deleteTransactionByID(SalesTransactionList salesTransactionList) throws IOException, ClassNotFoundException {
@@ -112,7 +117,6 @@ public class Manager extends User {
 
         salesTransactionList.totalAmountPerMonth(year, Month.of(week));
     }
-
     //Return revenue per Month
     public static void revenuePerMonth(SalesTransactionList salesTransactionList){
         Scanner s = new Scanner(System.in);
@@ -133,24 +137,11 @@ public class Manager extends User {
     }
 
 
-    public void listServices(){
-        String file = ""; //Replace this wil the folder
-        BufferedReader reader = null;
-        String line = "";
-        try{
-            reader = new BufferedReader(new FileReader(file));
-            while((line = reader.readLine())!= null){
-                String[] row = line.split(",");
-                for (String index: row){
-                    System.out.printf("%-10s",index);
-                }
-                System.out.println();
-            }
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
+    //Services
+    public static void addService(ServiceManager serviceManager) throws IOException {
+        serviceManager.createService();
     }
+
 //    public void calculateCarSoldMonth(){}
     /*To find the amount of CarSold. Look at the Assignment.Transaction.SalesTransaction, if purchased items is Car. Then write the code where
     * it will return salesTransaction that listOfItem is car. Then add in parameter of Month and Year. Next just get the total sum

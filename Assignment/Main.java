@@ -1,6 +1,8 @@
 package Assignment;
 
 
+import Assignment.Part.PartManager;
+import Assignment.Services.ServiceManager;
 import Assignment.Users.Manager;
 import Assignment.Object.Car.CarList;
 import Assignment.Transaction.SalesTransactionList;
@@ -15,9 +17,11 @@ public class Main {
     public static void main(String[] args) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
         CarList carList = new CarList();
         SalesTransactionList salesTransactionList = new SalesTransactionList();
-        start(carList, salesTransactionList);
+        ServiceManager serviceManager = new ServiceManager();
+        PartManager partManager = new PartManager();
+        start(carList, salesTransactionList, serviceManager, partManager);
     }
-    public static void start(CarList carList, SalesTransactionList salesTransactionList) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
+    public static void start(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
         int choice = -1;
         Scanner s = new Scanner(System.in);
         System.out.println("WELCOME TO THE HOMEPAGE");
@@ -30,14 +34,14 @@ public class Main {
             System.out.println("3. CLIENT");
             choice = s.nextInt();
             switch (choice){
-                case 1 -> manager(carList, salesTransactionList);
+                case 1 -> manager(carList, salesTransactionList, serviceManager, partManager);
                 case 2 -> employee();
                 case 3 -> client();
 
             }
         }while (choice !=0);
     }
-    public static void manager(CarList carList, SalesTransactionList salesTransactionList) throws IOException, ClassNotFoundException {
+    public static void manager(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, ClassNotFoundException {
         int choice = -1;
         Scanner s = new Scanner(System.in);
         do{
@@ -55,10 +59,12 @@ public class Main {
             System.out.println("11: Revenue by Week");
             System.out.println("12: Revenue by Week");
             System.out.println("13: Revenue by Month");
-//            System.out.println("9: List Auto part");
-//            System.out.println("10: Remove Car Parts");
-//            System.out.println("11: Remove Employees");
-//            System.out.println("12: Remove Client");
+            System.out.println("14: Create Services");
+            System.out.println("15: View Services");
+            System.out.println("16: Delete Service");
+            System.out.println("17: Add part");
+            System.out.println("18: View part");
+            System.out.println("19: Delete part");
 //            System.out.println("13. Logout ");
             choice = s.nextInt();
             switch (choice){
@@ -90,7 +96,6 @@ public class Main {
 
                 }
                 case 9 -> {Manager.viewTransaction(salesTransactionList);
-//                    salesTransactionList.saveTransactionCSV();
 
                 }
                 case 10 -> {
@@ -106,7 +111,23 @@ public class Main {
                 }
                 case 13 -> {
                     Manager.revenuePerMonth(salesTransactionList);
-
+                }
+                case 14 -> {
+                    ServiceManager.createService();
+                }case 15 -> {
+                    ServiceManager.viewServices();
+                }
+                case 16 -> {
+                    ServiceManager.deleteService();
+                }
+                case 17 -> {
+                    PartManager.createAutoPart();
+                }
+                case 18 -> {
+                    PartManager.viewAutoParts();
+                }
+                case 19 -> {
+//                    PartManager.de();
                 }
             }
         }while (choice !=0);
