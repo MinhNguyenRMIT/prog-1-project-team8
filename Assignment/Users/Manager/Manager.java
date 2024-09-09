@@ -1,5 +1,6 @@
 package Assignment.Users.Manager;
 import Assignment.Object.Car.CarList;
+import Assignment.Transaction.SalesTransaction;
 import Assignment.Transaction.SalesTransactionList;
 import Assignment.Users.User;
 
@@ -97,7 +98,6 @@ public class Manager extends User {
     }
 
 
-
     //Return revenue by Week
     public static void revenuePerWeek(SalesTransactionList salesTransactionList){
         Scanner s = new Scanner(System.in);
@@ -137,6 +137,35 @@ public class Manager extends User {
         String date = s.next();
         LocalDate transactionDate = LocalDate.parse(date);
         salesTransactionList.listCarSoldByDay(transactionDate);
+    }
+    public static void carSoldByWeek(SalesTransactionList salesTransactionList){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter Year. ");
+        int year = s.nextInt();
+        System.out.println("Enter the number of week in the Year (1-52). ");
+        int week = s.nextInt();
+        if (week < 1 && week > 52){
+            System.out.println("Number of week is invalid");
+        }
+
+        salesTransactionList.listCarSoldByWeek(year, week);
+    }
+    public static void carSoldByMonth(SalesTransactionList salesTransactionList){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter Year. ");
+        int year = s.nextInt();
+        System.out.println("Enter Month. ");
+        int monthV = s.nextInt();
+
+        Month month =  null;
+        try {
+            month = Month.of(monthV);
+        } catch (Exception e) {
+            System.out.println("Invalid month entered.");
+            return;
+        }
+        salesTransactionList.listCarSoldPerMonth(year, month);
+
     }
 
 

@@ -5,37 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39b00c64-6249-4408-9307-ba072dcf519b" name="Changes" comment="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
-      <change afterPath="$PROJECT_DIR$/Assignment/Data/Client/clients.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment/Data/Employees/employees.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment/Users/Client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment/Users/Client/ClientList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment/Users/Employee/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment/Users/users.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Data/Parts/autoparts.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Data/Transaction/transaction.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Object/Car/CarList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Object/Car/CarList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Part/AutoPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Part/AutoPart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Part/PartManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Part/PartManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Services/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Services/ServiceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Services/ServiceManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment/Transaction/SalesTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Transaction/SalesTransaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment/Transaction/SalesTransactionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Transaction/SalesTransactionList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Users/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Users/EmployeeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Employee/EmployeeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Users/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Manager/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Car/cars.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Car/cars.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Transaction/transaction.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Users/Manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Manager/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/EmployeeList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725779931322</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
+      <option name="closed" value="true" />
+      <created>1725876966221</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725876966221</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

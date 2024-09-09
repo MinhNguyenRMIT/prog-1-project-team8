@@ -59,13 +59,15 @@ public class Main {
             System.out.println("13: VIEW Revenue by Month");
             System.out.println("14: VIEW revenue by SalesPerson");
             System.out.println("15: VIEW Car Sold By Day");
-//            System.out.println("15: ADD Services");
-//            System.out.println("16: VIEW Services");
-//            System.out.println("17: DELETE Service");
-//            System.out.println("18: VIEW revenue by mechanic");
-//            System.out.println("19: ADD Part");
-//            System.out.println("20: VIEW Part");
-//            System.out.println("21: DELETE Part");
+            System.out.println("16: VIEW Car Sold By Week");
+            System.out.println("17: VIEW Car Sold By Month");
+            System.out.println("18: ADD Services");
+            System.out.println("19: VIEW Services");
+            System.out.println("20: DELETE Service");
+            System.out.println("21: VIEW revenue by mechanic");
+            System.out.println("22: ADD Part");
+            System.out.println("23: VIEW Part");
+            System.out.println("24: DELETE Part");
             choice = s.nextInt();
             switch (choice){
                 case 1 -> {Manager.addCar(carList);}
@@ -83,13 +85,15 @@ public class Main {
                 case 13 -> {Manager.revenuePerMonth(salesTransactionList);}
                 case 14 -> {Manager.revenueBySales(salesTransactionList);}
                 case 15 -> {Manager.carSoldByDay(salesTransactionList);}
-//                case 15 -> {ServiceManager.createService();}
-//                case 16 -> {ServiceManager.viewServices();}
-//                case 17 -> {ServiceManager.deleteService();}
-//                case 18 -> {ServiceManager.revenueByMechanic();}
-//                case 19 -> {PartManager.createAutoPart();}
-//                case 20-> {PartManager.viewAutoParts();}
-//                case 21 -> {PartManager.deleteAutoPart();}
+                case 16 -> {Manager.carSoldByWeek(salesTransactionList);}
+                case 17 -> {Manager.carSoldByMonth(salesTransactionList);}
+                case 18 -> {ServiceManager.createService();}
+                case 19 -> {ServiceManager.viewServices();}
+                case 20 -> {ServiceManager.deleteService();}
+                case 21 -> {ServiceManager.revenueByMechanic();}
+                case 22 -> {PartManager.createAutoPart();}
+                case 23-> {PartManager.viewAutoParts();}
+                case 24 -> {PartManager.deleteAutoPart();}
             }
         }while (choice !=0);
     }

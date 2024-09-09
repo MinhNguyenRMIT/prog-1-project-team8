@@ -14,6 +14,7 @@ import java.io.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.stream.StreamSupport;
 
 import static Assignment.Object.Car.CarList.carList;
 import static Assignment.Object.Car.CarList.carSold;
@@ -52,16 +53,8 @@ public class SalesTransactionList implements Serializable {
         int clientID = s.nextInt();
         System.out.println("Enter SalesPerson ID. ");
         int salesID = s.nextInt();
-        System.out.println("Enter the Item that has been sold. ");
-        String items = s.nextLine();
-        s.nextLine();
-        ArrayList<String> purchasedItems = new ArrayList<>();
-        for (int i = 0; i < items.length(); i++){
-            String item = s.nextLine();
-            purchasedItems.add(item);
-        }
 
-        ArrayList<Car> carsSold = new ArrayList<>();
+        ArrayList<Car> purchasedItems = new ArrayList<>();
         System.out.println("Do you want to add Car? (yes/no): ");
         String addCar = s.next();
         while (addCar.equalsIgnoreCase("yes")) {
@@ -81,15 +74,14 @@ public class SalesTransactionList implements Serializable {
             System.out.println("Enter Price: ");
             double price = s.nextDouble();
             // Add part to list using the full constructor
-            carsSold.add(new Car(cID,model, year, mileage,color,status,price));
-            System.out.println("Do you want to add another part? (yes/no): ");
+            purchasedItems.add(new Car(cID,model, year, mileage,color,status,price));
+            System.out.println("Do you want to add another Car? (yes/no): "); //if no break out loops
             addCar = s.next();
         }
         System.out.println("Enter discount. ");
         int discount = s.nextInt();
         System.out.println("Enter total amount spend. ");
         double amount = s.nextDouble();
-
         transactionList.add(new SalesTransaction(tID, transactionDate,clientID,salesID, purchasedItems, discount, amount));
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile));
         oos.writeObject(transactionList);
@@ -145,15 +137,6 @@ public class SalesTransactionList implements Serializable {
         oos.close();
     }
 
-    // Method to calculate the final total amount after applying the discount
-    public static double totalAmountPerClient(int clientID) {
-        double finalAmount = 0;
-        for (SalesTransaction salesTransaction : transactionList) {
-            finalAmount = salesTransaction.getTotalAmount() - (salesTransaction.getTotalAmount() / 100);
-        }
-        return finalAmount;
-    }
-
     // Method to add an item to the list of purchased items and save it to a text file
     public static void addPurchasedItem(String itemID) {
         String filename = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\_purchasedItems.txt"; // Each transaction has its own file
@@ -190,7 +173,7 @@ public class SalesTransactionList implements Serializable {
         double total = 0;
         while (li.hasNext()) {
             SalesTransaction salesTransaction = (SalesTransaction) li.next();
-            if (salesTransaction.getTransactionDate().get(ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR) == week && (salesTransaction.getTransactionDate().getYear() == year)){
+            if (salesTransaction.getTransactionDate().get(ChronoField.ALIGNED_WEEK_OF_YEAR) == week && salesTransaction.getTransactionDate().getYear() == year){;
                 total += salesTransaction.getTotalAmount();
                 found = true;
             }
@@ -221,11 +204,31 @@ public class SalesTransactionList implements Serializable {
     public static void listCarSoldByDay(LocalDate day){
         boolean found = false;
         ListIterator<SalesTransaction> li = transactionList.listIterator();
+        for (SalesTransaction salesTransaction : transactionList){
+            System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s \n", "CNUM" , "Model" , "Year" , "Milage" , "Color" , "Status", "Price");
+            String soldCar = salesTransaction.getPurchasedItems().toString();
+            soldCar = soldCar.substring(1, soldCar.length() - 1); // Remove the square brackets
+            System.out.println(soldCar);
+        }
+    }
+    public static void listCarSoldByWeek(int year, int week){
+        ListIterator<SalesTransaction> li= transactionList.listIterator();
+        System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s \n", "CNUM" , "Model" , "Year" , "Milage" , "Color" , "Status", "Price");
         while (li.hasNext()) {
-            System.out.println(li.next());
-            for (SalesTransaction salesTransaction : transactionList){
-                String soldCar = salesTransaction.getCarSold().toString();
-                soldCar = soldCar.substring(1, soldCar.length() - 1); // Remove the first and last character (the brackets)
+            SalesTransaction salesTransaction = (SalesTransaction) li.next();
+            if (salesTransaction.getTransactionDate().get(ChronoField.ALIGNED_WEEK_OF_YEAR) == week && salesTransaction.getTransactionDate().getYear() == year){;
+                String soldCar = salesTransaction.getPurchasedItems().toString();
+                soldCar = soldCar.substring(1, soldCar.length() - 1); // Remove the square brackets
+                System.out.println(soldCar);
+            }
+        }
+    }
+    public static void listCarSoldPerMonth(int year, Month month){
+        for (SalesTransaction salesTransaction : transactionList){
+            System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s \n", "CNUM" , "Model" , "Year" , "Milage" , "Color" , "Status", "Price");
+            if (salesTransaction.getTransactionDate().getMonth() == month && (salesTransaction.getTransactionDate().getYear() == year)){
+                String soldCar = salesTransaction.getPurchasedItems().toString();
+                soldCar = soldCar.substring(1, soldCar.length() - 1); // Remove the square brackets
                 System.out.println(soldCar);
             }
         }

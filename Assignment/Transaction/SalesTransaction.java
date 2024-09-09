@@ -1,32 +1,23 @@
 package Assignment.Transaction;
 
-import Assignment.Services.Service;
+import Assignment.Object.Car.Car;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.time.LocalDate;
-import java.time.temporal.TemporalAdjusters;
-import java.time.DayOfWeek;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class SalesTransaction implements Serializable{
     private int transactionID;
     private LocalDate transactionDate;
     private int clientID;
     private int salespersonID;
-    private ArrayList<String> purchasedItems;
+    private ArrayList<Car> purchasedItems;
     private double discount;
     private double totalAmount;
     private String additionalNotes;
 
     // Constructor
-    public SalesTransaction(int transactionID, LocalDate transactionDate,int clientID, int salespersonID,ArrayList<String> purchasedItems, double discount, double totalAmount
+    public SalesTransaction(int transactionID, LocalDate transactionDate,int clientID, int salespersonID,ArrayList<Car> purchasedItems, double discount, double totalAmount
                             ) {
         this.transactionID = transactionID;
         this.transactionDate = transactionDate;
@@ -82,14 +73,8 @@ public class SalesTransaction implements Serializable{
     }
 
 
+    public ArrayList<Car> getPurchasedItems(){
+        return purchasedItems;
 
-    public ArrayList<String> getCarSold(){
-        ArrayList<String> carSold = new ArrayList<>();
-        for (String items : purchasedItems){
-            carSold.add(items);
-        }
-        return carSold;
     }
-
-
 }
