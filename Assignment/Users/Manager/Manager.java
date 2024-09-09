@@ -1,8 +1,7 @@
-package Assignment.Users;
+package Assignment.Users.Manager;
 import Assignment.Object.Car.CarList;
-import Assignment.Services.ServiceManager;
-import Assignment.Transaction.SalesTransaction;
 import Assignment.Transaction.SalesTransactionList;
+import Assignment.Users.User;
 
 
 import java.io.*;
@@ -14,9 +13,8 @@ import java.util.Scanner;
 
 public class Manager extends User {
     private final int managerID;
-//    private Assignment.Transaction.SalesTransaction transaction;
-    public Manager(int managerID,String fullName, Date date, String address, int phoneNo, String email, String userType, String status){
-      super(fullName, date, address, phoneNo, email, userType, status);
+    public Manager(int managerID,String username, String password, String fullName, Date dob, String address, int phoneNumber, String email, String userType, String status){
+        super(username, password, fullName, dob, address, phoneNumber, email, userType, status);
         this.managerID = managerID;
     }
 
@@ -44,6 +42,7 @@ public class Manager extends User {
         carList.updateCarByID(ID, price);
 
     }
+    //Update Car Status
     public static void updateStatus(CarList carList) throws IOException {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter CAR ID: ");
@@ -74,20 +73,13 @@ public class Manager extends User {
     }
 
 
-
-
-
-
     //Sales Transaction
     //Create
     public static void addTransaction(SalesTransactionList salesTransactionList) throws IOException {
-        salesTransactionList.addTransaction();
-    }
+        salesTransactionList.addTransaction();}
     //View Transaction
     public static void viewTransaction(SalesTransactionList salesTransactionList) throws IOException, ClassNotFoundException {
-        salesTransactionList.viewTransaction();
-    }
-
+        salesTransactionList.viewTransaction();}
     //Delete byID
     public static void deleteTransactionByID(SalesTransactionList salesTransactionList) throws IOException, ClassNotFoundException {
         System.out.println("Enter the Transaction ID you want to delete: ");
@@ -95,7 +87,6 @@ public class Manager extends User {
         int transacID = s.nextInt();
         salesTransactionList.deleteTransaction(transacID);
     }
-
     //Return revenue by Day
     public static void revenueByDay(SalesTransactionList salesTransactionList) throws IOException {
         Scanner s = new Scanner(System.in);
@@ -104,6 +95,9 @@ public class Manager extends User {
         LocalDate transactionDate = LocalDate.parse(date);
         salesTransactionList.totalAmountPerDay(transactionDate);
     }
+
+
+
     //Return revenue by Week
     public static void revenuePerWeek(SalesTransactionList salesTransactionList){
         Scanner s = new Scanner(System.in);
@@ -115,7 +109,7 @@ public class Manager extends User {
             System.out.println("Number of week is invalid");
         }
 
-        salesTransactionList.totalAmountPerMonth(year, Month.of(week));
+        salesTransactionList.totalAmountPerWeek(year, week);
     }
     //Return revenue per Month
     public static void revenuePerMonth(SalesTransactionList salesTransactionList){
@@ -137,38 +131,18 @@ public class Manager extends User {
     }
 
 
-    //Services
-    public static void addService(ServiceManager serviceManager) throws IOException {
-        serviceManager.createService();
+    public static void carSoldByDay(SalesTransactionList salesTransactionList){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter date. ");
+        String date = s.next();
+        LocalDate transactionDate = LocalDate.parse(date);
+        salesTransactionList.listCarSoldByDay(transactionDate);
     }
 
-//    public void calculateCarSoldMonth(){}
-    /*To find the amount of CarSold. Look at the Assignment.Transaction.SalesTransaction, if purchased items is Car. Then write the code where
-    * it will return salesTransaction that listOfItem is car. Then add in parameter of Month and Year. Next just get the total sum
-    * amount per Month. Which then will give me CarSoldPerMonth. */
 
-
-    public void listAutoPart(){
-        String file = ""; //Replace this wil the folder
-        BufferedReader reader = null;
-        String line = "";
-        try{
-            reader = new BufferedReader(new FileReader(file));
-            while((line = reader.readLine())!= null){
-                String[] row = line.split(",");
-                for (String index: row){
-                    System.out.printf("%-10s",index);
-                }
-                System.out.println();
-            }
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
+    //Return the Revenue made by the Sales Person
+    public static void revenueBySales(SalesTransactionList salesTransactionList){
+        salesTransactionList.revenueBySalesPerson();
     }
-//    public void removeCarParts(){}
-//    public void removeEmployees(){}
-//    public void removeClients(){}
-
 
 }

@@ -1,12 +1,10 @@
 package Assignment.Services;
 
 import Assignment.Part.AutoPart;
-import jdk.vm.ci.meta.Local;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class Service implements Serializable {
@@ -15,18 +13,18 @@ public class Service implements Serializable {
     private int clientId;         // ID of the client who received the service
     private int mechanicId;       // ID of the mechanic who performed the service
     private String serviceType;      // Type of service performed (e.g., Oil Change, Tire Rotation)
-    private List<AutoPart> replacedParts; // List of parts replaced during the service, if any
+    private ArrayList<AutoPart> replacedParts; // List of parts replaced during the service, if any
     private double serviceCost;      // Cost of the service
     private String notes;            // Additional notes or details about the service
 
 
 
     public String toString(){
-        return String.format("%-10s %-13s %-10s %-10s %-10s %-25s %-10s %-10s \n",serviceId, serviceDate, clientId, mechanicId, serviceType, replacedParts, serviceCost,notes);
+        return String.format("%-10s %-13s %-10s %-10s %-10s %-10s %-10s \n",serviceId, serviceDate, clientId, mechanicId, serviceType, serviceCost, notes);
     }
     // Constructor
-    public Service(int serviceId, LocalDate serviceDate, int clientId, int mechanicId,
-                   String serviceType, List<AutoPart> replacedParts, double serviceCost, String notes) {
+    public Service(int serviceId, LocalDate serviceDate, int clientId, int mechanicId, ArrayList<AutoPart> replacedParts,
+                   String serviceType, double serviceCost, String notes) {
         this.serviceId = serviceId;
         this.serviceDate = serviceDate;
         this.clientId = clientId;
@@ -76,11 +74,11 @@ public class Service implements Serializable {
         this.serviceType = serviceType;
     }
 
-    public List<AutoPart> getReplacedParts() {
+    public ArrayList<AutoPart> getReplacedParts() {
         return replacedParts;
     }
 
-    public void setReplacedParts(List<AutoPart> replacedParts) {
+    public void setReplacedParts(ArrayList<AutoPart> replacedParts) {
         this.replacedParts = replacedParts;
     }
 

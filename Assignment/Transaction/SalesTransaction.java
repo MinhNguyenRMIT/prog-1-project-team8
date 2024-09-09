@@ -1,5 +1,7 @@
 package Assignment.Transaction;
 
+import Assignment.Services.Service;
+
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -9,6 +11,8 @@ import java.time.temporal.TemporalAdjusters;
 import java.time.DayOfWeek;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class SalesTransaction implements Serializable{
@@ -77,23 +81,14 @@ public class SalesTransaction implements Serializable{
         return totalAmount;
     }
 
-    // Method to calculate the final total amount after applying the discount
-    public double calculateFinalAmount() {
-        return totalAmount - (totalAmount * discount / 100);
-    }
 
 
-    // Method to add an item to the list of purchased items and save it to a text file
-    public static void addPurchasedItem(String itemID) {
-        String filename = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\_purchasedItems.txt"; // Each transaction has its own file
-        try {
-            // Append the purchased item to the text file
-            Files.write(Paths.get(filename), (itemID + System.lineSeparator()).getBytes(), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
-            System.out.println("Item " + itemID + " added to " + filename);
-        } catch (IOException e) {
-            System.err.println("An error occurred while writing to the file.");
-            e.printStackTrace();
+    public ArrayList<String> getCarSold(){
+        ArrayList<String> carSold = new ArrayList<>();
+        for (String items : purchasedItems){
+            carSold.add(items);
         }
+        return carSold;
     }
 
 

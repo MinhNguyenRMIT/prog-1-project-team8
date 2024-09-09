@@ -14,13 +14,13 @@ public class PartManager implements Serializable {
         scanner = new Scanner(System.in);
 
         // Input and validate unique part ID
-        String partId;
+        int partId;
         while (true) {
             System.out.println("Enter the Part ID: ");
-            partId = scanner.next();
+            partId = scanner.nextInt();
             boolean exists = false;
             for (AutoPart part : autoPartList) {
-                if (part.getPartId().equals(partId)) {
+                if (part.getPartId() == (partId)) {
                     exists = true;
                     break;
                 }
@@ -80,16 +80,18 @@ public class PartManager implements Serializable {
     }
 
     // Delete Assignment.Part.AutoPart by ID
-    public static void deleteAutoPart(String partId) throws IOException {
+    public static void deleteAutoPart () throws IOException {
+        Scanner scanner = new Scanner(System.in);
         String file = "Assignment/Data/Parts/autoparts.txt";  // Path to the autoparts file
         File newFile = new File(file);
         boolean found = false;
         ListIterator<AutoPart> li = autoPartList.listIterator();
-
+        System.out.println("Enter part ID to delete: ");
+        int partId = scanner.nextInt();
         // Iterate and remove part if ID matches
         while (li.hasNext()) {
             AutoPart part = li.next();
-            if (part.getPartId().equals(partId)) {
+            if (part.getPartId() == (partId)) {
                 li.remove();
                 System.out.println("Part has been found and removed.");
                 found = true;
@@ -106,18 +108,19 @@ public class PartManager implements Serializable {
     }
 
     // Update Assignment.Part.AutoPart by ID
-    public static void updateAutoPart(String partId) throws IOException {
+    public static void updateAutoPart() throws IOException {
+        Scanner scanner = new Scanner(System.in);
         String file = "Assignment/Data/Parts/autoparts.txt";  // Path to the autoparts file
         File newFile = new File(file);
         boolean found = false;
         ListIterator<AutoPart> li = autoPartList.listIterator();
-
+        System.out.println("Enter the ID to update: ");
+        int partId = scanner.nextInt();
         // Search for the part by ID
         while (li.hasNext()) {
             AutoPart part = li.next();
-            if (part.getPartId().equals(partId)) {
+            if (part.getPartId() == (partId)) {
                 found = true;
-
                 // Prompt the user to update the fields
                 scanner = new Scanner(System.in);
                 System.out.println("Enter the new Part Name: ");
@@ -161,18 +164,19 @@ public class PartManager implements Serializable {
     }
 
 
-    // Search Assignment.Part.AutoPart by ID
-    public static void searchAutoPart(String partId) {
+    // Search Part By ID
+    public static void searchAutoPart() {
         boolean found = false;
         ListIterator<AutoPart> li = autoPartList.listIterator();
-
+        System.out.println("Enter the ID to update: ");
+        int partId = scanner.nextInt();
         // Display header
         System.out.printf("%-10s %-15s %-15s %-15s %-10s %-10s %-10s\n", "PartID", "Part Name", "Manufacturer", "Part Number", "Condition", "Cost", "Warranty");
 
         // Search and display part if found
         while (li.hasNext()) {
             AutoPart part = li.next();
-            if (part.getPartId().equals(partId)) {
+            if (part.getPartId() == (partId)) {
                 System.out.println(part);
                 found = true;
             }

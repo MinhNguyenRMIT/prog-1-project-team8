@@ -1,8 +1,8 @@
 package Assignment.Services;
 
+import Assignment.Object.Car.Car;
 import Assignment.Part.AutoPart;
-import Assignment.Users.Client;
-import jdk.vm.ci.meta.Local;
+import Assignment.Transaction.SalesTransaction;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -11,6 +11,7 @@ import java.io.*;
 
 public class ServiceManager implements Serializable {
     public static ArrayList<Service> serviceList = new ArrayList<>();
+
     private static Scanner scanner;
     ListIterator<Service> li = null;
 
@@ -53,14 +54,14 @@ public class ServiceManager implements Serializable {
         System.out.println("Enter the Cost: ");
         double serviceCost = scanner.nextDouble();
 
-        // Input for replaced parts (if any)
-        List<AutoPart> replacedParts = new ArrayList<>();
+//         Input for replaced parts (if any)
+        ArrayList<AutoPart> replacedParts = new ArrayList<>();
         System.out.println("Do you want to add replaced parts? (yes/no): ");
         String addParts = scanner.next();
         while (addParts.equalsIgnoreCase("yes")) {
-            // Collect all required details for Assignment.Part.AutoPart
+            // Collect all required details for AutoPart
             System.out.println("Enter Part ID: ");
-            String partId = scanner.next();
+            int partId = scanner.nextInt();
             System.out.println("Enter Part Name: ");
             String partName = scanner.next();
             System.out.println("Enter Manufacturer: ");
@@ -75,10 +76,8 @@ public class ServiceManager implements Serializable {
             double partCost = scanner.nextDouble();
             System.out.println("Enter Notes: ");
             String notes = scanner.next();
-
             // Add part to list using the full constructor
             replacedParts.add(new AutoPart(partId, partName, manufacturer, partNumber, condition, warranty, partCost, notes));
-
             System.out.println("Do you want to add another part? (yes/no): ");
             addParts = scanner.next();
         }
@@ -89,7 +88,7 @@ public class ServiceManager implements Serializable {
         String notes = scanner.nextLine();
 
         // Add service to the list using the updated constructor
-        serviceList.add(new Service(serviceNum, serviceDate, clientId, mechanicId, serviceType, replacedParts, serviceCost, notes));
+        serviceList.add(new Service(serviceNum, serviceDate, clientId, mechanicId, replacedParts,serviceType,serviceCost,notes));
 
         // Save to file
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile));
@@ -110,11 +109,20 @@ public class ServiceManager implements Serializable {
         }
 
         // Display service details
-        System.out.printf("%-10s %-13s %-10s %-10s %-10s %-25s %-10s %-10s \n", "ServiceID", "Date", "ClientID", "MechanicID", "Type","Replace parts", "Cost", "Notes");
+        System.out.printf("%-10s %-13s %-10s %-10s %-10s %-10s %-10s\n", "ServiceID", "Date", "ClientID", "MechanicID", "Type", "Cost", "Notes");
         ListIterator<Service> li = serviceList.listIterator();
         while (li.hasNext()) {
             System.out.println(li.next());
+            for (Service service : serviceList){
+                System.out.println("This is the replace part for Client ID: " + service.getServiceId());
+                System.out.printf("%-10s %-10s %-15s %-10s %-10s %-10s %-10s \n", "partId", "partName", "manufacturer", "partNumber", "condition", "warranty", "partCost");
+                String replacedParts = service.getReplacedParts().toString();
+                replacedParts = replacedParts.substring(1, replacedParts.length() - 1); // Remove the first and last character (the brackets)
+                System.out.println(replacedParts);
+            }
         }
+
+
     }
     // Delete Service by ID
     public static void deleteService() throws IOException {
@@ -144,26 +152,46 @@ public class ServiceManager implements Serializable {
         oos.close();
     }
     //Search By ID
-    public static void searchService(int serviceID) {
+//    public static void searchService(int serviceID) {
+//        boolean found = false;
+//        ListIterator<Service> li = serviceList.listIterator();
+//
+//        // Display header
+//        System.out.printf("%-10s %-15s %-10s %-10s %-15s %-10s \n", "ServiceID", "Assignment.Services.Service Date", "ClientID", "MechanicID", "Assignment.Services.Service Type", "Cost");
+//
+//        // Search and display service if found
+//        while (li.hasNext()) {
+//            Service service = li.next();
+//            if (service.getServiceId() == serviceID) {
+//                System.out.println(service);
+//                found = true;
+//            }
+//        }
+//
+//        // If not found, notify user
+//        if (!found) {
+//            System.out.println("Assignment.Services.Service not found!");
+//        }
+//    }
+    public static void revenueByMechanic() { //This will calculate the total number of Revenue done by 1 mechanic
+        Scanner scanner = new Scanner(System.in);
         boolean found = false;
         ListIterator<Service> li = serviceList.listIterator();
-
-        // Display header
-        System.out.printf("%-10s %-15s %-10s %-10s %-15s %-10s \n", "ServiceID", "Assignment.Services.Service Date", "ClientID", "MechanicID", "Assignment.Services.Service Type", "Cost");
-
-        // Search and display service if found
+        System.out.println("Search Mechanic ID for to see revenue made by them: ");
+        int mID = scanner.nextInt();
+        double total = 0;
         while (li.hasNext()) {
-            Service service = li.next();
-            if (service.getServiceId() == serviceID) {
-                System.out.println(service);
+            Service service = (Service) li.next();
+            if (service.getMechanicId() == mID) {
+                total += service.getServiceCost();
                 found = true;
             }
         }
-
-        // If not found, notify user
         if (!found) {
-            System.out.println("Assignment.Services.Service not found!");
+            System.out.println(" Mechanic doesn't exist ! ");
         }
+        System.out.println("This mechanic has made " + total);
     }
 }
+
 

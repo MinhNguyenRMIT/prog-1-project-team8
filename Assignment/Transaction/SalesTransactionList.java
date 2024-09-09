@@ -1,5 +1,7 @@
 package Assignment.Transaction;
 import Assignment.Object.Car.Car;
+import Assignment.Part.AutoPart;
+import Assignment.Services.Service;
 
 import java.io.Serializable;
 import java.nio.file.Files;
@@ -14,6 +16,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import static Assignment.Object.Car.CarList.carList;
+import static Assignment.Object.Car.CarList.carSold;
 
 public class SalesTransactionList implements Serializable {
     public static ArrayList<SalesTransaction> transactionList = new ArrayList<SalesTransaction>();
@@ -41,7 +44,6 @@ public class SalesTransactionList implements Serializable {
             }else {
                 break;
             }
-
         }
         System.out.println("Enter transaction date. ");
         String date = s.next();
@@ -50,13 +52,38 @@ public class SalesTransactionList implements Serializable {
         int clientID = s.nextInt();
         System.out.println("Enter SalesPerson ID. ");
         int salesID = s.nextInt();
-        System.out.println("Enter the Item label Cars/Part. ");
+        System.out.println("Enter the Item that has been sold. ");
         String items = s.nextLine();
         s.nextLine();
         ArrayList<String> purchasedItems = new ArrayList<>();
         for (int i = 0; i < items.length(); i++){
             String item = s.nextLine();
             purchasedItems.add(item);
+        }
+
+        ArrayList<Car> carsSold = new ArrayList<>();
+        System.out.println("Do you want to add Car? (yes/no): ");
+        String addCar = s.next();
+        while (addCar.equalsIgnoreCase("yes")) {
+            // Collect all required details for AutoPart
+            System.out.println("Enter Car ID: ");
+            int cID = s.nextInt();
+            System.out.println("Enter Car model: ");
+            String model = s.next();
+            System.out.println("Enter Model Year: ");
+            int year = s.nextInt();
+            System.out.println("Enter Mileage: ");
+            double mileage = s.nextDouble();
+            System.out.println("Enter Color: ");
+            String color = s.next();
+            System.out.println("Enter Status: ");
+            String status = s.next();
+            System.out.println("Enter Price: ");
+            double price = s.nextDouble();
+            // Add part to list using the full constructor
+            carsSold.add(new Car(cID,model, year, mileage,color,status,price));
+            System.out.println("Do you want to add another part? (yes/no): ");
+            addCar = s.next();
         }
         System.out.println("Enter discount. ");
         int discount = s.nextInt();
@@ -118,17 +145,14 @@ public class SalesTransactionList implements Serializable {
         oos.close();
     }
 
-
-
     // Method to calculate the final total amount after applying the discount
-    public static double totalAmountPerClient() {
+    public static double totalAmountPerClient(int clientID) {
         double finalAmount = 0;
         for (SalesTransaction salesTransaction : transactionList) {
             finalAmount = salesTransaction.getTotalAmount() - (salesTransaction.getTotalAmount() / 100);
         }
         return finalAmount;
     }
-
 
     // Method to add an item to the list of purchased items and save it to a text file
     public static void addPurchasedItem(String itemID) {
@@ -143,6 +167,7 @@ public class SalesTransactionList implements Serializable {
         }
     }
 
+    //Calculate amount made by Day/Week/Month
     public static void totalAmountPerDay(LocalDate day) throws IOException {
         boolean found = false;
         ListIterator<SalesTransaction> li= transactionList.listIterator();
@@ -158,7 +183,6 @@ public class SalesTransactionList implements Serializable {
             System.out.println(" Not found! ");
         }
         System.out.println(total);
-
     }
     public static void totalAmountPerWeek(int year, int week){
         boolean found = false;
@@ -192,23 +216,43 @@ public class SalesTransactionList implements Serializable {
         }
         System.out.println(total);
     }
-    public static void totalAmountPerYear(int year){
+
+    //List CarSold by Day/Week/Month
+    public static void listCarSoldByDay(LocalDate day){
         boolean found = false;
-        ListIterator<SalesTransaction> li= transactionList.listIterator();
+        ListIterator<SalesTransaction> li = transactionList.listIterator();
+        while (li.hasNext()) {
+            System.out.println(li.next());
+            for (SalesTransaction salesTransaction : transactionList){
+                String soldCar = salesTransaction.getCarSold().toString();
+                soldCar = soldCar.substring(1, soldCar.length() - 1); // Remove the first and last character (the brackets)
+                System.out.println(soldCar);
+            }
+        }
+    }
+
+
+    //Return sales person by ID and calculate the amount of money they made
+    public static void revenueBySalesPerson() { //This will calculate the total number of Revenue done by 1 mechanic
+        Scanner scanner = new Scanner(System.in);
+        boolean found = false;
+        ListIterator<SalesTransaction> li = transactionList.listIterator();
+        System.out.println("Search Sales ID ID for to see revenue made by them: ");
+        int sID = scanner.nextInt();
         double total = 0;
         while (li.hasNext()) {
             SalesTransaction salesTransaction = (SalesTransaction) li.next();
-            if (salesTransaction.getTransactionDate().getYear() == year){
+            if (salesTransaction.getSalespersonID() == sID) {
                 total += salesTransaction.getTotalAmount();
                 found = true;
             }
         }
-        if(!found){
-            System.out.println(" Not found! ");
+        if (!found) {
+            System.out.println(" Sales person doesn't exist ! ");
         }
-        System.out.println(total);
-
+        System.out.println("This Sales person has made " + total);
     }
+
 
 //    public void saveTransactionCSV() throws IOException {
 //        File fileSrc = new File("C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\transaction.csv");

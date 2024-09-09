@@ -1,9 +1,8 @@
 package Assignment;
 
-
 import Assignment.Part.PartManager;
 import Assignment.Services.ServiceManager;
-import Assignment.Users.Manager;
+import Assignment.Users.Manager.Manager;
 import Assignment.Object.Car.CarList;
 import Assignment.Transaction.SalesTransactionList;
 
@@ -37,7 +36,6 @@ public class Main {
                 case 1 -> manager(carList, salesTransactionList, serviceManager, partManager);
                 case 2 -> employee();
                 case 3 -> client();
-
             }
         }while (choice !=0);
     }
@@ -46,89 +44,52 @@ public class Main {
         Scanner s = new Scanner(System.in);
         do{
             System.out.println("You are log in Manager!");
-            System.out.println("1: Add Cars");
-            System.out.println("2: View All Cars");
-            System.out.println("3: Update Car Price");
-            System.out.println("4: Update Car Status");
-            System.out.println("5: Delete Cars");
-            System.out.println("6: Get By ID");
-            System.out.println("7: List Car Sold");
-            System.out.println("8: Add transaction");
-            System.out.println("9: List Transaction");
-            System.out.println("10: Delete Transaction");
-            System.out.println("11: Revenue by Week");
-            System.out.println("12: Revenue by Week");
-            System.out.println("13: Revenue by Month");
-            System.out.println("14: Create Services");
-            System.out.println("15: View Services");
-            System.out.println("16: Delete Service");
-            System.out.println("17: Add part");
-            System.out.println("18: View part");
-            System.out.println("19: Delete part");
-//            System.out.println("13. Logout ");
+            System.out.println("1: ADD Cars");
+            System.out.println("2: VIEW All Cars");
+            System.out.println("3: UPDATE Car Price");
+            System.out.println("4: UPDATE Car Status");
+            System.out.println("5: DELETE Cars");
+            System.out.println("6: VIEW Car by ID");
+            System.out.println("7: VIEW Car Sold");
+            System.out.println("8: ADD Transaction");
+            System.out.println("9: VIEW Transaction");
+            System.out.println("10: DELETE Transaction");
+            System.out.println("11: VIEW Revenue by Day");
+            System.out.println("12: VIEW Revenue by Week");
+            System.out.println("13: VIEW Revenue by Month");
+            System.out.println("14: VIEW revenue by SalesPerson");
+            System.out.println("15: VIEW Car Sold By Day");
+//            System.out.println("15: ADD Services");
+//            System.out.println("16: VIEW Services");
+//            System.out.println("17: DELETE Service");
+//            System.out.println("18: VIEW revenue by mechanic");
+//            System.out.println("19: ADD Part");
+//            System.out.println("20: VIEW Part");
+//            System.out.println("21: DELETE Part");
             choice = s.nextInt();
             switch (choice){
-                case 1 -> {
-                    Manager.addCar(carList);
-                    carList.saveToCSV();
-                }
-                case 2 -> {
-                    Manager.viewCar(carList);
-                }case 3 -> {
-                    Manager.updateCarPriceByID(carList);
-                    carList.saveToCSV();
-                }
-                case 4 -> {
-                    Manager.updateStatus(carList);
-                    carList.saveToCSV();
-
-                }
-                case 5 -> {Manager.deletedCar(carList);
-                    carList.saveToCSV();
-
-                }
-                case 6 -> {Manager.getByID((carList));
-
-                }case 7 -> {Manager.listCarSold(carList);
-                   ;
-                }
-                case 8 -> {Manager.addTransaction(salesTransactionList);
-
-                }
-                case 9 -> {Manager.viewTransaction(salesTransactionList);
-
-                }
-                case 10 -> {
-                    Manager.deleteTransactionByID(salesTransactionList);
-
-
-                }case 11 -> {
-                    Manager.revenueByDay(salesTransactionList);
-
-                }case 12 -> {
-                    Manager.revenuePerWeek(salesTransactionList);
-
-                }
-                case 13 -> {
-                    Manager.revenuePerMonth(salesTransactionList);
-                }
-                case 14 -> {
-                    ServiceManager.createService();
-                }case 15 -> {
-                    ServiceManager.viewServices();
-                }
-                case 16 -> {
-                    ServiceManager.deleteService();
-                }
-                case 17 -> {
-                    PartManager.createAutoPart();
-                }
-                case 18 -> {
-                    PartManager.viewAutoParts();
-                }
-                case 19 -> {
-//                    PartManager.de();
-                }
+                case 1 -> {Manager.addCar(carList);}
+                case 2 -> {Manager.viewCar(carList);}
+                case 3 -> {Manager.updateCarPriceByID(carList);}
+                case 4 -> {Manager.updateStatus(carList);}
+                case 5 -> {Manager.deletedCar(carList);}
+                case 6 -> {Manager.getByID((carList));}
+                case 7 -> {Manager.listCarSold(carList);}
+                case 8 -> {Manager.addTransaction(salesTransactionList);}
+                case 9 -> {Manager.viewTransaction(salesTransactionList);}
+                case 10 -> {Manager.deleteTransactionByID(salesTransactionList);}
+                case 11 -> {Manager.revenueByDay(salesTransactionList);}
+                case 12 -> {Manager.revenuePerWeek(salesTransactionList);}
+                case 13 -> {Manager.revenuePerMonth(salesTransactionList);}
+                case 14 -> {Manager.revenueBySales(salesTransactionList);}
+                case 15 -> {Manager.carSoldByDay(salesTransactionList);}
+//                case 15 -> {ServiceManager.createService();}
+//                case 16 -> {ServiceManager.viewServices();}
+//                case 17 -> {ServiceManager.deleteService();}
+//                case 18 -> {ServiceManager.revenueByMechanic();}
+//                case 19 -> {PartManager.createAutoPart();}
+//                case 20-> {PartManager.viewAutoParts();}
+//                case 21 -> {PartManager.deleteAutoPart();}
             }
         }while (choice !=0);
     }
@@ -167,7 +128,6 @@ public class Main {
 
                 choice = s.nextInt();
                 switch (choice){
-
                 }
 
             }while (choice !=0);

@@ -3,7 +3,7 @@ package Assignment.Part;
 import java.io.Serializable;
 
 public class AutoPart implements Serializable  {
-    private String partId;          // Unique ID for the part (formatted as p-number)
+    private int partId;          // Unique ID for the part (formatted as p-number)
     private String partName;        // Name of the part
     private String manufacturer;    // Manufacturer of the part
     private String partNumber;      // Part number
@@ -14,7 +14,7 @@ public class AutoPart implements Serializable  {
 
     // Constructor, getters, and setters...
 
-    public AutoPart(String partId, String partName, String manufacturer, String partNumber,
+    public AutoPart(int partId, String partName, String manufacturer, String partNumber,
                     String condition, String warranty, double cost, String notes) {
         this.partId = partId;
         this.partName = partName;
@@ -28,15 +28,15 @@ public class AutoPart implements Serializable  {
 
 
     public String toString(){
-        return String.format("%-10s %-15s %-15s %-15s %-10s %-10s %-10s \n",partId, partName, manufacturer, partNumber, condition, warranty, condition);
+        return String.format("%-10s %-10s %-15s %-10s %-10s %-10s %-10s\n",partId, partName, manufacturer, partNumber, condition, warranty, condition);
     }
     // Getters and Setters...
 
-    public String getPartId() {
+    public int getPartId() {
         return partId;
     }
 
-    public void setPartId(String partId) {
+    public void setPartId(int partId) {
         this.partId = partId;
     }
 
