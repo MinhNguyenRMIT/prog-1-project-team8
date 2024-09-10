@@ -92,7 +92,7 @@ public class User {
         allUsers.addAll(clients);
 
         // Load Managers
-        List<Manager> managers = Manager.readManagersFromTXT();
+        List<Manager> managers = Manager.readManagersFromTXT("Assignment/Data/Manager/manager.txt");
         System.out.println("Loaded " + managers.size() + " managers.");
         allUsers.addAll(managers);
 

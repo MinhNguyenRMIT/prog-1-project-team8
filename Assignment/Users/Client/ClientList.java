@@ -71,14 +71,13 @@ public class ClientList {
             br.readLine(); // Skip the header
 
             while ((line = br.readLine()) != null) {
-                line = line.trim(); // Remove any leading or trailing spaces
 
-                System.out.println("Parsing line: " + line); // Debug print
+//                System.out.println("Parsing line: " + line); // Debug print
 
                 // Split the line by space, but respect quoted text for fields like address
                 String[] data = line.split(" (?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
-                System.out.println("Fields found: " + data.length); // Debug print for field count
+//                System.out.println("Fields found: " + data.length); // Debug print for field count
 
                 if (data.length != 12) {
                     System.err.println("Error: Expected 12 fields but found " + data.length);
@@ -103,7 +102,7 @@ public class ClientList {
                 String membership = data[11];  // Membership field
 
                 // Debug print for successful parsing
-                System.out.println("Successfully parsed client: " + fullName);
+                //System.out.println("Successfully parsed client: " + fullName);
 
                 // Create and add the client to the list
                 Client client = new Client(clientID, username, password, fullName, dob, address, phoneNumber, email, userType, status, membership);

@@ -175,19 +175,25 @@ public class Manager extends User {
         salesTransactionList.revenueBySalesPerson();
     }
 
-    // Method to read managers from manager.txt
-    public static List<Manager> readManagersFromTXT() throws IOException, ParseException {
-        List<Manager> managers = new ArrayList<>();
+    // Method to read managers from manager.txt.txt
+    public static List<Manager> readManagersFromTXT(String filePath) throws IOException, ParseException {
         String line;
+        List<Manager> managers = new ArrayList<>();
+        File file = new File(filePath);
+        String delimiter = " ";
 
-        try (BufferedReader br = new BufferedReader(new FileReader("Assignment/Data/Manager/manager.txt"))) {
-            br.readLine(); // Skip the header
+        if (!file.exists()) {
+            System.err.println("File not found: " + filePath);
+            return managers; // Return an empty list if the file is not found
+        }
+
+        BufferedReader br = new BufferedReader(new FileReader(filePath));
 
             while ((line = br.readLine()) != null) {
-                System.out.println("Parsing line: " + line); // Debugging line
+//                System.out.println("Parsing line: " + line); // Debugging line
 
-                String[] data = line.split(" ");
-                System.out.println("Fields found: " + data.length);
+                String[] data = line.split(delimiter);
+//                System.out.println("Fields found: " + data.length);
 
                 if (data.length == 12) { // Ensure that the correct number of fields are present
                     String username = data[0];
@@ -202,12 +208,12 @@ public class Manager extends User {
 
                     Manager manager = new Manager(username, password, fullName, dob, address, phoneNumber, email, userType, status);
                     managers.add(manager);
-                    System.out.println("Successfully parsed manager: " + fullName);
+                    System.out.println("Successfully parsed manager.txt: " + fullName);
                 } else {
-                    System.err.println("Error: Invalid number of fields in manager data: " + line);
+                    System.err.println("Error: Invalid number of fields in manager.txt data: " + line);
                 }
             }
-        }
+
 
         return managers;
     }
