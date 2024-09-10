@@ -75,6 +75,7 @@ public class Manager extends User {
 
 
     //Sales Transaction
+    //CRUD OPERATIONS
     //Create
     public static void addTransaction(SalesTransactionList salesTransactionList) throws IOException {
         salesTransactionList.addTransaction();}
@@ -96,8 +97,6 @@ public class Manager extends User {
         LocalDate transactionDate = LocalDate.parse(date);
         salesTransactionList.totalAmountPerDay(transactionDate);
     }
-
-
     //Return revenue by Week
     public static void revenuePerWeek(SalesTransactionList salesTransactionList){
         Scanner s = new Scanner(System.in);
@@ -131,6 +130,7 @@ public class Manager extends User {
     }
 
 
+    //Lists car sold by Day/Week/Month
     public static void carSoldByDay(SalesTransactionList salesTransactionList){
         Scanner s = new Scanner(System.in);
         System.out.println("Enter date. ");
