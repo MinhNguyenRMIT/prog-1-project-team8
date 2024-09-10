@@ -2,15 +2,19 @@ package Assignment;
 
 import Assignment.Part.PartManager;
 import Assignment.Services.ServiceManager;
+import Assignment.Users.Client.Client;
+import Assignment.Users.Employee.Employee;
 import Assignment.Users.Manager.Manager;
+import Assignment.Users.User;
 import Assignment.Object.Car.CarList;
+import Assignment.Transaction.SalesTransaction;
 import Assignment.Transaction.SalesTransactionList;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.text.ParseException;
+import java.util.List;
 import java.util.Scanner;
-
 
 public class Main {
     public static void main(String[] args) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
@@ -18,32 +22,45 @@ public class Main {
         SalesTransactionList salesTransactionList = new SalesTransactionList();
         ServiceManager serviceManager = new ServiceManager();
         PartManager partManager = new PartManager();
-        start(carList, salesTransactionList, serviceManager, partManager);
+
+        List<User> userList = User.loadAllUsers();
+
+        start(carList, salesTransactionList, serviceManager, partManager, userList);
     }
-    public static void start(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
-        int choice = -1;
+
+    public static void start(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager, List<User> userList) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
         Scanner s = new Scanner(System.in);
+
+        System.out.println("-----------------------");
         System.out.println("WELCOME TO THE HOMEPAGE");
-        System.out.println("------------------------------");
-        System.out.println("|Who do you want to login as?|");
-        System.out.println("------------------------------");
-        do{
-            System.out.println("1. MANAGER");
-            System.out.println("2. EMPLOYEE");
-            System.out.println("3. CLIENT");
-            choice = s.nextInt();
-            switch (choice){
-                case 1 -> manager(carList, salesTransactionList, serviceManager, partManager);
-                case 2 -> employee();
-                case 3 -> client();
+        System.out.println("-----------------------");
+
+        User loggedInUser = null;
+        do {
+            System.out.println("--------------");
+            System.out.println("|Please Login|");
+            System.out.println("--------------");
+            loggedInUser = User.LOGIN(userList);
+
+            if (loggedInUser != null) {
+                switch (loggedInUser.getUserType()) {
+                    case "Manager" -> manager((Manager) loggedInUser, carList, salesTransactionList, serviceManager, partManager);
+                    case "Employee" -> employee((Employee) loggedInUser);
+                    case "Client" -> client((Client) loggedInUser);
+                    default -> System.out.println("Unknown user type. Returning to home screen.");
+                }
+            } else {
+                System.out.println("Login failed. Please try again.");
             }
-        }while (choice !=0);
+
+        } while (true);  // Keep running until the program is manually exited
     }
-    public static void manager(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, ClassNotFoundException {
-        int choice = -1;
+
+    public static void manager(Manager manager, CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, ClassNotFoundException {
+        int choice;
         Scanner s = new Scanner(System.in);
-        do{
-            System.out.println("You are log in Manager!");
+        do {
+            System.out.println("You are logged in as a Manager!");
             System.out.println("1: ADD Cars");
             System.out.println("2: VIEW All Cars");
             System.out.println("3: UPDATE Car Price");
@@ -68,8 +85,9 @@ public class Main {
             System.out.println("22: ADD Part");
             System.out.println("23: VIEW Part");
             System.out.println("24: DELETE Part");
+            System.out.println("25: LOGOUT");
             choice = s.nextInt();
-            switch (choice){
+            switch (choice) {
                 case 1 -> {Manager.addCar(carList);}
                 case 2 -> {Manager.viewCar(carList);}
                 case 3 -> {Manager.updateCarPriceByID(carList);}
@@ -92,50 +110,81 @@ public class Main {
                 case 20 -> {ServiceManager.deleteService();}
                 case 21 -> {ServiceManager.revenueByMechanic();}
                 case 22 -> {PartManager.createAutoPart();}
-                case 23-> {PartManager.viewAutoParts();}
+                case 23 -> {PartManager.viewAutoParts();}
                 case 24 -> {PartManager.deleteAutoPart();}
+                case 25 -> {manager.LOGOUT();}
             }
-        }while (choice !=0);
+        } while (choice != 25);
+        System.out.println("Manager " + manager.getUsername() + " logged out at " + new java.util.Date());
     }
-    public static void employee() {
-        int choice = -1;
+
+    public static void employee(Employee employee) {
+        int choice;
         Scanner s = new Scanner(System.in);
+        List<SalesTransaction> transactions = employee.readTransactionsFromCSV();
+
         do {
-            System.out.println("You are log in as an Employee");
-            System.out.println("1: Calculate revenue in day ");
-            System.out.println("2: Calculate revenue in week ");
-            System.out.println("3: Calculate revenue in month ");
+            System.out.println("You are logged in as: " + employee.getFullName());
+            String position = employee.getPosition();
+
+            // Debug: Print out the position to confirm
+            System.out.println("Employee Position: " + position);
+
+            if (position.equalsIgnoreCase("Sales")) {
+                System.out.println("1: Calculate revenue in day");
+                System.out.println("2: Calculate revenue in week");
+                System.out.println("3: Calculate revenue in month");
+            } else if (position.equalsIgnoreCase("Mechanic")) {
+                System.out.println("1: List the number of cars in days");
+                System.out.println("2: List the number of cars in weeks");
+                System.out.println("3: List the number of cars in months");
+            }
+
             System.out.println("4: List the number of services in days");
-            System.out.println("5: List the number of services in weeks ");
-            System.out.println("6: List the number of services in month ");
-            System.out.println("7: List the number of cars in days ");
-            System.out.println("8: List the number of cars in weeks ");
-            System.out.println("9: List the number of cars in month ");
-            System.out.println("10: LOGOUT");
+            System.out.println("5: List the number of services in weeks");
+            System.out.println("6: List the number of services in months");
+            System.out.println("7: LOGOUT");
 
             choice = s.nextInt();
-            switch (choice) {
 
+            if (position.equalsIgnoreCase("Sales")) {
+                switch (choice) {
+                    case 1 -> Employee.calculateRevenue(transactions, "day");
+                    case 2 -> Employee.calculateRevenue(transactions, "week");
+                    case 3 -> Employee.calculateRevenue(transactions, "month");
+                }
+            } else if (position.equalsIgnoreCase("Mechanic")) {
+                switch (choice) {
+                    case 1 -> System.out.println("List the number of cars in days (feature pending)");
+                    case 2 -> System.out.println("List the number of cars in weeks (feature pending)");
+                    case 3 -> System.out.println("List the number of cars in months (feature pending)");
+                }
             }
 
-        } while (choice != 0);
+            switch (choice) {
+                case 4 -> Employee.listServices("day");
+                case 5 -> Employee.listServices("week");
+                case 6 -> Employee.listServices("month");
+                case 7 -> employee.LOGOUT();
+            }
+
+        } while (choice != 7);
+        System.out.println("Employee " + employee.getUsername() + " logged out at " + new java.util.Date());
     }
-    public static void client(){
-            int choice = -1;
-            Scanner s = new Scanner(System.in);
-            do{
-                System.out.println("You are log in as a Client");
-                System.out.println("1: ");
-                System.out.println("2: ");
-                System.out.println("3: ");
-                System.out.println("4: ");
 
-                choice = s.nextInt();
-                switch (choice){
-                }
-
-            }while (choice !=0);
-        }
-
-
+    public static void client(Client client) {
+        int choice;
+        Scanner s = new Scanner(System.in);
+        do {
+            System.out.println("You are logged in as a Client");
+            System.out.println("1: View client info");
+            System.out.println("2: Logout");
+            choice = s.nextInt();
+            switch (choice) {
+                case 1 -> System.out.println("Client info: " + client.getFullName());
+                case 2 -> client.LOGOUT();
+            }
+        } while (choice != 2);
+        System.out.println("Client " + client.getUsername() + " logged out at " + new java.util.Date());
+    }
 }

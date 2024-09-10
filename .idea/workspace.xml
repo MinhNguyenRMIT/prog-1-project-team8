@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39b00c64-6249-4408-9307-ba072dcf519b" name="Changes" comment="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
+      <change afterPath="$PROJECT_DIR$/Assignment/Data/Manager/manager.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment/Data/SalesTransaction/SalesTransaction.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment/Data/Services/services.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/Client/clients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/Client/clients.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/Employees/employees.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/Employees/employees.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Transaction/SalesTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Transaction/SalesTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Users/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Users/Client/ClientList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Client/ClientList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Users/Employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Users/Employee/EmployeeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Employee/EmployeeList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment/Users/Manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Manager/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Car/cars.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +103,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nminh\IdeaProjects\prog-1-project-team8-FINAL\Assignment\Data\SalesTransaction" />
       <recent name="C:\Users\ankha\OneDrive\Desktop\University\Programming 1\ASM-Group\prog-1-project-team8\Assignment\Users" />
       <recent name="C:\Users\ankha\OneDrive\Desktop\University\Programming 1\ASM-Group\prog-1-project-team8\Assignment\Data\Service" />
       <recent name="C:\Users\ankha\OneDrive\Desktop\University\Programming 1\ASM-Group\prog-1-project-team8\Assignment\Data\Parts" />
@@ -106,6 +129,14 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

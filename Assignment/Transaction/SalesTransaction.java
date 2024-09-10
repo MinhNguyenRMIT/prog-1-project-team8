@@ -17,7 +17,7 @@ public class SalesTransaction implements Serializable{
     private String additionalNotes;
 
     // Constructor
-    public SalesTransaction(int transactionID, LocalDate transactionDate,int clientID, int salespersonID,ArrayList<Car> purchasedItems, double discount, double totalAmount
+    public SalesTransaction(int transactionID, LocalDate transactionDate, int clientID, int salespersonID, ArrayList<Car> purchasedItems, double discount, double totalAmount
                             ) {
         this.transactionID = transactionID;
         this.transactionDate = transactionDate;

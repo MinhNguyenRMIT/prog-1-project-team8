@@ -1,22 +1,23 @@
 package Assignment.Users.Manager;
 import Assignment.Object.Car.CarList;
-import Assignment.Transaction.SalesTransaction;
 import Assignment.Transaction.SalesTransactionList;
 import Assignment.Users.User;
 
 
 import java.io.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 
 public class Manager extends User {
-    private final int managerID;
-    public Manager(int managerID,String username, String password, String fullName, Date dob, String address, int phoneNumber, String email, String userType, String status){
+    public Manager(String username, String password, String fullName, Date dob, String address, String phoneNumber, String email, String userType, String status) {
         super(username, password, fullName, dob, address, phoneNumber, email, userType, status);
-        this.managerID = managerID;
     }
 
     //Car OBJECT
@@ -173,5 +174,43 @@ public class Manager extends User {
     public static void revenueBySales(SalesTransactionList salesTransactionList){
         salesTransactionList.revenueBySalesPerson();
     }
+
+    // Method to read managers from manager.txt
+    public static List<Manager> readManagersFromTXT() throws IOException, ParseException {
+        List<Manager> managers = new ArrayList<>();
+        String line;
+
+        try (BufferedReader br = new BufferedReader(new FileReader("Assignment/Data/Manager/manager.txt"))) {
+            br.readLine(); // Skip the header
+
+            while ((line = br.readLine()) != null) {
+                System.out.println("Parsing line: " + line); // Debugging line
+
+                String[] data = line.split(" ");
+                System.out.println("Fields found: " + data.length);
+
+                if (data.length == 12) { // Ensure that the correct number of fields are present
+                    String username = data[0];
+                    String password = data[1];
+                    String fullName = data[2] + " " + data[3];
+                    Date dob = new SimpleDateFormat("yyyy-MM-dd").parse(data[4]);
+                    String address = data[5] + " " + data[6] + " " + data[7];
+                    String phoneNumber = data[8];
+                    String email = data[9];
+                    String userType = data[10];
+                    String status = data[11];
+
+                    Manager manager = new Manager(username, password, fullName, dob, address, phoneNumber, email, userType, status);
+                    managers.add(manager);
+                    System.out.println("Successfully parsed manager: " + fullName);
+                } else {
+                    System.err.println("Error: Invalid number of fields in manager data: " + line);
+                }
+            }
+        }
+
+        return managers;
+    }
+
 
 }
