@@ -1,0 +1,10 @@
+1001,2024-09-01,5001,3001,Oil Change,150.00,Changed oil filter
+1002,2024-09-05,5002,3002,Tire Rotation,100.00,Tire pressure adjusted
+1003,2024-09-12,5003,3001,Battery Replacement,200.00,Replaced car battery
+1004,2024-09-08,5004,3003,Brake Inspection,120.00,Brake pads checked
+1005,2024-09-18,5005,3001,Engine Tune-Up,350.00,Spark plugs replaced
+1006,2024-09-23,5006,3002,Transmission Repair,500.00,Replaced transmission fluid
+1007,2024-09-14,5007,3003,Cooling System Repair,180.00,Coolant levels topped up
+1008,2024-09-21,5008,3001,Wheel Alignment,130.00,Adjusted wheel angles
+1009,2024-09-09,5009,3002,Exhaust Repair,220.00,Fixed exhaust leak
+1010,2024-09-05,5010,3003,Fuel System Cleaning,170.00,Cleaned fuel injectors
