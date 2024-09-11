@@ -18,7 +18,7 @@ public class ServiceManager implements Serializable {
     //CRUD
     // Create Service
     public static void createService() throws IOException {
-        String file = "Assignment/Data/Service/Service.txt";  // Path to the services file
+        String file = "Assignment/Data/Services/Service.txt";  // Path to the services file
         File newFile = new File(file);
         scanner = new Scanner(System.in);
 
@@ -97,7 +97,7 @@ public class ServiceManager implements Serializable {
     }
     //Read
     public static void viewServices() throws IOException, ClassNotFoundException {
-        String file = "Assignment/Data/Service/Service.txt";
+        String file = "AAssignment/Data/Services/Service.txt";
         File newFile = new File(file);
         ObjectInputStream ois = null;
 
@@ -127,7 +127,7 @@ public class ServiceManager implements Serializable {
     // Delete Service by ID
     public static void deleteService() throws IOException {
         Scanner scanner = new Scanner(System.in);
-        String file = "Assignment/Data/Service/Service.txt";  // Path to the services file
+        String file = "Assignment/Data/Services/Service.txt";  // Path to the services file
         File newFile = new File(file);
         boolean found = false;
         ListIterator<Service> li = serviceList.listIterator();

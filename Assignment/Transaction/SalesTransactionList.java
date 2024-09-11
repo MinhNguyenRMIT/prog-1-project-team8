@@ -21,12 +21,13 @@ import static Assignment.Object.Car.CarList.carSold;
 
 public class SalesTransactionList implements Serializable {
     public static ArrayList<SalesTransaction> transactionList = new ArrayList<SalesTransaction>();
+    public static ArrayList<Car> purchasedItems = new ArrayList<>();
     ListIterator li = null;
 
     //CRUD for Manager
     //Create
     public static void addTransaction() throws IOException {
-        String file = "Assignment/Data/Transaction/transaction.txt";
+        String file = "Assignment/Data/SalesTransaction/transaction.txt";
         File newFile = new File(file);
         Scanner s = new Scanner(System.in);
         int tID;
@@ -54,27 +55,26 @@ public class SalesTransactionList implements Serializable {
         System.out.println("Enter SalesPerson ID. ");
         int salesID = s.nextInt();
 
-        ArrayList<Car> purchasedItems = new ArrayList<>();
+
         System.out.println("Do you want to add Car? (yes/no): ");
         String addCar = s.next();
         while (addCar.equalsIgnoreCase("yes")) {
+            Car foundCar = null;
             // Collect all required details for AutoPart
             System.out.println("Enter Car ID: ");
             int cID = s.nextInt();
-            System.out.println("Enter Car model: ");
-            String model = s.next();
-            System.out.println("Enter Model Year: ");
-            int year = s.nextInt();
-            System.out.println("Enter Mileage: ");
-            double mileage = s.nextDouble();
-            System.out.println("Enter Color: ");
-            String color = s.next();
-            System.out.println("Enter Status: ");
-            String status = s.next();
-            System.out.println("Enter Price: ");
-            double price = s.nextDouble();
+            for (Car car : carList){
+                if (car.getCNumber() == cID){
+                    foundCar = car;
+                    break;
+                }
+            }
             // Add part to list using the full constructor
-            purchasedItems.add(new Car(cID,model, year, mileage,color,status,price));
+            if (foundCar != null){
+                purchasedItems.add(foundCar);
+            }else {
+                System.out.println("Car ID not found!");
+            }
             System.out.println("Do you want to add another Car? (yes/no): "); //if no break out loops
             addCar = s.next();
         }
@@ -91,7 +91,7 @@ public class SalesTransactionList implements Serializable {
     }
     //View Transaction
     public static void viewTransaction() throws IOException, ClassNotFoundException {
-        String file = "Assignment/Data/Transaction/transaction.txt";
+        String file = "Assignment/Data/SalesTransaction/transaction.txt";
         File newFile = new File(file);
         ObjectInputStream ois = null;
         if (newFile.isFile()){
@@ -108,7 +108,7 @@ public class SalesTransactionList implements Serializable {
     }
     //Delete Transaction
     public static void deleteTransaction(int transacID) throws IOException {
-        String file = "Assignment/Data/Transaction/transaction.txt";
+        String file = "Assignment/Data/SalesTransaction/transaction.txt";
         File newFile = new File(file);
         boolean found = false;
 
@@ -130,25 +130,13 @@ public class SalesTransactionList implements Serializable {
     }
     //Save Transaction
     public static void saveTransaction() throws IOException {
-        String file = "Assignment/Data/Transaction/transaction.txt";
+        String file = "Assignment/Data/SalesTransaction/transaction.txt";
         File newFile = new File(file);
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile, true));
         oos.writeObject(transactionList);
         oos.close();
     }
 
-    // Method to add an item to the list of purchased items and save it to a text file
-    public static void addPurchasedItem(String itemID) {
-        String filename = "C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\_purchasedItems.txt"; // Each transaction has its own file
-        try {
-            // Append the purchased item to the text file
-            Files.write(Paths.get(filename), (itemID + System.lineSeparator()).getBytes(), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
-            System.out.println("Item " + itemID + " added to " + filename);
-        } catch (IOException e) {
-            System.err.println("An error occurred while writing to the file.");
-            e.printStackTrace();
-        }
-    }
 
     //Calculate amount made by Day/Week/Month
     public static void totalAmountPerDay(LocalDate day) throws IOException {
@@ -256,17 +244,5 @@ public class SalesTransactionList implements Serializable {
         System.out.println("This Sales person has made " + total);
     }
 
-
-//    public void saveTransactionCSV() throws IOException {
-//        File fileSrc = new File("C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\transaction.csv");
-//        FileWriter fileWriterSrc = new FileWriter(fileSrc, true);
-//        String columns= "TID,DATE,CID,SID,DISCOUNT";
-//        fileWriterSrc.write(columns + "\n");
-//        for (SalesTransaction salesTransaction : transactionList)
-//        {
-//            fileWriterSrc.write(salesTransaction.convertTransactionToCSV() + "\n");
-//        }
-//        fileWriterSrc.close();
-//    }
 
 }
