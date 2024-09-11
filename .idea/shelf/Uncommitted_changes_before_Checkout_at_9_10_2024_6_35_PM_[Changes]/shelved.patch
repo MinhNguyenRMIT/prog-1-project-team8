@@ -1,0 +1,1015 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"39b00c64-6249-4408-9307-ba072dcf519b\" name=\"Changes\" comment=\"Merge remote-tracking branch 'origin/Minh' into thinh-branch\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Car/cars.txt\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/Car.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/Car.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <favorite-branches>\r\n      <branch-storage>\r\n        <map>\r\n          <entry type=\"REMOTE\">\r\n            <value>\r\n              <list>\r\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"origin/Minh\" />\r\n              </list>\r\n            </value>\r\n          </entry>\r\n        </map>\r\n      </branch-storage>\r\n    </favorite-branches>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;MinhNguyenRMIT&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/MinhNguyenRMIT/prog-1-project-team8&quot;,\r\n    &quot;accountId&quot;: &quot;73d78500-d5f8-42c3-9eee-14aeedfe78cd&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2lbgJDYAhTj3Q7LuDBBd6yRrBvU\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Main.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"thinh-branch\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/nminh/Downloads/prog-1-project-team8-thinh-branch\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Users\" />\r\n      <recent name=\"C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Service\" />\r\n      <recent name=\"C:\\Users\\ankha\\OneDrive\\Desktop\\University\\Programming 1\\ASM-Group\\prog-1-project-team8\\Assignment\\Data\\Parts\" />\r\n      <recent name=\"C:\\Users\\nminh\\IdeaProjects\\prog-1-project-team8\\Users\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Assignment.Main\" />\r\n      <module name=\"prog-1-project-team8\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Assignment.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62\" />\r\n        <option value=\"bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"39b00c64-6249-4408-9307-ba072dcf519b\" name=\"Changes\" comment=\"\" />\r\n      <created>1725454115348</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1725454115348</updated>\r\n      <workItem from=\"1725454116789\" duration=\"1317000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Merge remote-tracking branch 'origin/Minh' into thinh-branch\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725720091350</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725720091350</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Merge remote-tracking branch 'origin/Minh' into thinh-branch\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725720103531</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725720103531</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Merge remote-tracking branch 'origin/Minh' into thinh-branch\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725720169873</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725720169873</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Merge remote-tracking branch 'origin/Minh' into thinh-branch\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725720471503</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725720471503</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Merge remote-tracking branch 'origin/Minh' into thinh-branch\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725779931322</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725779931322</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Merge remote-tracking branch 'origin/Minh' into thinh-branch\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725876966221</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725876966221</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/AnhHuynh\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Merge remote-tracking branch 'origin/thinh-branch' into thinh-branch\" />\r\n    <MESSAGE value=\"Updated with User methods\" />\r\n    <MESSAGE value=\"Merge remote-tracking branch 'origin/Minh' into thinh-branch\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Merge remote-tracking branch 'origin/Minh' into thinh-branch\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,8 +5,20 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="39b00c64-6249-4408-9307-ba072dcf519b" name="Changes" comment="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assignment/Data/Manager/manager.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Assignment/Data/Service/services.txt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Data/Client/clients.csv" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Data/Client/clients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/Client/clients.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Data/Employees/employees.csv" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Data/Employees/employees.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/Employees/employees.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Users/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Client/Client.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Users/Client/ClientList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Client/ClientList.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Users/Employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Employee/Employee.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Users/Employee/EmployeeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Employee/EmployeeList.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Users/Manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/Manager/Manager.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assignment/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/User.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Car/cars.txt" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" afterDir="false" />
+@@ -55,12 +67,12 @@
+     &quot;assignee&quot;: &quot;MinhNguyenRMIT&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings">{
+-  &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/MinhNguyenRMIT/prog-1-project-team8&quot;,
+-    &quot;accountId&quot;: &quot;73d78500-d5f8-42c3-9eee-14aeedfe78cd&quot;
+-  }
+-}</component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/MinhNguyenRMIT/prog-1-project-team8.git",
++    "accountId": "06797606-4db9-4c13-9916-3eb5019d5a0d"
++  }
++}]]></component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 1
+ }</component>
+@@ -80,7 +92,7 @@
+     "git-widget-placeholder": "thinh-branch",
+     "ignore.virus.scanning.warn.message": "true",
+     "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/nminh/Downloads/prog-1-project-team8-thinh-branch",
++    "last_opened_file_path": "C:/Users/nminh/IdeaProjects/prog-1-project-team8-10-9.1",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+@@ -91,6 +103,7 @@
+ }]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\nminh\IdeaProjects\prog-1-project-team8-10-9\Assignment\Data\Service" />
+       <recent name="C:\Users\ankha\OneDrive\Desktop\University\Programming 1\ASM-Group\prog-1-project-team8\Assignment\Users" />
+       <recent name="C:\Users\ankha\OneDrive\Desktop\University\Programming 1\ASM-Group\prog-1-project-team8\Assignment\Data\Service" />
+       <recent name="C:\Users\ankha\OneDrive\Desktop\University\Programming 1\ASM-Group\prog-1-project-team8\Assignment\Data\Parts" />
+@@ -134,6 +147,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1725454115348</updated>
+       <workItem from="1725454116789" duration="1317000" />
++      <workItem from="1725912466239" duration="28030000" />
+     </task>
+     <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
+       <option name="closed" value="true" />
+@@ -183,7 +197,31 @@
+       <option name="project" value="LOCAL" />
+       <updated>1725876966221</updated>
+     </task>
+-    <option name="localTasksCounter" value="7" />
++    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
++      <option name="closed" value="true" />
++      <created>1725937601091</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1725937601091</updated>
++    </task>
++    <task id="LOCAL-00008" summary="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
++      <option name="closed" value="true" />
++      <created>1725943378424</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1725943378424</updated>
++    </task>
++    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
++      <option name="closed" value="true" />
++      <created>1725943779018</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1725943779018</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+Index: Assignment/Data/Client/clients.txt
+===================================================================
+diff --git a/Assignment/Data/Client/clients.txt b/Assignment/Data/Client/clients.txt
+--- a/Assignment/Data/Client/clients.txt	
++++ b/Assignment/Data/Client/clients.txt	
+@@ -1,0 +1,4 @@
++clientID username password firstName lastName dob address phoneNumber email userType status membership
++5001 johnDoe pass123 John Doe 1990-01-01 "123 Main St" 1234567890 john@example.com Client Active Gold
++5002 janeDoe pass456 Jane Doe 1992-11-20 "456 Elm St" 9876543210 jane@example.com Client Active Silver
++5003 aliceSmith pass789 Alice Smith 1985-03-15 "789 Pine St" 5556667777 alice@example.com Client Active Platinum
+Index: Assignment/Users/Client/ClientList.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Assignment.Users.Client;\r\n\r\nimport Assignment.Object.Car.Car;\r\nimport Assignment.Transaction.SalesTransaction;\r\n\r\nimport java.io.*;\r\nimport java.time.LocalDate;\r\nimport java.util.ArrayList;\r\nimport java.util.Scanner;\r\n\r\npublic class ClientList {\r\n    public static ArrayList<Client> clientList = new ArrayList<Client>();\r\n\r\n    public static void addClient() throws IOException {\r\n        String file = \"Assignment/Data/Client/clients.txt\";\r\n        File newFile = new File(file);\r\n        Scanner s = new Scanner(System.in);\r\n        int clientID;\r\n        while (true){\r\n            System.out.println(\"Enter the Client ID: \");\r\n            clientID = s.nextInt();\r\n            boolean exists = false;\r\n            for (Client client : clientList){\r\n                if (client.getClientID() == clientID){\r\n                    exists = true;\r\n                    break;\r\n                }\r\n            }\r\n            if (exists){\r\n                System.out.println(\"This Client already exist, try again. \");\r\n            }else {\r\n                break;\r\n            }\r\n        }\r\n\r\n        System.out.println(\"Enter transaction date. \");\r\n        String date = s.next();\r\n        LocalDate transactionDate = LocalDate.parse(date);\r\n        System.out.println(\"Enter SalesPerson ID. \");\r\n        int salesID = s.nextInt();\r\n        System.out.println(\"Enter the Item label Cars/Part. \");\r\n        String items = s.nextLine();\r\n        s.nextLine();\r\n        ArrayList<String> purchasedItems = new ArrayList<>();\r\n        for (int i = 0; i < items.length(); i++){\r\n            String item = s.nextLine();\r\n            purchasedItems.add(item);\r\n        }\r\n        System.out.println(\"Enter discount. \");\r\n        int discount = s.nextInt();\r\n        System.out.println(\"Enter total amount spend. \");\r\n        double amount = s.nextDouble();\r\n\r\n        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile));\r\n        oos.writeObject(clientID);\r\n        oos.close();\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/Assignment/Users/Client/ClientList.java b/Assignment/Users/Client/ClientList.java
+--- a/Assignment/Users/Client/ClientList.java	
++++ b/Assignment/Users/Client/ClientList.java	
+@@ -4,10 +4,16 @@
+ import Assignment.Transaction.SalesTransaction;
+ 
+ import java.io.*;
++import java.text.ParseException;
++import java.text.SimpleDateFormat;
+ import java.time.LocalDate;
+ import java.util.ArrayList;
++import java.util.Date;
++import java.util.List;
+ import java.util.Scanner;
+ 
++
++
+ public class ClientList {
+     public static ArrayList<Client> clientList = new ArrayList<Client>();
+ 
+@@ -55,4 +61,51 @@
+         oos.writeObject(clientID);
+         oos.close();
+     }
++
++    // ClientList.java
++    public static List<Client> readClientsFromTXT(String filePath) throws IOException, ParseException {
++        List<Client> clients = new ArrayList<>();
++        String line;
++
++        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
++            br.readLine(); // Skip the header
++
++            while ((line = br.readLine()) != null) {
++                line = line.trim(); // Remove any leading or trailing spaces
++
++                // Split the line by space, but respect quoted text for fields like address
++                String[] data = line.split(" (?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
++
++                if (data.length != 12) {
++                    System.err.println("Error: Expected 12 fields but found " + data.length);
++                    System.err.println("Offending line: " + line);  // Print the offending line for debugging
++                    continue;  // Skip this line and move to the next
++                }
++
++                // Remove quotes from the address field (data[6]) if present
++                data[6] = data[6].replace("\"", "");
++
++                // Parse fields accordingly
++                int clientID = Integer.parseInt(data[0]);
++                String username = data[1];
++                String password = data[2];
++                String fullName = data[3] + " " + data[4]; // Combine first and last name
++                Date dob = new SimpleDateFormat("yyyy-MM-dd").parse(data[5]);
++                String address = data[6];  // Use the quoted address
++                String phoneNumber = data[7];
++                String email = data[8];
++                String userType = data[9];
++                String status = data[10];
++                String membership = data[11];  // Membership field
++
++                // Create and add the client to the list
++                Client client = new Client(clientID, username, password, fullName, dob, address, phoneNumber, email, userType, status, membership);
++                clients.add(client);
++            }
++        }
++
++        return clients;
++    }
++
++
+ }
+Index: Assignment/Users/Manager/Manager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Assignment.Users.Manager;\r\nimport Assignment.Object.Car.CarList;\r\nimport Assignment.Transaction.SalesTransaction;\r\nimport Assignment.Transaction.SalesTransactionList;\r\nimport Assignment.Users.User;\r\n\r\n\r\nimport java.io.*;\r\nimport java.time.LocalDate;\r\nimport java.time.Month;\r\nimport java.util.Date;\r\nimport java.util.Scanner;\r\n\r\n\r\npublic class Manager extends User {\r\n    private final int managerID;\r\n    public Manager(int managerID,String username, String password, String fullName, Date dob, String address, int phoneNumber, String email, String userType, String status){\r\n        super(username, password, fullName, dob, address, phoneNumber, email, userType, status);\r\n        this.managerID = managerID;\r\n    }\r\n\r\n    //Car OBJECT\r\n    //CRUD operations\r\n    //Create\r\n    public static void addCar(CarList carList) throws IOException {\r\n        carList.create();\r\n\r\n    }\r\n    //Read\r\n    public static void viewCar(CarList carList) throws IOException, ClassNotFoundException {\r\n//        carList.displayListCar();\r\n//        carList.headers();\r\n        carList.view();\r\n\r\n    }\r\n    //Update car by ID\r\n    public static void updateCarPriceByID(CarList carList) throws IOException{\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"Enter CAR ID: \");\r\n        int ID = s.nextInt();\r\n        System.out.println(\"Enter CAR PRICE: \");\r\n        double price = s.nextInt();\r\n        carList.updateCarByID(ID, price);\r\n\r\n    }\r\n    //Update Car Status\r\n    public static void updateStatus(CarList carList) throws IOException {\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"Enter CAR ID: \");\r\n        int ID = s.nextInt();\r\n        System.out.println(\"Change the Car Status: \");\r\n        String status = s.next();\r\n        carList.updateStatusByID(ID, status);\r\n    }\r\n    //Delete\r\n    public static void deletedCar(CarList carList) throws IOException {\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"Enter CAR ID: \");\r\n        int ID = s.nextInt();\r\n        carList.delete(ID);\r\n\r\n\r\n    } //This will need to first list the car. After words chose the Car ID to delete\r\n    //Return Car by its ID\r\n    public static void getByID(CarList carList){\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"Enter CAR ID: \");\r\n        int ID = s.nextInt();\r\n        carList.searchCar(ID);\r\n    }\r\n    //List CarSold\r\n    public static void listCarSold(CarList carList){\r\n        carList.listSold();\r\n    }\r\n\r\n\r\n    //Sales Transaction\r\n    //Create\r\n    public static void addTransaction(SalesTransactionList salesTransactionList) throws IOException {\r\n        salesTransactionList.addTransaction();}\r\n    //View Transaction\r\n    public static void viewTransaction(SalesTransactionList salesTransactionList) throws IOException, ClassNotFoundException {\r\n        salesTransactionList.viewTransaction();}\r\n    //Delete byID\r\n    public static void deleteTransactionByID(SalesTransactionList salesTransactionList) throws IOException, ClassNotFoundException {\r\n        System.out.println(\"Enter the Transaction ID you want to delete: \");\r\n        Scanner s = new Scanner(System.in);\r\n        int transacID = s.nextInt();\r\n        salesTransactionList.deleteTransaction(transacID);\r\n    }\r\n    //Return revenue by Day\r\n    public static void revenueByDay(SalesTransactionList salesTransactionList) throws IOException {\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"Enter transaction date. \");\r\n        String date = s.next();\r\n        LocalDate transactionDate = LocalDate.parse(date);\r\n        salesTransactionList.totalAmountPerDay(transactionDate);\r\n    }\r\n\r\n\r\n    //Return revenue by Week\r\n    public static void revenuePerWeek(SalesTransactionList salesTransactionList){\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"Enter transaction Year. \");\r\n        int year = s.nextInt();\r\n        System.out.println(\"Enter the number of week in the Year (1-52). \");\r\n        int week = s.nextInt();\r\n        if (week < 1 && week > 52){\r\n            System.out.println(\"Number of week is invalid\");\r\n        }\r\n\r\n        salesTransactionList.totalAmountPerWeek(year, week);\r\n    }\r\n    //Return revenue per Month\r\n    public static void revenuePerMonth(SalesTransactionList salesTransactionList){\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"Enter transaction Year. \");\r\n        int year = s.nextInt();\r\n        System.out.println(\"Enter transaction Month. \");\r\n        int monthV = s.nextInt();\r\n\r\n        Month month =  null;\r\n        try {\r\n            month = Month.of(monthV);\r\n        } catch (Exception e) {\r\n            System.out.println(\"Invalid month entered.\");\r\n            return;\r\n        }\r\n\r\n        salesTransactionList.totalAmountPerMonth(year, month);\r\n    }\r\n\r\n\r\n    public static void carSoldByDay(SalesTransactionList salesTransactionList){\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"Enter date. \");\r\n        String date = s.next();\r\n        LocalDate transactionDate = LocalDate.parse(date);\r\n        salesTransactionList.listCarSoldByDay(transactionDate);\r\n    }\r\n    public static void carSoldByWeek(SalesTransactionList salesTransactionList){\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"Enter Year. \");\r\n        int year = s.nextInt();\r\n        System.out.println(\"Enter the number of week in the Year (1-52). \");\r\n        int week = s.nextInt();\r\n        if (week < 1 && week > 52){\r\n            System.out.println(\"Number of week is invalid\");\r\n        }\r\n\r\n        salesTransactionList.listCarSoldByWeek(year, week);\r\n    }\r\n    public static void carSoldByMonth(SalesTransactionList salesTransactionList){\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"Enter Year. \");\r\n        int year = s.nextInt();\r\n        System.out.println(\"Enter Month. \");\r\n        int monthV = s.nextInt();\r\n\r\n        Month month =  null;\r\n        try {\r\n            month = Month.of(monthV);\r\n        } catch (Exception e) {\r\n            System.out.println(\"Invalid month entered.\");\r\n            return;\r\n        }\r\n        salesTransactionList.listCarSoldPerMonth(year, month);\r\n\r\n    }\r\n\r\n\r\n    //Return the Revenue made by the Sales Person\r\n    public static void revenueBySales(SalesTransactionList salesTransactionList){\r\n        salesTransactionList.revenueBySalesPerson();\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/Assignment/Users/Manager/Manager.java b/Assignment/Users/Manager/Manager.java
+--- a/Assignment/Users/Manager/Manager.java	
++++ b/Assignment/Users/Manager/Manager.java	
+@@ -6,15 +6,19 @@
+ 
+ 
+ import java.io.*;
++import java.text.ParseException;
++import java.text.SimpleDateFormat;
+ import java.time.LocalDate;
+ import java.time.Month;
++import java.util.ArrayList;
+ import java.util.Date;
++import java.util.List;
+ import java.util.Scanner;
+ 
+ 
+ public class Manager extends User {
+     private final int managerID;
+-    public Manager(int managerID,String username, String password, String fullName, Date dob, String address, int phoneNumber, String email, String userType, String status){
++    public Manager(int managerID,String username, String password, String fullName, Date dob, String address, String phoneNumber, String email, String userType, String status){
+         super(username, password, fullName, dob, address, phoneNumber, email, userType, status);
+         this.managerID = managerID;
+     }
+@@ -174,4 +178,38 @@
+         salesTransactionList.revenueBySalesPerson();
+     }
+ 
++    // Method to read managers from manager.txt
++    public static List<Manager> readManagersFromTXT(String filePath) throws IOException, ParseException {
++        List<Manager> managers = new ArrayList<>();
++        String line;
++        String delimiter = " ";  // Ensure this matches how the manager.txt file is structured
++
++        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
++            while ((line = br.readLine()) != null) {
++                String[] data = line.split(delimiter);
++
++                if (data.length < 10) {  // Check if enough fields exist
++                    System.out.println("Skipping invalid line: " + line);
++                    continue; // Skip invalid entries
++                }
++
++                int managerID = Integer.parseInt(data[0]);
++                String username = data[1];
++                String password = data[2];
++                String fullName = data[3] + " " + data[4];  // Concatenate first and last name
++                Date dob = new SimpleDateFormat("yyyy-MM-dd").parse(data[5]);
++                String address = data[6] + " " + data[7] + " " + data[8];
++                String phoneNumber = data[9];
++                String email = data[10];
++                String userType = "Manager";  // This is a manager-specific user type
++                String status = "Active";
++
++                Manager manager = new Manager(managerID, username, password, fullName, dob, address, phoneNumber, email, userType, status);
++                managers.add(manager);
++            }
++        }
++
++        return managers;
++    }
++
+ }
+Index: Assignment/Data/Employees/employees.txt
+===================================================================
+diff --git a/Assignment/Data/Employees/employees.txt b/Assignment/Data/Employees/employees.txt
+--- a/Assignment/Data/Employees/employees.txt	
++++ b/Assignment/Data/Employees/employees.txt	
+@@ -1,0 +1,6 @@
++3001 emp1 emp123 John Smith 1985-01-01 789 Oak St 5551234567 john.smith@company.com Sales
++3002 emp2 emp456 Jane Smith 1987-02-15 321 Pine St 5559876543 jane.smith@company.com Sales
++3003 emp3 emp789 Bob Jones 1990-07-10 654 Cedar St 5551112233 bob.jones@company.com Sales
++3004 emp4 emp312 Ronald Reagan 1985-01-01 789 Oak St 5551234567 john.smith@company.com Mechanic
++3005 emp5 emp213 Nikita Khrushchev 1987-02-15 321 Pine St 5559876543 jane.smith@company.com Mechanic
++3006 emp6 emp987 Joe Bidome 1990-07-10 654 Cedar St 5551112233 bob.jones@company.com Mechanic
+\ No newline at end of file
+Index: Assignment/Users/Client/Client.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Assignment.Users.Client;\r\n\r\nimport Assignment.Users.User;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.FileReader;\r\nimport java.io.IOException;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.Date;\r\n\r\npublic class Client extends User {\r\n    private final String membership;\r\n    private final int clientID;\r\n    private static final String clientsCSVPath = \"Assignment/Data/Client/clients.csv\";\r\n    public static ArrayList<Client> clientList = new ArrayList<>();\r\n\r\n    public Client(int clientID, String username, String password, String fullName, Date dob, String address, int phoneNumber, String email, String userType, String status, String membership) {\r\n        super(username, password, fullName, dob, address, phoneNumber, email, userType, status);\r\n        this.clientID = clientID;\r\n        this.membership = membership;\r\n    }\r\n\r\n    public int getClientID() {\r\n        return clientID;\r\n    }\r\n\r\n    public String getMembershipType() {\r\n        return membership;\r\n    }\r\n\r\n    public void viewSalesTransaction() {\r\n        String line;\r\n        String csvSplitBy = \",\";\r\n\r\n        System.out.println(\"Viewing transactions for Client ID: \" + getClientID());\r\n\r\n        try (BufferedReader br = new BufferedReader(new FileReader(clientsCSVPath))) {\r\n            br.readLine(); // Skip the header line\r\n\r\n            while ((line = br.readLine()) != null) {\r\n                String[] transaction = line.split(csvSplitBy);\r\n\r\n                int transactionClientID = Integer.parseInt(transaction[1]);\r\n                String transactionID = transaction[0];\r\n                String employeeID = transaction[2];\r\n                String date = transaction[3];\r\n                String totalAmount = transaction[4];\r\n\r\n                if (transactionClientID == this.clientID) {\r\n                    System.out.println(\"TransactionID: \" + transactionID + \", Date: \" + date + \", Total Amount: $\" + totalAmount);\r\n                }\r\n            }\r\n        } catch (IOException e) {\r\n            System.err.println(\"Error reading transactions: \" + e.getMessage());\r\n        }\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/Assignment/Users/Client/Client.java b/Assignment/Users/Client/Client.java
+--- a/Assignment/Users/Client/Client.java	
++++ b/Assignment/Users/Client/Client.java	
+@@ -6,16 +6,19 @@
+ import java.io.FileReader;
+ import java.io.IOException;
+ 
++import java.text.ParseException;
++import java.text.SimpleDateFormat;
+ import java.util.ArrayList;
+ import java.util.Date;
++import java.util.List;
+ 
+ public class Client extends User {
+-    private final String membership;
++    private String membership; // Instead of public static String membership
+     private final int clientID;
+-    private static final String clientsCSVPath = "Assignment/Data/Client/clients.csv";
++    private static final String clientsTXTPath = "Assignment/Data/Client/clients.tst";
+     public static ArrayList<Client> clientList = new ArrayList<>();
+ 
+-    public Client(int clientID, String username, String password, String fullName, Date dob, String address, int phoneNumber, String email, String userType, String status, String membership) {
++    public Client(int clientID, String username, String password, String fullName, Date dob, String address, String phoneNumber, String email, String userType, String status, String membership) {
+         super(username, password, fullName, dob, address, phoneNumber, email, userType, status);
+         this.clientID = clientID;
+         this.membership = membership;
+@@ -35,7 +38,7 @@
+ 
+         System.out.println("Viewing transactions for Client ID: " + getClientID());
+ 
+-        try (BufferedReader br = new BufferedReader(new FileReader(clientsCSVPath))) {
++        try (BufferedReader br = new BufferedReader(new FileReader(clientsTXTPath))) {
+             br.readLine(); // Skip the header line
+ 
+             while ((line = br.readLine()) != null) {
+@@ -55,4 +58,35 @@
+             System.err.println("Error reading transactions: " + e.getMessage());
+         }
+     }
++
++    // Method to read clients from clients.txt
++    public List<Client> readClientsFromTXT(String filePath) throws IOException, ParseException {
++        List<Client> clients = new ArrayList<>();
++        String line;
++        String delimiter = ",";
++
++        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
++            br.readLine(); // Skip the header
++
++            while ((line = br.readLine()) != null) {
++                String[] data = line.split(delimiter);
++
++                int clientID = Integer.parseInt(data[0]);
++                String username = data[1];
++                String password = data[2];
++                String fullName = data[3];
++                Date dob = new SimpleDateFormat("yyyy-MM-dd").parse(data[4]);
++                String address = data[5];
++                String phoneNumber = data[6];
++                String email = data[7];
++                String userType = data[8];
++                String status = data[9];
++
++                Client client = new Client(clientID, username, password, fullName, dob, address, phoneNumber, email, userType, status, membership);
++                clients.add(client);
++            }
++        }
++
++        return clients;
++    }
+ }
+Index: Assignment/Users/User.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Assignment.Users;\r\n\r\nimport java.io.BufferedWriter;\r\nimport java.io.FileWriter;\r\nimport java.io.IOException;\r\nimport java.util.ArrayList;\r\nimport java.util.Date;\r\nimport java.util.List;\r\n\r\npublic class User {\r\n    private final String username;\r\n    private final String password;\r\n    private final String fullName;\r\n    private final Date dob;\r\n    private final String address;\r\n    private final int phoneNo;\r\n    private final String email;\r\n    private final String userType;\r\n    private final String status;\r\n    private final List<String> logHistory;\r\n\r\n    // Constructor for initializing Users.User attributes\r\n    public User(String username, String password, String fullName, Date dob, String address, int phoneNumber, String email, String userType, String status) {\r\n        this.username = username;\r\n        this.password = password;\r\n        this.fullName = fullName;\r\n        this.dob = dob;\r\n        this.address = address;\r\n        this.phoneNo = phoneNumber;\r\n        this.email = email;\r\n        this.userType = userType;\r\n        this.status = status;\r\n        this.logHistory = new ArrayList<>();\r\n    }\r\n\r\n    // Getters for user attributes\r\n    public String getUsername() {\r\n        return username;\r\n    }\r\n\r\n    public String getPassword() {\r\n        return password;\r\n    }\r\n\r\n    public String getFullName() {\r\n        return fullName;\r\n    }\r\n\r\n    public Date getDob() {\r\n        return dob;\r\n    }\r\n\r\n    public String getAddress() {\r\n        return address;\r\n    }\r\n\r\n    public int getPhoneNumber() {\r\n        return phoneNo;\r\n    }\r\n\r\n    public String getEmail() {\r\n        return email;\r\n    }\r\n\r\n    public String getUserType() {\r\n        return userType;\r\n    }\r\n\r\n    public String getStatus() {\r\n        return status;\r\n    }\r\n\r\n    // Methods for user actions\r\n    public void LOGIN() {\r\n        String logEntry = \"Users.User \" + username + \" logged in at \" + new Date();\r\n        logHistory.add(logEntry);\r\n        System.out.println(logEntry);\r\n    }\r\n\r\n    public void LOGOUT() {\r\n        String logEntry = \"Users.User \" + username + \" logged out at \" + new Date();\r\n        logHistory.add(logEntry);\r\n        System.out.println(logEntry);\r\n    }\r\n\r\n    public void reviewLogHistory() {\r\n        System.out.println(\"Log history for \" + fullName + \":\");\r\n        for (String log : logHistory) {\r\n            System.out.println(log);\r\n        }\r\n    }\r\n\r\n    public void exportLogHistoryToCSV(String filename) {\r\n        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {\r\n            for (String log : logHistory) {\r\n                writer.write(log);\r\n                writer.newLine();\r\n            }\r\n            System.out.println(\"Log history exported to \" + filename);\r\n        } catch (IOException e) {\r\n            System.err.println(\"An error occurred while exporting the log history: \" + e.getMessage());\r\n        }\r\n    }\r\n}\r\n\r\n\r\n
+===================================================================
+diff --git a/Assignment/Users/User.java b/Assignment/Users/User.java
+--- a/Assignment/Users/User.java	
++++ b/Assignment/Users/User.java	
+@@ -1,32 +1,40 @@
+ package Assignment.Users;
+ 
++import Assignment.Users.Client.Client;
++import Assignment.Users.Employee.Employee;
++import Assignment.Users.Employee.EmployeeList;
++import Assignment.Users.Client.ClientList;
++import Assignment.Users.Manager.Manager;
++
+ import java.io.BufferedWriter;
+ import java.io.FileWriter;
+ import java.io.IOException;
++import java.text.ParseException;
+ import java.util.ArrayList;
+ import java.util.Date;
+ import java.util.List;
++import java.util.Scanner;
+ 
+ public class User {
+     private final String username;
+     private final String password;
+-    private final String fullName;
++    private String fullName;
+     private final Date dob;
+     private final String address;
+-    private final int phoneNo;
++    private final String phoneNo;
+     private final String email;
+     private final String userType;
+     private final String status;
+     private final List<String> logHistory;
+ 
+     // Constructor for initializing Users.User attributes
+-    public User(String username, String password, String fullName, Date dob, String address, int phoneNumber, String email, String userType, String status) {
++    public User(String username, String password, String fullName, Date dob, String address, String phoneNo, String email, String userType, String status) {
+         this.username = username;
+         this.password = password;
+         this.fullName = fullName;
+         this.dob = dob;
+         this.address = address;
+-        this.phoneNo = phoneNumber;
++        this.phoneNo = phoneNo;
+         this.email = email;
+         this.userType = userType;
+         this.status = status;
+@@ -54,7 +62,7 @@
+         return address;
+     }
+ 
+-    public int getPhoneNumber() {
++    public String getPhoneNumber() {
+         return phoneNo;
+     }
+ 
+@@ -70,19 +78,70 @@
+         return status;
+     }
+ 
++    // Method to load data from all three .txt files (Employee, Client, Manager)
++    public static List<User> loadAllUsers() throws IOException, ParseException {
++        List<User> allUsers = new ArrayList<>();
++
++        // Load Employees
++        List<Employee> employees = EmployeeList.readEmployeesFromTXT("Assignment/Data/Employees/employees.txt");
++        System.out.println("Loaded " + employees.size() + " employees.");
++        allUsers.addAll(employees);
++
++        // Load Clients
++        List<Client> clients = ClientList.readClientsFromTXT("Assignment/Data/Client/clients.txt");
++        System.out.println("Loaded " + clients.size() + " clients.");
++        allUsers.addAll(clients);
++
++        // Load Managers
++        List<Manager> managers = Manager.readManagersFromTXT("Assignment/Data/Manager/manager.txt");
++        System.out.println("Loaded " + managers.size() + " managers.");
++        allUsers.addAll(managers);
++
++        System.out.println("Total users loaded: " + allUsers.size());
++        return allUsers;
++    }
++
++
+     // Methods for user actions
+-    public void LOGIN() {
+-        String logEntry = "Users.User " + username + " logged in at " + new Date();
+-        logHistory.add(logEntry);
+-        System.out.println(logEntry);
++    public static User LOGIN(List<User> userList) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.print("Enter username: ");
++        String inputUsername = scanner.nextLine().trim();
++        System.out.print("Enter password: ");
++        String inputPassword = scanner.nextLine();
++
++        System.out.println("Attempting login for username: " + inputUsername);
++        System.out.println("Total users in system: " + userList.size());
++
++        for (User user : userList) {
++            System.out.println("Checking against user: " + user.getUsername());
++
++            // Verify if this user is an Employee, Client, or Manager
++            if (user instanceof Employee && user.getUsername().equalsIgnoreCase(inputUsername) && user.getPassword().equals(inputPassword)) {
++                System.out.println("Login successful! Welcome, " + user.getFullName() + ". You are logged in as an Employee.");
++                return user;
++            } else if (user instanceof Client && user.getUsername().equalsIgnoreCase(inputUsername) && user.getPassword().equals(inputPassword)) {
++                System.out.println("Login successful! Welcome, " + user.getFullName() + ". You are logged in as a Client.");
++                return user;
++            } else if (user instanceof Manager && user.getUsername().equalsIgnoreCase(inputUsername) && user.getPassword().equals(inputPassword)) {
++                System.out.println("Login successful! Welcome, " + user.getFullName() + ". You are logged in as a Manager.");
++                return user;
++            }
++        }
++
++        System.out.println("Invalid credentials.");
++        return null;
+     }
++
+ 
+     public void LOGOUT() {
+-        String logEntry = "Users.User " + username + " logged out at " + new Date();
++        String logEntry = getUserType() + " " + getUsername() + " logged out at " + new Date();
+         logHistory.add(logEntry);
+         System.out.println(logEntry);
+     }
+ 
++
+     public void reviewLogHistory() {
+         System.out.println("Log history for " + fullName + ":");
+         for (String log : logHistory) {
+Index: Assignment/Users/Employee/EmployeeList.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Assignment.Users.Employee;\r\n\r\npublic class EmployeeList {\r\n}\r\n
+===================================================================
+diff --git a/Assignment/Users/Employee/EmployeeList.java b/Assignment/Users/Employee/EmployeeList.java
+--- a/Assignment/Users/Employee/EmployeeList.java	
++++ b/Assignment/Users/Employee/EmployeeList.java	
+@@ -1,4 +1,57 @@
+ package Assignment.Users.Employee;
+ 
++import java.io.BufferedReader;
++import java.io.FileReader;
++import java.io.IOException;
++import java.text.ParseException;
++import java.text.SimpleDateFormat;
++import java.util.ArrayList;
++import java.util.Date;
++import java.util.List;
++
+ public class EmployeeList {
++
++    // List to hold all employee data
++    private static List<Employee> employeeList = new ArrayList<>();
++
++    // Method to read employees from a TXT file
++    public static List<Employee> readEmployeesFromTXT(String txtFilePath) {
++        employeeList.clear();  // Clear the list to prevent duplicates
++        String line;
++
++        try (BufferedReader br = new BufferedReader(new FileReader(txtFilePath))) {
++            while ((line = br.readLine()) != null) {
++                String[] data = line.split("\\s+"); // Splitting by space
++
++                int employeeID = Integer.parseInt(data[0]);
++                String username = data[1];
++                String password = data[2];
++                String fullName = data[3] + " " + data[4]; // Handle first and last name
++                Date dob = new SimpleDateFormat("yyyy-MM-dd").parse(data[5]);
++                String address = data[6] + " " + data[7] + " " + data[8]; // Handle address with spaces
++                String phoneNumber = data[9];
++                String email = data[10];
++                String position = data[11];
++
++                Employee employee = new Employee(employeeID, username, password, fullName, dob, address, phoneNumber, email, "Employee", "Active", position);
++                employeeList.add(employee);
++            }
++        } catch (IOException | ParseException e) {
++            System.err.println("Error reading TXT file: " + e.getMessage());
++        }
++
++        return employeeList; // Return the updated list
++    }
++
++    // Method to return the list of employees
++    public static List<Employee> getEmployeeList() {
++        return employeeList;
++    }
++
++    // Optional: A method to print the list of employees
++    public static void printEmployeeList() {
++        for (Employee employee : employeeList) {
++            System.out.println("Employee: " + employee.getFullName() + " | Position: " + employee.getPosition());
++        }
++    }
+ }
+Index: Assignment/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Assignment;\r\n\r\nimport Assignment.Part.PartManager;\r\nimport Assignment.Services.ServiceManager;\r\nimport Assignment.Users.Manager.Manager;\r\nimport Assignment.Object.Car.CarList;\r\nimport Assignment.Transaction.SalesTransactionList;\r\n\r\nimport java.io.IOException;\r\nimport java.net.URISyntaxException;\r\nimport java.text.ParseException;\r\nimport java.util.Scanner;\r\n\r\n\r\npublic class Main {\r\n    public static void main(String[] args) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {\r\n        CarList carList = new CarList();\r\n        SalesTransactionList salesTransactionList = new SalesTransactionList();\r\n        ServiceManager serviceManager = new ServiceManager();\r\n        PartManager partManager = new PartManager();\r\n        start(carList, salesTransactionList, serviceManager, partManager);\r\n    }\r\n    public static void start(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {\r\n        int choice = -1;\r\n        Scanner s = new Scanner(System.in);\r\n        System.out.println(\"WELCOME TO THE HOMEPAGE\");\r\n        System.out.println(\"------------------------------\");\r\n        System.out.println(\"|Who do you want to login as?|\");\r\n        System.out.println(\"------------------------------\");\r\n        do{\r\n            System.out.println(\"1. MANAGER\");\r\n            System.out.println(\"2. EMPLOYEE\");\r\n            System.out.println(\"3. CLIENT\");\r\n            choice = s.nextInt();\r\n            switch (choice){\r\n                case 1 -> manager(carList, salesTransactionList, serviceManager, partManager);\r\n                case 2 -> employee();\r\n                case 3 -> client();\r\n            }\r\n        }while (choice !=0);\r\n    }\r\n    public static void manager(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, ClassNotFoundException {\r\n        int choice = -1;\r\n        Scanner s = new Scanner(System.in);\r\n        do{\r\n            System.out.println(\"You are log in Manager!\");\r\n            System.out.println(\"1: ADD Cars\");\r\n            System.out.println(\"2: VIEW All Cars\");\r\n            System.out.println(\"3: UPDATE Car Price\");\r\n            System.out.println(\"4: UPDATE Car Status\");\r\n            System.out.println(\"5: DELETE Cars\");\r\n            System.out.println(\"6: VIEW Car by ID\");\r\n            System.out.println(\"7: VIEW Car Sold\");\r\n            System.out.println(\"8: ADD Transaction\");\r\n            System.out.println(\"9: VIEW Transaction\");\r\n            System.out.println(\"10: DELETE Transaction\");\r\n            System.out.println(\"11: VIEW Revenue by Day\");\r\n            System.out.println(\"12: VIEW Revenue by Week\");\r\n            System.out.println(\"13: VIEW Revenue by Month\");\r\n            System.out.println(\"14: VIEW revenue by SalesPerson\");\r\n            System.out.println(\"15: VIEW Car Sold By Day\");\r\n            System.out.println(\"16: VIEW Car Sold By Week\");\r\n            System.out.println(\"17: VIEW Car Sold By Month\");\r\n            System.out.println(\"18: ADD Services\");\r\n            System.out.println(\"19: VIEW Services\");\r\n            System.out.println(\"20: DELETE Service\");\r\n            System.out.println(\"21: VIEW revenue by mechanic\");\r\n            System.out.println(\"22: ADD Part\");\r\n            System.out.println(\"23: VIEW Part\");\r\n            System.out.println(\"24: DELETE Part\");\r\n            choice = s.nextInt();\r\n            switch (choice){\r\n                case 1 -> {Manager.addCar(carList);}\r\n                case 2 -> {Manager.viewCar(carList);}\r\n                case 3 -> {Manager.updateCarPriceByID(carList);}\r\n                case 4 -> {Manager.updateStatus(carList);}\r\n                case 5 -> {Manager.deletedCar(carList);}\r\n                case 6 -> {Manager.getByID((carList));}\r\n                case 7 -> {Manager.listCarSold(carList);}\r\n                case 8 -> {Manager.addTransaction(salesTransactionList);}\r\n                case 9 -> {Manager.viewTransaction(salesTransactionList);}\r\n                case 10 -> {Manager.deleteTransactionByID(salesTransactionList);}\r\n                case 11 -> {Manager.revenueByDay(salesTransactionList);}\r\n                case 12 -> {Manager.revenuePerWeek(salesTransactionList);}\r\n                case 13 -> {Manager.revenuePerMonth(salesTransactionList);}\r\n                case 14 -> {Manager.revenueBySales(salesTransactionList);}\r\n                case 15 -> {Manager.carSoldByDay(salesTransactionList);}\r\n                case 16 -> {Manager.carSoldByWeek(salesTransactionList);}\r\n                case 17 -> {Manager.carSoldByMonth(salesTransactionList);}\r\n                case 18 -> {ServiceManager.createService();}\r\n                case 19 -> {ServiceManager.viewServices();}\r\n                case 20 -> {ServiceManager.deleteService();}\r\n                case 21 -> {ServiceManager.revenueByMechanic();}\r\n                case 22 -> {PartManager.createAutoPart();}\r\n                case 23-> {PartManager.viewAutoParts();}\r\n                case 24 -> {PartManager.deleteAutoPart();}\r\n            }\r\n        }while (choice !=0);\r\n    }\r\n    public static void employee() {\r\n        int choice = -1;\r\n        Scanner s = new Scanner(System.in);\r\n        do {\r\n            System.out.println(\"You are log in as an Employee\");\r\n            System.out.println(\"1: Calculate revenue in day \");\r\n            System.out.println(\"2: Calculate revenue in week \");\r\n            System.out.println(\"3: Calculate revenue in month \");\r\n            System.out.println(\"4: List the number of services in days\");\r\n            System.out.println(\"5: List the number of services in weeks \");\r\n            System.out.println(\"6: List the number of services in month \");\r\n            System.out.println(\"7: List the number of cars in days \");\r\n            System.out.println(\"8: List the number of cars in weeks \");\r\n            System.out.println(\"9: List the number of cars in month \");\r\n            System.out.println(\"10: LOGOUT\");\r\n\r\n            choice = s.nextInt();\r\n            switch (choice) {\r\n\r\n            }\r\n\r\n        } while (choice != 0);\r\n    }\r\n    public static void client(){\r\n            int choice = -1;\r\n            Scanner s = new Scanner(System.in);\r\n            do{\r\n                System.out.println(\"You are log in as a Client\");\r\n                System.out.println(\"1: \");\r\n                System.out.println(\"2: \");\r\n                System.out.println(\"3: \");\r\n                System.out.println(\"4: \");\r\n\r\n                choice = s.nextInt();\r\n                switch (choice){\r\n                }\r\n\r\n            }while (choice !=0);\r\n        }\r\n\r\n\r\n}\r\n
+===================================================================
+diff --git a/Assignment/Main.java b/Assignment/Main.java
+--- a/Assignment/Main.java	
++++ b/Assignment/Main.java	
+@@ -2,44 +2,83 @@
+ 
+ import Assignment.Part.PartManager;
+ import Assignment.Services.ServiceManager;
++import Assignment.Users.Client.Client;
++import Assignment.Users.Employee.Employee;
++import Assignment.Users.Employee.EmployeeList;
+ import Assignment.Users.Manager.Manager;
++import Assignment.Users.User;
+ import Assignment.Object.Car.CarList;
++import Assignment.Transaction.SalesTransaction;
+ import Assignment.Transaction.SalesTransactionList;
+ 
+ import java.io.IOException;
+ import java.net.URISyntaxException;
+ import java.text.ParseException;
++import java.util.List;
+ import java.util.Scanner;
+ 
+ 
+ public class Main {
++    // This list holds all users (clients, employees, managers)
++
+     public static void main(String[] args) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
+         CarList carList = new CarList();
+         SalesTransactionList salesTransactionList = new SalesTransactionList();
+         ServiceManager serviceManager = new ServiceManager();
+         PartManager partManager = new PartManager();
+-        start(carList, salesTransactionList, serviceManager, partManager);
++
++        List<User> userList = User.loadAllUsers();
++
++        start(carList, salesTransactionList, serviceManager, partManager, userList);
+     }
+-    public static void start(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
+-        int choice = -1;
++
++    public static void start(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager, List<User> userList) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
+         Scanner s = new Scanner(System.in);
+-        System.out.println("WELCOME TO THE HOMEPAGE");
+-        System.out.println("------------------------------");
+-        System.out.println("|Who do you want to login as?|");
+-        System.out.println("------------------------------");
+-        do{
+-            System.out.println("1. MANAGER");
+-            System.out.println("2. EMPLOYEE");
+-            System.out.println("3. CLIENT");
+-            choice = s.nextInt();
+-            switch (choice){
+-                case 1 -> manager(carList, salesTransactionList, serviceManager, partManager);
+-                case 2 -> employee();
+-                case 3 -> client();
++        boolean exitApp = false;  // Boolean flag to keep the loop running
++
++        while (!exitApp) {
++            System.out.println("-----------------------");
++            System.out.println("WELCOME TO THE HOMEPAGE");
++            System.out.println("-----------------------");
++
++            // Prompt for login
++            User loggedInUser;
++
++            do {
++                System.out.println("--------------");
++                System.out.println("|Please Login|");
++                System.out.println("--------------");
++                loggedInUser = User.LOGIN(userList);
++
++                if (loggedInUser != null) {
++                    switch (loggedInUser.getUserType()) {
++                        case "Manager" -> manager((Manager) loggedInUser, carList, salesTransactionList, serviceManager, partManager);
++                        case "Employee" -> employee((Employee) loggedInUser);
++                        case "Client" -> client((Client) loggedInUser);
++                        default -> System.out.println("Unknown user type. Returning to home screen.");
++                    }
++                } else {
++                    System.out.println("Login failed. Please try again.");
++                }
++
++            } while (loggedInUser == null);  // Keep asking for login if failed
++
++            System.out.println("-----------------------------------");
++            System.out.println("Would you like to continue or exit?");
++            System.out.println("1. Continue (go back to homescreen)");
++            System.out.println("0. Exit");
++            System.out.println("-----------------------------------");
++
++            int choice = s.nextInt();
++            if (choice == 0) {
++                exitApp = true;  // Exit the loop and the application
+             }
+-        }while (choice !=0);
++        }
++        System.out.println("Thank you for using the system. Goodbye!");
+     }
+-    public static void manager(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, ClassNotFoundException {
++
++
++    public static void manager(Manager manager, CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, ClassNotFoundException {
+         int choice = -1;
+         Scanner s = new Scanner(System.in);
+         do{
+@@ -68,6 +107,7 @@
+             System.out.println("22: ADD Part");
+             System.out.println("23: VIEW Part");
+             System.out.println("24: DELETE Part");
++            System.out.println("25: LOGOUT");
+             choice = s.nextInt();
+             switch (choice){
+                 case 1 -> {Manager.addCar(carList);}
+@@ -94,48 +134,89 @@
+                 case 22 -> {PartManager.createAutoPart();}
+                 case 23-> {PartManager.viewAutoParts();}
+                 case 24 -> {PartManager.deleteAutoPart();}
++                case 25 -> {
++                    manager.LOGOUT();
++                    return;
++                }
+             }
+         }while (choice !=0);
+     }
+-    public static void employee() {
+-        int choice = -1;
++
++    public static void employee(Employee employee) {
++        int choice;
+         Scanner s = new Scanner(System.in);
++        List<SalesTransaction> transactions = employee.readTransactionsFromCSV();
++
+         do {
+-            System.out.println("You are log in as an Employee");
+-            System.out.println("1: Calculate revenue in day ");
+-            System.out.println("2: Calculate revenue in week ");
+-            System.out.println("3: Calculate revenue in month ");
++            System.out.println("You are logged in as: " + employee.getFullName());
++            String position = employee.getPosition();
++
++            // Display options for Sales employees
++            if (position.equalsIgnoreCase("Sales")) {
++                System.out.println("1: Calculate revenue in day ");
++                System.out.println("2: Calculate revenue in week ");
++                System.out.println("3: Calculate revenue in month ");
++            }
++
++            // Display options for Mechanic employees
++            if (position.equalsIgnoreCase("Mechanic")) {
++                System.out.println("1: List the number of cars in days ");
++                System.out.println("2: List the number of cars in weeks ");
++                System.out.println("3: List the number of cars in month ");
++            }
++
++            // Display options for both Sales and Mechanic employees
+             System.out.println("4: List the number of services in days");
+             System.out.println("5: List the number of services in weeks ");
+             System.out.println("6: List the number of services in month ");
+-            System.out.println("7: List the number of cars in days ");
+-            System.out.println("8: List the number of cars in weeks ");
+-            System.out.println("9: List the number of cars in month ");
+-            System.out.println("10: LOGOUT");
++            System.out.println("7: LOGOUT");
+ 
+             choice = s.nextInt();
++
++            if (position.equalsIgnoreCase("Sales")) {
++                switch (choice) {
++                    case 1 -> {Employee.calculateRevenue(transactions, "day");}
++                    case 2 -> {Employee.calculateRevenue(transactions, "week");}
++                    case 3 -> {Employee.calculateRevenue(transactions, "month");}
++                }
++            } else if (position.equalsIgnoreCase("Mechanic")) {
++                switch (choice) {
++                    case 1 -> System.out.println("List the number of cars in days (feature pending)"); // Placeholder for actual functionality
++                    case 2 -> System.out.println("List the number of cars in weeks (feature pending)"); // Placeholder for actual functionality
++                    case 3 -> System.out.println("List the number of cars in month (feature pending)"); // Placeholder for actual functionality
++                }
++            }
++
+             switch (choice) {
+-
++                case 4 -> {Employee.listServices("day");} // Placeholder for actual functionality
++                case 5 -> {Employee.listServices("week");}// Placeholder for actual functionality
++                case 6 -> {Employee.listServices("month");}// Placeholder for actual functionality
++                case 7 -> {
++                    employee.LOGOUT();
++                    return; // Exit employee method after logout, returning to the home screen
++                }
+             }
+ 
+         } while (choice != 0);
+     }
+-    public static void client(){
+-            int choice = -1;
+-            Scanner s = new Scanner(System.in);
+-            do{
+-                System.out.println("You are log in as a Client");
+-                System.out.println("1: ");
+-                System.out.println("2: ");
+-                System.out.println("3: ");
+-                System.out.println("4: ");
++
++    public static void client(Client client) {
++        int choice;
++        Scanner s = new Scanner(System.in);
++        do {
++            System.out.println("You are logged in as a Client");
++            System.out.println("1: View client info");
++            System.out.println("2: Logout");
+ 
+-                choice = s.nextInt();
+-                switch (choice){
++            choice = s.nextInt();
++
++            switch (choice) {
++                case 2 -> {
++                    client.LOGOUT();
++                    return; // Exit employee method after logout, returning to the home screen
+                 }
+ 
+-            }while (choice !=0);
+-        }
+-
+-
++            }
++        } while (choice != 0);
++    }
+ }
+Index: out/production/prog-1-project-team8/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n    <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_21\" default=\"true\" project-jdk-name=\"temurin-21\" project-jdk-type=\"JavaSDK\">\r\n        <output url=\"file://$PROJECT_DIR$/out\" />\r\n    </component>\r\n</project>
+===================================================================
+diff --git a/out/production/prog-1-project-team8/.idea/misc.xml b/out/production/prog-1-project-team8/.idea/misc.xml
+--- a/out/production/prog-1-project-team8/.idea/misc.xml	
++++ b/out/production/prog-1-project-team8/.idea/misc.xml	
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-    <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
+-        <output url="file://$PROJECT_DIR$/out" />
+-    </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
+ </project>
+\ No newline at end of file
+Index: Assignment/Users/Employee/Employee.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Assignment.Users.Employee;\r\n\r\nimport Assignment.Object.Car.Car;\r\nimport Assignment.Transaction.SalesTransaction;\r\nimport Assignment.Users.User;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.FileReader;\r\nimport java.io.IOException;\r\nimport java.text.ParseException;\r\nimport java.text.SimpleDateFormat;\r\nimport java.time.LocalDate;\r\nimport java.util.ArrayList;\r\nimport java.util.Date;\r\nimport java.util.List;\r\n\r\npublic class Employee extends User {\r\n    private final String position;\r\n    private static final String salesTransactionCSVPath = \"Assignment/Data/SalesTransaction/SalesTransaction.csv\";\r\n\r\n    public Employee(String username, String password, String fullName, Date dob, String address, int phoneNumber, String email, String userType, String status, String position) {\r\n        super(username, password, fullName, dob, address, phoneNumber, email, userType, status);\r\n        this.position = position;\r\n    }\r\n\r\n    public String getPosition() {\r\n        return position;\r\n    }\r\n\r\n    String csvFilePath = \"Assignment/Data/SalesTransaction/SalesTransaction.csv\";\r\n\r\n    // Method to read data from CSV and populate SalesTransaction list\r\n    public List<SalesTransaction> readTransactionsFromCSV() {\r\n        List<SalesTransaction> transactions = new ArrayList<>();\r\n        String line;\r\n        String csvSplitBy = \",\";\r\n\r\n        try (BufferedReader br = new BufferedReader(new FileReader(salesTransactionCSVPath))) {\r\n            br.readLine(); // Skip the header line\r\n\r\n            while ((line = br.readLine()) != null) {\r\n                String[] data = line.split(csvSplitBy);\r\n                int transactionID = Integer.parseInt(data[0]);\r\n                int clientID = Integer.parseInt(data[1]);\r\n                int salespersonID = Integer.parseInt(data[2]);\r\n                LocalDate transactionDate = LocalDate.parse(data[3]); // Parsing as LocalDate\r\n\r\n                ArrayList<Car> purchasedItems = new ArrayList<>(); // Add items to the list\r\n                double discount = Double.parseDouble(data[4]);\r\n                double totalAmount = Double.parseDouble(data[5]);\r\n\r\n                SalesTransaction transaction = new SalesTransaction(transactionID, transactionDate, clientID, salespersonID, purchasedItems, discount, totalAmount);\r\n                transactions.add(transaction);\r\n            }\r\n        } catch (IOException e) {\r\n            System.err.println(\"Error reading CSV file: \" + e.getMessage());\r\n        }\r\n\r\n        return transactions;\r\n    }\r\n\r\n\r\n    public static void calculateRevenue(List<SalesTransaction> transactions, String period) {\r\n        Date now = new Date();\r\n        long timeLimit = 0;\r\n\r\n        // Predefined values for day, month, and year in milliseconds\r\n        switch (period.toLowerCase()) {\r\n            case \"day\":\r\n                timeLimit = 86400000L; // 1 day = 86,400,000 ms\r\n                break;\r\n            case \"month\":\r\n                timeLimit = (long) 2.628E9; // 1 month = 2.628E+9 ms (30 days)\r\n                break;\r\n            case \"year\":\r\n                timeLimit = (long) 3.1536E10; // 1 year = 3.1536E+10 ms (365 days)\r\n                break;\r\n            default:\r\n                System.out.println(\"Invalid period. Please enter 'day', 'month', or 'year'.\");\r\n                return;\r\n        }\r\n\r\n\r\n        // Calculate total revenue for the selected period\r\n        double totalRevenue = 0.0;\r\n        for (SalesTransaction transaction : transactions) {\r\n            LocalDate transactionDate = transaction.getTransactionDate();\r\n            if (transactionDate != null) {\r\n                long daysBetween = now.toEpochDay() - transactionDate.toEpochDay(); // Time difference in days\r\n\r\n                if (daysBetween <= daysLimit) {\r\n                    totalRevenue += transaction.getTotalAmount();\r\n                }\r\n            }\r\n        }\r\n\r\n        // Display the total revenue\r\n        System.out.println(\"The total revenue in the past \" + period + \" is: \" + totalRevenue);\r\n    }\r\n\r\n    public void listServices() {\r\n        // List services\r\n        System.out.println(\"Listing services performed by \" + getFullName());\r\n    }\r\n\r\n    public void processTransaction() {\r\n        // Transactions\r\n        System.out.println(\"Processing transaction for \" + getFullName());\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/Assignment/Users/Employee/Employee.java b/Assignment/Users/Employee/Employee.java
+--- a/Assignment/Users/Employee/Employee.java	
++++ b/Assignment/Users/Employee/Employee.java	
+@@ -7,18 +7,19 @@
+ import java.io.BufferedReader;
+ import java.io.FileReader;
+ import java.io.IOException;
+-import java.text.ParseException;
+-import java.text.SimpleDateFormat;
+ import java.time.LocalDate;
++import java.time.format.DateTimeFormatter;
+ import java.util.ArrayList;
++import java.util.Arrays;
+ import java.util.Date;
+ import java.util.List;
+ 
+ public class Employee extends User {
+     private final String position;
+-    private static final String salesTransactionCSVPath = "Assignment/Data/SalesTransaction/SalesTransaction.csv";
++    private static final String salesTransactionPath = "Assignment/Data/SalesTransaction/SalesTransaction.csv";
++    private static final String servicesFilePath = "Assignment/Data/Service/services.txt";
+ 
+-    public Employee(String username, String password, String fullName, Date dob, String address, int phoneNumber, String email, String userType, String status, String position) {
++    public Employee(int employeeID, String username, String password, String fullName, Date dob, String address, String phoneNumber, String email, String userType, String status, String position) {
+         super(username, password, fullName, dob, address, phoneNumber, email, userType, status);
+         this.position = position;
+     }
+@@ -27,32 +28,39 @@
+         return position;
+     }
+ 
+-    String csvFilePath = "Assignment/Data/SalesTransaction/SalesTransaction.csv";
+-
+     // Method to read data from CSV and populate SalesTransaction list
+     public List<SalesTransaction> readTransactionsFromCSV() {
+         List<SalesTransaction> transactions = new ArrayList<>();
+         String line;
+         String csvSplitBy = ",";
+ 
+-        try (BufferedReader br = new BufferedReader(new FileReader(salesTransactionCSVPath))) {
++        try (BufferedReader br = new BufferedReader(new FileReader(salesTransactionPath))) {
+             br.readLine(); // Skip the header line
+ 
++            // Ensure proper CSV parsing in readTransactionsFromCSV()
+             while ((line = br.readLine()) != null) {
+                 String[] data = line.split(csvSplitBy);
+-                int transactionID = Integer.parseInt(data[0]);
+-                int clientID = Integer.parseInt(data[1]);
+-                int salespersonID = Integer.parseInt(data[2]);
+-                LocalDate transactionDate = LocalDate.parse(data[3]); // Parsing as LocalDate
++                // Adjust the condition to match your CSV format (5 fields)
++                if (data.length >= 5) {
++                    int transactionID = Integer.parseInt(data[0]);
++                    int clientID = Integer.parseInt(data[1]);
++                    int salespersonID = Integer.parseInt(data[2]);
++                    LocalDate transactionDate = LocalDate.parse(data[3]); // Assuming date is valid
+ 
+-                ArrayList<Car> purchasedItems = new ArrayList<>(); // Add items to the list
+-                double discount = Double.parseDouble(data[4]);
+-                double totalAmount = Double.parseDouble(data[5]);
++                    // Optional: Use an empty list for purchased items
++                    ArrayList<Car> purchasedItems = new ArrayList<>();
++
++                    double totalAmount = Double.parseDouble(data[4]); // Adjust index as needed
++                    double discount = 0;  // Assuming discount is not in your CSV for now
+ 
+-                SalesTransaction transaction = new SalesTransaction(transactionID, transactionDate, clientID, salespersonID, purchasedItems, discount, totalAmount);
+-                transactions.add(transaction);
++                    SalesTransaction transaction = new SalesTransaction(transactionID, transactionDate, clientID, salespersonID, purchasedItems, discount, totalAmount);
++                    transactions.add(transaction);
++                }else {
++                    System.err.println("Skipping invalid transaction record: " + Arrays.toString(data));
++
+             }
+-        } catch (IOException e) {
++                }
++            }catch (IOException e) {
+             System.err.println("Error reading CSV file: " + e.getMessage());
+         }
+ 
+@@ -61,46 +69,103 @@
+ 
+ 
+     public static void calculateRevenue(List<SalesTransaction> transactions, String period) {
+-        Date now = new Date();
+-        long timeLimit = 0;
++        LocalDate now = LocalDate.now(); // Use LocalDate for the current date
++        int daysLimit = 0;
+ 
+-        // Predefined values for day, month, and year in milliseconds
++        // Predefined values for day, month, and year in terms of days
+         switch (period.toLowerCase()) {
+             case "day":
+-                timeLimit = 86400000L; // 1 day = 86,400,000 ms
++                daysLimit = 1; // 1 day
+                 break;
+-            case "month":
+-                timeLimit = (long) 2.628E9; // 1 month = 2.628E+9 ms (30 days)
++            case "week":
++                daysLimit = 7; // 30 days
+                 break;
+-            case "year":
+-                timeLimit = (long) 3.1536E10; // 1 year = 3.1536E+10 ms (365 days)
++            case "month":
++                daysLimit = 30; // 365 days
+                 break;
+             default:
+-                System.out.println("Invalid period. Please enter 'day', 'month', or 'year'.");
++                System.out.println("Invalid period. Please enter 'day', 'week', or 'month'.");
+                 return;
+         }
+ 
+-
+         // Calculate total revenue for the selected period
+         double totalRevenue = 0.0;
+         for (SalesTransaction transaction : transactions) {
+             LocalDate transactionDate = transaction.getTransactionDate();
+             if (transactionDate != null) {
+-                long daysBetween = now.toEpochDay() - transactionDate.toEpochDay(); // Time difference in days
++                // Manual calculation of days difference
++                long daysBetween = now.toEpochDay() - transactionDate.toEpochDay(); // Manually calculate days difference
+ 
+-                if (daysBetween <= daysLimit) {
++                // The condition is now checking if the transaction is within or older than the specified range
++                if (daysBetween <= daysLimit && daysBetween >= 0) {
+                     totalRevenue += transaction.getTotalAmount();
+                 }
+             }
+         }
+ 
+         // Display the total revenue
+-        System.out.println("The total revenue in the past " + period + " is: " + totalRevenue);
++        System.out.println("-----------------------------------------------\n" +
++                "The total revenue in the past " + period + " is: $" + totalRevenue + "\n" +
++                "-----------------------------------------------");
+     }
++
++    public static void listServices(String period) {
++        LocalDate now = LocalDate.now();
++        long timeLimit = 0;
++
++        // Set the time limit based on the period (similar to calculateRevenue)
++        switch (period.toLowerCase()) {
++            case "day":
++                timeLimit = 1;  // 1 day
++                break;
++            case "week":
++                timeLimit = 7;  // 7 days in a week
++                break;
++            case "month":
++                timeLimit = 30; // Approximate month duration in days
++                break;
++            default:
++                System.out.println("Invalid period. Please enter 'day', 'week', or 'month'.");
++                return;
++        }
++
++        // Define a date format to parse the date from the services.txt file
++        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
++
++        List<String> servicesWithinPeriod = new ArrayList<>();
++
++        // Read the services.txt file
++        try (BufferedReader br = new BufferedReader(new FileReader(servicesFilePath))) {
++            String line;
++            while ((line = br.readLine()) != null) {
++                String[] data = line.split(",");
++
++                // Assuming that the service date is in the second column (index 1)
++                LocalDate serviceDate = LocalDate.parse(data[1], dateFormatter);
++
++                // Manually calculate the difference in days
++                long daysBetween = Math.abs(serviceDate.toEpochDay() - now.toEpochDay());
++
++                // Check if the service falls within the specified time limit
++                if (daysBetween <= timeLimit) {
++                    servicesWithinPeriod.add(line); // Add the service to the list
++                }
++            }
++        } catch (IOException e) {
++            System.err.println("Error reading services.txt file: " + e.getMessage());
++        }
+ 
+-    public void listServices() {
+-        // List services
+-        System.out.println("Listing services performed by " + getFullName());
++        // Display the services that fall within the period
++        if (servicesWithinPeriod.isEmpty()) {
++            System.out.println("No services found within the given period.");
++        } else {
++            System.out.println("----------------------------------------------------------------\n" +
++                    "Services in the past " + period + ":");
++            for (String service : servicesWithinPeriod) {
++                System.out.println(service);
++            }
++            System.out.println("----------------------------------------------------------------");
++        }
+     }
+ 
+     public void processTransaction() {

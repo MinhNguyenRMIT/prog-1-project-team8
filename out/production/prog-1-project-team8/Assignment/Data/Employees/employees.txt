@@ -1,0 +1,6 @@
+3001 emp1 emp123 John Smith 1985-01-01 789 Oak St 5551234567 john.smith@company.com Sales
+3002 emp2 emp456 Jane Smith 1987-02-15 321 Pine St 5559876543 jane.smith@company.com Sales
+3003 emp3 emp789 Bob Jones 1990-07-10 654 Cedar St 5551112233 bob.jones@company.com Sales
+3004 emp4 emp312 Ronald Reagan 1985-01-01 789 Oak St 5551234567 john.smith@company.com Mechanic
+3005 emp5 emp213 Nikita Khrushchev 1987-02-15 321 Pine St 5559876543 jane.smith@company.com Mechanic
+3006 emp6 emp987 Joe Bidome 1990-07-10 654 Cedar St 5551112233 bob.jones@company.com Mechanic

@@ -1,0 +1,34 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_9_10_2024_6_35_PM_[Changes]1" date="1725968205956" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_10_2024_6_35_PM_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 9/10/2024 6:35 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class" />
+    <option name="AFTER_PATH" value="out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_10_2024_6_35_PM_[Changes]1/SalesTransaction.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class" />
+    <option name="AFTER_PATH" value="out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_10_2024_6_35_PM_[Changes]1/SalesTransactionList.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class" />
+    <option name="AFTER_PATH" value="out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_10_2024_6_35_PM_[Changes]1/CarList.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/prog-1-project-team8/Assignment/Main.class" />
+    <option name="AFTER_PATH" value="out/production/prog-1-project-team8/Assignment/Main.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_10_2024_6_35_PM_[Changes]1/Main.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/prog-1-project-team8/Assignment/Object/Car/Car.class" />
+    <option name="AFTER_PATH" value="out/production/prog-1-project-team8/Assignment/Object/Car/Car.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_10_2024_6_35_PM_[Changes]1/Car.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/prog-1-project-team8/Assignment/Users/User.class" />
+    <option name="AFTER_PATH" value="out/production/prog-1-project-team8/Assignment/Users/User.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_10_2024_6_35_PM_[Changes]1/User.class" />
+  </binary>
+</changelist>
