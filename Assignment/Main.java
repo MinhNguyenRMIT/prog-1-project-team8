@@ -176,15 +176,19 @@ public class Main {
         int choice;
         Scanner s = new Scanner(System.in);
         do {
+            client.exportLogHistoryToTXT();
+
             System.out.println("You are logged in as a Client");
             System.out.println("1: View client info");
-            System.out.println("2: Logout");
+            System.out.println("2: View Personal Log History");
+            System.out.println("3: LOGOUT");
             choice = s.nextInt();
             switch (choice) {
-                case 1 -> System.out.println("Client info: " + client.getFullName());
-                case 2 -> client.LOGOUT();
+                case 1 -> client.getClientInfo();
+                case 2 -> client.reviewLogHistory();
+                case 3 -> client.LOGOUT();
             }
-        } while (choice != 2);
+        } while (choice != 3);
         System.out.println("Client " + client.getUsername() + " logged out at " + new java.util.Date());
     }
 }

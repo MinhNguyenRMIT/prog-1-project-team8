@@ -7,6 +7,7 @@ import Assignment.Users.Employee.EmployeeList;
 import Assignment.Users.Manager.Manager;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.ParseException;
@@ -139,22 +140,39 @@ public class User {
         System.out.println(logEntry);
     }
 
-
-
-
+    // This method will read from userLog.txt and display logs for the current user based on their username and userType
     public void reviewLogHistory() {
-        System.out.println("Log history for " + fullName + ":");
-        for (String log : logHistory) {
-            System.out.println(log);
+        String filename = "Assignment/Data/userLog.txt";
+        try (Scanner scanner = new Scanner(new File(filename))) {
+            System.out.println("Log history for " + getFullName() + " (" + getUserType() + "):");
+            System.out.println("-----------------------------------------------------------" +
+                    "---------------------------------------------------------");
+            while (scanner.hasNextLine()) {
+                String log = scanner.nextLine();
+
+                if (log.contains("Username: " + getUsername()) && log.contains("UserType: " + getUserType())) {
+                    System.out.println(log);
+                }
+
+            }
+            System.out.println("-----------------------------------------------------------" +
+                    "---------------------------------------------------------\n");
+        } catch (IOException e) {
+            System.err.println("An error occurred while reading the log history: " + e.getMessage());
         }
     }
 
-    public void exportLogHistoryToCSV(String filename) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            for (String log : logHistory) {
-                writer.write(log);
-                writer.newLine();
-            }
+    public void exportLogHistoryToTXT() {
+        String filename = "Assignment/Data/userLog.txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) {
+            String logEntry = "Username: " + getUsername() + ", Full Name: " + getFullName() +
+                    ", UserType: " + getUserType() + ", Status: " + getStatus() +
+                    ", Logged in at: " + new Date();
+            logHistory.add(logEntry); // Store the log entry in memory
+
+            writer.write(logEntry);  // Write the log entry to the file
+            writer.newLine();
+
             System.out.println("Log history exported to " + filename);
         } catch (IOException e) {
             System.err.println("An error occurred while exporting the log history: " + e.getMessage());

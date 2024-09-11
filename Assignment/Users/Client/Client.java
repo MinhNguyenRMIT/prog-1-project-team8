@@ -59,34 +59,48 @@ public class Client extends User {
         }
     }
 
-    // Method to read clients from clients.txt
-    public static List<Client> readClientsFromTXT(String filePath) throws IOException, ParseException {
-        List<Client> clients = new ArrayList<>();
-        String line;
-        String delimiter = ",";
-
-        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            br.readLine(); // Skip the header
-
-            while ((line = br.readLine()) != null) {
-                String[] data = line.split(delimiter);
-
-                int clientID = Integer.parseInt(data[0]);
-                String username = data[1];
-                String password = data[2];
-                String fullName = data[3];
-                Date dob = new SimpleDateFormat("yyyy-MM-dd").parse(data[4]);
-                String address = data[5];
-                String phoneNumber = data[6];
-                String email = data[7];
-                String userType = data[8];
-                String status = data[9];
-
-                Client client = new Client(clientID, username, password, fullName, dob, address, phoneNumber, email, userType, status, membership);
-                clients.add(client);
-            }
-        }
-
-        return clients;
+    public void getClientInfo() {
+        System.out.println("------------------------------------------------");
+        System.out.println(
+                "\n--------------" + "\nCLIENT INFO " + "\n--------------" +
+                        "\nFull Name: " + getFullName() +
+                        "\nBirthdate: " + getDob() +
+                        "\nEmail: " + getEmail() +
+                        "\nAddress: " + getAddress() +
+                        "\nPhoneNumber: " + getPhoneNumber() +
+                        "\nStatus: " + getStatus() +
+                        "\nMembership: " + getMembershipType()
+        );
+        System.out.println("------------------------------------------------");
     }
+
+//    public static List<Client> readClientsFromTXT(String filePath) throws IOException, ParseException {
+//        List<Client> clients = new ArrayList<>();
+//        String line;
+//        String delimiter = ",";
+//
+//        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+//            br.readLine(); // Skip the header
+//
+//            while ((line = br.readLine()) != null) {
+//                String[] data = line.split(delimiter);
+//
+//                int clientID = Integer.parseInt(data[0]);
+//                String username = data[1];
+//                String password = data[2];
+//                String fullName = data[3];
+//                Date dob = new SimpleDateFormat("yyyy-MM-dd").parse(data[4]);
+//                String address = data[5];
+//                String phoneNumber = data[6];
+//                String email = data[7];
+//                String userType = data[8];
+//                String status = data[9];
+//
+//                Client client = new Client(clientID, username, password, fullName, dob, address, phoneNumber, email, userType, status, membership);
+//                clients.add(client);
+//            }
+//        }
+//
+//        return clients;
+//    }
 }
