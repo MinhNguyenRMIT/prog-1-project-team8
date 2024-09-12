@@ -192,8 +192,8 @@ public class SalesTransactionList implements Serializable {
     public static void listCarSoldByDay(LocalDate day){
         boolean found = false;
         ListIterator<SalesTransaction> li = transactionList.listIterator();
+        System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s \n", "CNUM" , "Model" , "Year" , "Milage" , "Color" , "Status", "Price");
         for (SalesTransaction salesTransaction : transactionList){
-            System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s \n", "CNUM" , "Model" , "Year" , "Milage" , "Color" , "Status", "Price");
             String soldCar = salesTransaction.getPurchasedItems().toString();
             soldCar = soldCar.substring(1, soldCar.length() - 1); // Remove the square brackets
             System.out.println(soldCar);
