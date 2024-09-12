@@ -16,7 +16,7 @@ import java.util.List;
 public class Employee extends User {
     private final int employeeID;
     private final String position;
-    private static final String transactionsTXTPath = "Assignment/Data/SalesTransaction/SalesTransaction.txt";
+    private static final String transactionsTXTPath = "Assignment/Data/SalesTransaction/transaction.txt";
     private static final String servicesFilePath = "Assignment/Data/Services/services.txt";
 
     public Employee(int employeeID, String username, String password, String fullName, Date dob, String address, String phoneNumber, String email, String userType, String status, String position) {
@@ -127,7 +127,7 @@ public class Employee extends User {
             }
 
         } catch (IOException e) {
-            System.err.println("Error reading CSV file: " + e.getMessage());
+            System.err.println("Error reading Transaction Data file: " + e.getMessage());
         }
 
         return transactions;
