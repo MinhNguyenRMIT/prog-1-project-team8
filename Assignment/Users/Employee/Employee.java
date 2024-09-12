@@ -17,7 +17,7 @@ public class Employee extends User {
     private final int employeeID;
     private final String position;
     private static final String transactionsTXTPath = "Assignment/Data/SalesTransaction/transaction.txt";
-    private static final String servicesFilePath = "Assignment/Data/Services/services.txt";
+    private static final String servicesFilePath = "Assignment/Data/Services/Service.txt";
 
     public Employee(int employeeID, String username, String password, String fullName, Date dob, String address, String phoneNumber, String email, String userType, String status, String position) {
         super(username, password, fullName, dob, address, phoneNumber, email, userType, status);
@@ -179,7 +179,9 @@ public class Employee extends User {
 
         // Display the services that fall within the period
         if (servicesWithinPeriod.isEmpty()) {
-            System.out.println("No services found within the given period.");
+            System.out.println("--------------------------------------------");
+            System.out.println(" No services found within the given period.");
+            System.out.println("--------------------------------------------");
         } else {
             System.out.println("Services in the past " + period + ":");
             for (String service : servicesWithinPeriod) {
