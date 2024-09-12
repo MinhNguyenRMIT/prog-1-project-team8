@@ -2,6 +2,7 @@ package Assignment.Transaction;
 import Assignment.Object.Car.Car;
 import Assignment.Part.AutoPart;
 import Assignment.Services.Service;
+import Assignment.Users.Client.Client;
 
 import java.io.Serializable;
 import java.nio.file.Files;
@@ -18,6 +19,7 @@ import java.util.stream.StreamSupport;
 
 import static Assignment.Object.Car.CarList.carList;
 import static Assignment.Object.Car.CarList.carSold;
+import static Assignment.Users.Client.ClientList.clientList;
 
 public class SalesTransactionList implements Serializable {
     public static ArrayList<SalesTransaction> transactionList = new ArrayList<SalesTransaction>();
@@ -35,8 +37,8 @@ public class SalesTransactionList implements Serializable {
             System.out.println("Enter the tID: ");
             tID = s.nextInt();
             boolean exists = false;
-            for (Car car : carList){
-                if (car.getCNumber() == tID){
+            for (SalesTransaction salesTransaction : transactionList){
+                if (salesTransaction.getTransactionID() == tID){
                     exists = true;
                     break;
                 }
@@ -50,14 +52,13 @@ public class SalesTransactionList implements Serializable {
         System.out.println("Enter transaction date. ");
         String date = s.next();
         LocalDate transactionDate = LocalDate.parse(date);
-        System.out.println("Enter Client ID. ");
-        int clientID = s.nextInt();
+        System.out.println("Enter Client ID");
+        int clID = s.nextInt();
         System.out.println("Enter SalesPerson ID. ");
         int salesID = s.nextInt();
-
-
         System.out.println("Do you want to add Car? (yes/no): ");
         String addCar = s.next();
+        double amount = 0;
         while (addCar.equalsIgnoreCase("yes")) {
             Car foundCar = null;
             // Collect all required details for AutoPart
@@ -66,6 +67,7 @@ public class SalesTransactionList implements Serializable {
             for (Car car : carList){
                 if (car.getCNumber() == cID){
                     foundCar = car;
+                    amount = car.getPrice();
                     break;
                 }
             }
@@ -80,9 +82,7 @@ public class SalesTransactionList implements Serializable {
         }
         System.out.println("Enter discount. ");
         int discount = s.nextInt();
-        System.out.println("Enter total amount spend. ");
-        double amount = s.nextDouble();
-        transactionList.add(new SalesTransaction(tID, transactionDate,clientID,salesID, purchasedItems, discount, amount));
+        transactionList.add(new SalesTransaction(tID, transactionDate,clID,salesID, purchasedItems, discount, amount));
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile));
         oos.writeObject(transactionList);
         saveTransaction();

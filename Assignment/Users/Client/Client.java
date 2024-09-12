@@ -14,9 +14,8 @@ import java.util.List;
 
 public class Client extends User {
     public static String membership;
-    private final int clientID;
-    private static final String clientsTXTPath = "Assignment/Data/Client/clients.tst";
-    public static ArrayList<Client> clientList = new ArrayList<>();
+    private int clientID;
+    private static final String clientsTXTPath = "Assignment/Data/Client/clients.txt";
 
     public Client(int clientID, String username, String password, String fullName, Date dob, String address, String phoneNumber, String email, String userType, String status, String membership) {
         super(username, password, fullName, dob, address, phoneNumber, email, userType, status);
