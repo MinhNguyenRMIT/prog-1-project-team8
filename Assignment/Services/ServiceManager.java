@@ -8,10 +8,13 @@ import java.time.LocalDate;
 import java.util.*;
 import java.io.*;
 
+import static Assignment.Part.AutoPart.partsList;
+import static Assignment.Part.PartManager.autoPartList;
+
 
 public class ServiceManager implements Serializable {
     public static ArrayList<Service> serviceList = new ArrayList<>();
-
+    public static ArrayList<AutoPart> replacedParts = new ArrayList<>();
     private static Scanner scanner;
     ListIterator<Service> li = null;
 
@@ -51,35 +54,31 @@ public class ServiceManager implements Serializable {
         int mechanicId = scanner.nextInt();
         System.out.println("Enter the Service Type: ");
         String serviceType = scanner.next();
-        System.out.println("Enter the Cost: ");
-        double serviceCost = scanner.nextDouble();
-
-//         Input for replaced parts (if any)
-        ArrayList<AutoPart> replacedParts = new ArrayList<>();
+        //         Input for replaced parts (if any)
         System.out.println("Do you want to add replaced parts? (yes/no): ");
         String addParts = scanner.next();
+        double serviceCost = 0;
         while (addParts.equalsIgnoreCase("yes")) {
+            Scanner s = new Scanner(System.in);
+            AutoPart foundPart = null;
             // Collect all required details for AutoPart
             System.out.println("Enter Part ID: ");
-            int partId = scanner.nextInt();
-            System.out.println("Enter Part Name: ");
-            String partName = scanner.next();
-            System.out.println("Enter Manufacturer: ");
-            String manufacturer = scanner.next();
-            System.out.println("Enter Part Number: ");
-            String partNumber = scanner.next();
-            System.out.println("Enter Condition: ");
-            String condition = scanner.next();
-            System.out.println("Enter Warranty: ");
-            String warranty = scanner.next();
-            System.out.println("Enter Part Cost: ");
-            double partCost = scanner.nextDouble();
-            System.out.println("Enter Notes: ");
-            String notes = scanner.next();
+            int partId = s.nextInt();
+            for (AutoPart autoPart : autoPartList){
+                if (autoPart.getPartId() == partId){
+                    foundPart = autoPart;
+                    serviceCost = autoPart.getCost();
+                    break;
+                }
+            }
             // Add part to list using the full constructor
-            replacedParts.add(new AutoPart(partId, partName, manufacturer, partNumber, condition, warranty, partCost, notes));
-            System.out.println("Do you want to add another part? (yes/no): ");
-            addParts = scanner.next();
+            if (foundPart != null){
+                replacedParts.add(foundPart);
+            }else {
+                System.out.println("Part ID not found!");
+            }
+            System.out.println("Do you want to add another Car? (yes/no): "); //if no break out loops
+            addParts = s.next();
         }
 
         // Additional notes about the service
@@ -121,8 +120,6 @@ public class ServiceManager implements Serializable {
                 System.out.println(replacedParts);
             }
         }
-
-
     }
     // Delete Service by ID
     public static void deleteService() throws IOException {
@@ -151,28 +148,6 @@ public class ServiceManager implements Serializable {
         oos.writeObject(serviceList);
         oos.close();
     }
-    //Search By ID
-//    public static void searchService(int serviceID) {
-//        boolean found = false;
-//        ListIterator<Service> li = serviceList.listIterator();
-//
-//        // Display header
-//        System.out.printf("%-10s %-15s %-10s %-10s %-15s %-10s \n", "ServiceID", "Assignment.Services.Service Date", "ClientID", "MechanicID", "Assignment.Services.Service Type", "Cost");
-//
-//        // Search and display service if found
-//        while (li.hasNext()) {
-//            Service service = li.next();
-//            if (service.getServiceId() == serviceID) {
-//                System.out.println(service);
-//                found = true;
-//            }
-//        }
-//
-//        // If not found, notify user
-//        if (!found) {
-//            System.out.println("Assignment.Services.Service not found!");
-//        }
-//    }
     public static void revenueByMechanic() { //This will calculate the total number of Revenue done by 1 mechanic
         Scanner scanner = new Scanner(System.in);
         boolean found = false;

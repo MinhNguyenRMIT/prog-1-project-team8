@@ -1,6 +1,7 @@
 package Assignment.Part;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class AutoPart implements Serializable  {
     private int partId;          // Unique ID for the part (formatted as p-number)
@@ -10,7 +11,10 @@ public class AutoPart implements Serializable  {
     private String condition;       // Condition of the part (new, used, refurbished)
     private String warranty;        // Warranty information
     private double cost;            // Cost of the part
-    private String notes;           // Additional notes
+    private String notes;
+
+    public static ArrayList<AutoPart> partsList = new ArrayList<AutoPart>();
+    // Additional notes
 
     // Constructor, getters, and setters...
 

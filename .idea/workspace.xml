@@ -5,8 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39b00c64-6249-4408-9307-ba072dcf519b" name="Changes" comment="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Data/userLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/userLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/Parts/autoparts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/SalesTransaction/transaction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/SalesTransaction/transaction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/Services/Service.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/Services/Service.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Part/AutoPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Part/AutoPart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Services/ServiceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Services/ServiceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Parts/autoparts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/SalesTransaction/transaction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/SalesTransaction/transaction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Services/Service.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Services/Service.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/AutoPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/AutoPart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/AutoPartInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/AutoPartInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/PartManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/PartManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/ServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/ServiceInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/ServiceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/ServiceManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Client/ClientList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Client/ClientList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Employee/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Employee/EmployeeList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Employee/EmployeeList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Manager/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
