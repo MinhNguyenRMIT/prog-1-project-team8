@@ -144,19 +144,22 @@ public class User {
     public void reviewLogHistory() {
         String filename = "Assignment/Data/userLog.txt";
         try (Scanner scanner = new Scanner(new File(filename))) {
+
+            System.out.println("----------------------------------");
             System.out.println("Log history for " + getFullName() + " (" + getUserType() + "):");
+            System.out.println("----------------------------------");
+
             System.out.println("-----------------------------------------------------------" +
                     "---------------------------------------------------------");
             while (scanner.hasNextLine()) {
                 String log = scanner.nextLine();
-
                 if (log.contains("Username: " + getUsername()) && log.contains("UserType: " + getUserType())) {
                     System.out.println(log);
                 }
 
-            }
-            System.out.println("-----------------------------------------------------------" +
-                    "---------------------------------------------------------\n");
+            } System.out.println("-----------------------------------------------------------" +
+                    "---------------------------------------------------------");
+
         } catch (IOException e) {
             System.err.println("An error occurred while reading the log history: " + e.getMessage());
         }
