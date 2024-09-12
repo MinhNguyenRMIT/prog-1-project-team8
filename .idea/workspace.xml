@@ -7,10 +7,6 @@
     <list default="true" id="39b00c64-6249-4408-9307-ba072dcf519b" name="Changes" comment="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment/Data/userLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/userLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/userLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/userLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
