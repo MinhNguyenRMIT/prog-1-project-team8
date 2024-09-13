@@ -148,8 +148,6 @@ public class SalesTransactionList implements Serializable {
         oos.writeObject(transactionList);
         oos.close();
     }
-
-
     //Calculate amount made by Day/Week/Month
     public static void totalAmountPerDay(LocalDate day) throws IOException {
         boolean found = false;
@@ -233,7 +231,6 @@ public class SalesTransactionList implements Serializable {
             }
         }
     }
-
 
     //Return sales person by ID and calculate the amount of money they made
     public static void revenueBySalesPerson() { //This will calculate the total number of Revenue done by 1 mechanic

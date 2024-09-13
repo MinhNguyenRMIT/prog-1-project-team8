@@ -8,3 +8,23 @@
 1008 2024-09-21 5008 3001 Wheel Alignment 130.00 Adjusted wheel angles
 1009 2024-09-09 5009 3002 Exhaust Repair 220.00 Fixed exhaust leak
 1010 2024-09-05 5010 3003 Fuel System Cleaning 170.00 Cleaned fuel injectors
+1 2024-10-03 1 1 [1          Mirror          Honda           1               New        None       10.0       None      
+] Replace 10.0 
+1 2004-03-02 1 1 [1          Mirror          Honda           1               New        None       10.0       None      
+] Replace 10.0 
+2 2024-03-01 1 1 [] replace 0.0 
+1 2024-03-01 1 1 [] replace 0.0 
+1 2024-03-03 1 1 [] replace 0.0 
+1 2023-03-03 1 1 [] replac 0.0 
+2 2024-03-02 1 1 [1          Mirror          Honda           1               New        None       10.0       None      
+] Replace 10.0 
+1 2024-02-02 1 1 [1          Mirror          Honda           1               New        None       10.0       None      
+] Replace 10.0 
+2 2002-02-02 1 1 [1          Mirror          Honda           1               New        None       10.0       None      
+, 1          Mirror          Honda           1               New        None       10.0       None      
+] replace 10.0 
+1 2004-03-02 1 1 [] replace 0.0 
+1 2004-03-02 1 1 [] replace 0.0 
+1 2004-02-03 1 1 [1          Tire            Toyota          630             New        1 year     4.0        Check for defects
+, 2          Engine          BMW             678             Refurbish  3 years    0.0        Limited stock
+] replace 0.0 

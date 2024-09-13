@@ -51,7 +51,6 @@ public class CarList implements Serializable{
         carList.add(new Car(cNum,model,year,milage,color,status,price));
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile));
         oos.writeObject(carList);
-        save();
         oos.close();
     }
     //View Car details
@@ -90,7 +89,6 @@ public class CarList implements Serializable{
         }
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile));
         oos.writeObject(carList);
-        save();
     }
     //Search Car by ID
     public static void searchCar(int carID){
@@ -147,7 +145,6 @@ public class CarList implements Serializable{
         }
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile));
         oos.writeObject(carList);
-        save();
     }
     //List Car sold
     public static void listSold(){
@@ -165,8 +162,6 @@ public class CarList implements Serializable{
             System.out.println("Car not found! ");
         }
     }
-
-
 
 
     //Save Cars

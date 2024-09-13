@@ -1,7 +1,11 @@
 package Assignment.Part;
 
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class AutoPart implements Serializable  {
     private int partId;          // Unique ID for the part (formatted as p-number)
@@ -98,5 +102,37 @@ public class AutoPart implements Serializable  {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public static void main(String[] args) {
+        List<AutoPart> autoPartList = new ArrayList<>();
+        Random random = new Random();
+        String[] conditions = {"New", "Used", "Refurbish"};
+        String[] manufacturers = {"Honda", "Toyota", "Ford", "BMW", "Audi"};
+        String[] notesArray = {"None", "Check for defects", "Limited stock"};
+        String[] partNames = {"Mirror", "Engine", "Brake", "Tire", "Battery"};
+        String[] warranties = {"None", "1 year", "2 years", "3 years"};
+
+        for (int i = 0; i < 31; i++) {
+            double cost = Math.round((random.nextDouble() * 1000)/100.00);
+            int partId = random.nextInt(35);
+            String condition = conditions[random.nextInt(conditions.length)];
+            String manufacturer = manufacturers[random.nextInt(manufacturers.length)];
+            String notes = notesArray[random.nextInt(notesArray.length)];
+            String partName = partNames[random.nextInt(partNames.length)];
+            String partNumber = String.valueOf(random.nextInt(1000));
+            String warranty = warranties[random.nextInt(warranties.length)];
+
+            AutoPart part = new AutoPart(partId, partName, manufacturer, partNumber, condition, warranty, cost, notes);
+            autoPartList.add(part);
+        }
+
+        try (FileOutputStream fos = new FileOutputStream("autoparts.txt");
+             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+            oos.writeObject(autoPartList);
+            System.out.println("Data has been serialized and saved to autoparts.txt");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

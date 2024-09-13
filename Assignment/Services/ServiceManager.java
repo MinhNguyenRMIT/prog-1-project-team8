@@ -119,16 +119,10 @@ public class ServiceManager implements Serializable {
 
         // Display service details
         System.out.printf("%-10s %-13s %-10s %-10s %-10s %-10s %-10s\n", "ServiceID", "Date", "ClientID", "MechanicID", "Type", "Cost", "Notes");
+
         ListIterator<Service> li = serviceList.listIterator();
         while (li.hasNext()) {
             System.out.println(li.next());
-            for (Service service : serviceList){
-                System.out.println("This is the replace part for Client ID: " + service.getServiceId());
-                System.out.printf("%-10s %-10s %-15s %-10s %-10s %-10s %-10s \n", "partId", "partName", "manufacturer", "partNumber", "condition", "warranty", "partCost");
-                String replacedParts = service.getReplacedParts().toString();
-                replacedParts = replacedParts.substring(1, replacedParts.length() - 1); // Remove the first and last character (the brackets)
-                System.out.println(replacedParts);
-            }
         }
     }
     // Delete Service by ID
@@ -145,7 +139,7 @@ public class ServiceManager implements Serializable {
             Service service = li.next();
             if (service.getServiceId() == serviceID) {
                 li.remove();
-                System.out.println("Assignment.Services.Service has been found and removed.");
+                System.out.println("Service has been found and removed.");
                 found = true;
             }
         }
@@ -177,6 +171,7 @@ public class ServiceManager implements Serializable {
         }
         System.out.println("This mechanic has made " + total);
     }
+
 }
 
 
