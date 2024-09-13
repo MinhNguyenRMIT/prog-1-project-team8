@@ -1,0 +1,10 @@
+1,Ferrari,2022,1200.5,Red,Available,300000
+2,Lamborghini,2021,2000.0,Yellow,Sold,350000
+3,Tesla,2024,800.0,White,Available,50000
+4,BMW,2020,15000.0,Black,Sold,55000
+5,Audi,2019,18000.0,Blue,Available,45000
+6,Mercedes,2024,2200.0,Silver,Sold,60000
+7,Porsche,2024,2500.0,Green,Available,70000
+8,Toyota,2020,30000.0,White,Sold,25000
+9,Honda,2021,12000.0,Black,Available,23000
+10,Chevrolet,2019,40000.0,Red,Sold,35000

@@ -12,7 +12,6 @@ import java.util.List;
 public class EmployeeList {
 
     // List to hold all employee data
-    // List to hold all employee data
     public static List<Employee> readEmployeesFromTXT(String filePath) throws IOException, ParseException {
         List<Employee> employees = new ArrayList<>();
         String line;
@@ -27,7 +26,7 @@ public class EmployeeList {
                     continue; // Skipping invalid entries
                 }
 
-                int employeeID = Integer.parseInt(data[0]);
+                int employeeNumber = Integer.parseInt(data[0]);
                 String username = data[1];
                 String password = data[2];
                 String fullName = data[3] + " " + data[4];  // Concatenate first and last name
@@ -39,7 +38,7 @@ public class EmployeeList {
                 String status = data[12];
                 String position = data[13];
 
-                Employee employee = new Employee(employeeID, username, password, fullName, dob, address, phoneNumber, email, userType, status, position);
+                Employee employee = new Employee(employeeNumber, username, password, fullName, dob, address, phoneNumber, email, userType, status, position);
                 employees.add(employee);
             }
         }

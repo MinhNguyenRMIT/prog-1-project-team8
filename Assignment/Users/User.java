@@ -84,17 +84,17 @@ public class User {
 
         // Load Employees
         List<Employee> employees = EmployeeList.readEmployeesFromTXT("Assignment/Data/Employees/employees.txt");
-        System.out.println("Loaded " + employees.size() + " employees.");
+
         allUsers.addAll(employees);
 
         // Load Clients
         List<Client> clients = ClientList.readClientsFromTXT("Assignment/Data/Client/clients.txt");
-        System.out.println("Loaded " + clients.size() + " clients.");
+
         allUsers.addAll(clients);
 
         // Load Managers
         List<Manager> managers = Manager.readManagersFromTXT("Assignment/Data/Manager/manager.txt");
-        System.out.println("Loaded " + managers.size() + " managers.");
+
         allUsers.addAll(managers);
 
         System.out.println("Total users loaded: " + allUsers.size());
@@ -113,9 +113,9 @@ public class User {
         System.out.println("Attempting login for username: " + inputUsername);
         System.out.println("Total users in system: " + userList.size());
 
-        for (User user : userList) {
-            System.out.println("Checking against user: " + user.getUsername());
+        System.out.println("--------------------------------------------------");
 
+        for (User user : userList) {
             // Verify if this user is an Employee, Client, or Manager
             if (user instanceof Employee && user.getUsername().equalsIgnoreCase(inputUsername) && user.getPassword().equals(inputPassword)) {
                 System.out.println("Login successful! Welcome, " + user.getFullName() + ". You are logged in as an Employee.");
@@ -135,9 +135,6 @@ public class User {
 
 
     public void LOGOUT() {
-        String logEntry = getUserType() + " " + getUsername() + " logged out at " + new Date();
-        logHistory.add(logEntry);
-        System.out.println(logEntry);
     }
 
     // This method will read from userLog.txt and display logs for the current user based on their username and userType
@@ -176,7 +173,6 @@ public class User {
             writer.write(logEntry);  // Write the log entry to the file
             writer.newLine();
 
-            System.out.println("Log history exported to " + filename);
         } catch (IOException e) {
             System.err.println("An error occurred while exporting the log history: " + e.getMessage());
         }

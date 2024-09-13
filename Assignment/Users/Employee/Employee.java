@@ -9,22 +9,23 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 public class Employee extends User {
-    private final int employeeID;
+    private final int employeeNumber;
     private final String position;
     private static final String transactionsTXTPath = "Assignment/Data/SalesTransaction/transaction_read.txt";
     private static final String servicesFilePath = "Assignment/Data/Services/service_read.txt";
     public static List<SalesTransaction> transactions = new ArrayList<>();
 
-    public Employee(int employeeID, String username, String password, String fullName, Date dob, String address, String phoneNumber, String email, String userType, String status, String position) {
+    public Employee(int employeeNumber, String username, String password, String fullName, Date dob, String address, String phoneNumber, String email, String userType, String status, String position) {
         super(username, password, fullName, dob, address, phoneNumber, email, userType, status);
-        this.employeeID = employeeID;
+        this.employeeNumber = employeeNumber;
         this.position = position;
     }
 
     public int getEmployeeID() {
-        return employeeID;
+        return employeeNumber;
     }
 
     public String getPosition() {
@@ -85,7 +86,6 @@ public class Employee extends User {
     public List<SalesTransaction> readTransactionsFromCSV() {
         List<SalesTransaction> transactions = new ArrayList<>();
         String line;
-        String delimiter = " ";
 
         try (BufferedReader br = new BufferedReader(new FileReader(transactionsTXTPath))) {
             br.readLine(); // Skip the header
@@ -102,21 +102,21 @@ public class Employee extends User {
 
                 // Parse each field from the transaction file
                 int transactionID = Integer.parseInt(data[0]);
-                int employeeID = Integer.parseInt(data[1]);
-                int clientID = Integer.parseInt(data[2]);
+                int employeeNumber = Integer.parseInt(data[1]);
+                int clientNumber = Integer.parseInt(data[2]);
                 LocalDate transactionDate = LocalDate.parse(data[3]);
                 double transactionAmount = Double.parseDouble(data[4]);
 
-        // Assuming the CSV doesn't store `purchasedItems` and `discount`, you can initialize them as:
-                ArrayList<Car> purchasedItems = new ArrayList<>();  // Empty list for now
+
+                ArrayList<Car> purchasedItems = new ArrayList<>();
                 double discount = 0.0;  // Default discount
 
                 // Create SalesTransaction object
                 SalesTransaction transaction = new SalesTransaction(
                         transactionID,
                         transactionDate,
-                        clientID,
-                        employeeID,
+                        clientNumber,
+                        employeeNumber,
                         purchasedItems,
                         discount,
                         transactionAmount
@@ -185,6 +185,55 @@ public class Employee extends User {
             System.out.println("Services in the past " + period + ":");
             for (String service : servicesWithinPeriod) {
                 System.out.println(service);
+            }
+        }
+    }
+
+    public static void listCars() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the year to filter cars: ");
+        int yearInput = scanner.nextInt();  // Get the user input for the year
+
+        List<Car> carsInYear = new ArrayList<>();
+        String filePath = "Assignment/Data/Car/cars_read.txt";  // Path to the car data file
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+
+            while ((line = br.readLine()) != null) {
+                String[] data = line.split(",");  // Assuming the car data is comma-separated
+
+                if (data.length == 7) {  // Check if we have all the required fields
+                    int carID = Integer.parseInt(data[0].trim());
+                    String model = data[1].trim();
+                    int year = Integer.parseInt(data[2].trim());
+                    double milage = Double.parseDouble(data[3].trim());
+                    String color = data[4].trim();
+                    String status = data[5].trim();
+                    double price = Double.parseDouble(data[6].trim());
+
+                    // Check if the car was released in the year provided by the user
+                    if (year == yearInput) {
+                        carsInYear.add(new Car(carID, model, year, milage, color, status, price));
+                    }
+                } else {
+                    System.err.println("Error: Invalid data format in line: " + line);
+                }
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading cars.txt file: " + e.getMessage());
+        }
+
+        // Display the cars that match the specified year
+        if (carsInYear.isEmpty()) {
+            System.out.println("--------------------------------------------");
+            System.out.println(" No cars found for the year " + yearInput + ".");
+            System.out.println("--------------------------------------------");
+        } else {
+            System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s\n", "CNUM", "Model", "Year", "Milage", "Color", "Status", "Price");
+            for (Car car : carsInYear) {
+                System.out.printf("%-10d %-10s %-10d %-10.2f %-10s %-10s %-10.2f\n",
+                        car.getCNumber(), car.getModel(), car.getYear(), car.getMileage(), car.getColor(), car.getStatus(), car.getPrice());
             }
         }
     }

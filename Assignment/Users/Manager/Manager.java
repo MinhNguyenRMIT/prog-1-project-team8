@@ -208,7 +208,7 @@ public class Manager extends User {
 
                     Manager manager = new Manager(username, password, fullName, dob, address, phoneNumber, email, userType, status);
                     managers.add(manager);
-                    System.out.println("Successfully parsed manager.txt: " + fullName);
+
                 } else {
                     System.err.println("Error: Invalid number of fields in manager.txt data: " + line);
                 }

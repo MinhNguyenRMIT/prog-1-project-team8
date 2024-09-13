@@ -34,9 +34,9 @@ public class Main {
     public static void start(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager, List<User> userList) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
         Scanner s = new Scanner(System.in);
 
-        System.out.println("-----------------------");
-        System.out.println("WELCOME TO THE HOMEPAGE");
-        System.out.println("-----------------------");
+        System.out.println("---------------------------------------------------");
+        System.out.println(" WELCOME TO THE AUTO136 SERVICE MANAGEMENT SYSTEM! ");
+        System.out.println("---------------------------------------------------");
 
         User loggedInUser = null;
         do {
@@ -63,6 +63,8 @@ public class Main {
         int choice;
         Scanner s = new Scanner(System.in);
         do {
+            manager.exportLogHistoryToTXT();
+
             System.out.println("You are logged in as a Manager!");
             System.out.println("1: ADD Cars");
             System.out.println("2: VIEW All Cars");
@@ -126,6 +128,8 @@ public class Main {
         Scanner s = new Scanner(System.in);
         List<SalesTransaction> transactionList = employee.readTransactionsFromCSV();
         do {
+            employee.exportLogHistoryToTXT();
+
             System.out.println("You are logged in as: " + employee.getFullName());
             String position = employee.getPosition();
 
@@ -137,9 +141,7 @@ public class Main {
                 System.out.println("2: Calculate revenue in week");
                 System.out.println("3: Calculate revenue in month");
             } else if (position.equalsIgnoreCase("Mechanic")) {
-                System.out.println("1: List the number of cars in days");
-                System.out.println("2: List the number of cars in weeks");
-                System.out.println("3: List the number of cars in months");
+                System.out.println("1: List the number cars models released by year");
             }
 
             System.out.println("4: List the number of services in days");
@@ -157,9 +159,7 @@ public class Main {
                 }
             } else if (position.equalsIgnoreCase("Mechanic")) {
                 switch (choice) {
-                    case 1 -> System.out.println("List the number of cars in days (feature pending)");
-                    case 2 -> System.out.println("List the number of cars in weeks (feature pending)");
-                    case 3 -> System.out.println("List the number of cars in months (feature pending)");
+                    case 1 -> Employee.listCars();
                 }
             }
 
@@ -183,6 +183,7 @@ public class Main {
             System.out.println("You are logged in as a Client");
             System.out.println("1: View client info");
             System.out.println("2: View Personal Log History");
+            System.out.println("3: View my transactions");
             System.out.println("3: LOGOUT");
             choice = s.nextInt();
             switch (choice) {
