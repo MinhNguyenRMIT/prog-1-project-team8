@@ -72,7 +72,7 @@ public class PartManager implements Serializable {
         }
 
         // Display part details
-        System.out.printf("%-10s %-15s %-15s %-15s %-10s %-10s %-10s\n", "PartID", "Part Name", "Manufacturer", "Part Number", "Condition", "Cost", "Warranty");
+        System.out.printf("%-10s %-15s %-15s %-15s %-10s %-10s %-10s %-10s\n", "PartID", "Part Name", "Manufacturer", "Part Number", "Condition", "Warranty", "Cost", "Notes");
         ListIterator<AutoPart> li = autoPartList.listIterator();
         while (li.hasNext()) {
             System.out.println(li.next());

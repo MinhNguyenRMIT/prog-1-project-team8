@@ -32,7 +32,7 @@ public class AutoPart implements Serializable  {
 
 
     public String toString(){
-        return String.format("%-10s %-15s %-15s %-15s %-10s %-10s %-10s\n",partId, partName, manufacturer, partNumber, condition, warranty, condition);
+        return String.format("%-10s %-15s %-15s %-15s %-10s %-10s %-10s %-10s\n",partId, partName, manufacturer, partNumber, condition, warranty, cost, notes);
     }
     // Getters and Setters...
 
