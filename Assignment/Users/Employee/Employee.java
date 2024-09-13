@@ -80,10 +80,7 @@ public class Employee extends User {
         System.out.println("-----------------------------------------------");
     }
 
-
-
-
-    public List<SalesTransaction> readTransactionsFromCSV() {
+    public List<SalesTransaction> readTransactionsFromTXT() {
         List<SalesTransaction> transactions = new ArrayList<>();
         String line;
 

@@ -126,7 +126,7 @@ public class Main {
     public static void employee(Employee employee) {
         int choice;
         Scanner s = new Scanner(System.in);
-        List<SalesTransaction> transactionList = employee.readTransactionsFromCSV();
+        List<SalesTransaction> transactionList = employee.readTransactionsFromTXT();
         do {
             employee.exportLogHistoryToTXT();
 
