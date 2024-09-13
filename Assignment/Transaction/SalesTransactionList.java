@@ -82,12 +82,24 @@ public class SalesTransactionList implements Serializable {
         }
         System.out.println("Enter discount. ");
         int discount = s.nextInt();
+
+        // Append to the file - in a format that's not encoded
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("Assignment/Data/SalesTransaction/transaction_read.txt", true))) {
+            writer.write(tID + " ");
+            writer.write(transactionDate+ " ");
+            writer.write(clID + " ");
+            writer.write(salesID + " ");
+            writer.write(amount + " ");
+            writer.write(discount + " ");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         transactionList.add(new SalesTransaction(tID, transactionDate,clID,salesID, purchasedItems, discount, amount));
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(newFile));
         oos.writeObject(transactionList);
+
         saveTransaction();
         oos.close();
-
     }
     //View Transaction
     public static void viewTransaction() throws IOException, ClassNotFoundException {
@@ -243,6 +255,7 @@ public class SalesTransactionList implements Serializable {
         }
         System.out.println("This Sales person has made " + total);
     }
+
 
 
 }

@@ -24,7 +24,6 @@ public class ServiceManager implements Serializable {
         String file = "Assignment/Data/Services/Service.txt";  // Path to the services file
         File newFile = new File(file);
         scanner = new Scanner(System.in);
-
         // Input and validate unique service ID
         int serviceNum;
         while (true) {
@@ -43,7 +42,6 @@ public class ServiceManager implements Serializable {
                 break;
             }
         }
-
         // Input other details from user
         System.out.println("Enter the Service Date (YYYY-MM-DD): ");
         String date = scanner.next();
@@ -80,7 +78,19 @@ public class ServiceManager implements Serializable {
             System.out.println("Do you want to add another Car? (yes/no): "); //if no break out loops
             addParts = s.next();
         }
-
+        // Append to the file
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("Assignment/Data/Services/service_read.txt", true))) {
+            writer.write(serviceNum + " ");
+            writer.write(serviceDate.toString()+ " ");
+            writer.write(clientId + " ");
+            writer.write(mechanicId + " ");
+            writer.write(replacedParts + " ");
+            writer.write(serviceType + " ");
+            writer.write(serviceCost + " ");
+            writer.write("\n");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         // Additional notes about the service
         System.out.println("Enter any additional notes for the service: ");
         scanner.nextLine(); // Consume the leftover newline

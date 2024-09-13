@@ -9,3 +9,4 @@ Username: janeDoe, Full Name: Jane Doe, UserType: Client, Status: Active, Logged
 Username: janeDoe, Full Name: Jane Doe, UserType: Client, Status: Active, Logged in at: Thu Sep 12 20:49:56 ICT 2024
 Username: janeDoe, Full Name: Jane Doe, UserType: Client, Status: Active, Logged in at: Thu Sep 12 20:49:58 ICT 2024
 Username: janeDoe, Full Name: Jane Doe, UserType: Client, Status: Active, Logged in at: Thu Sep 12 20:50:37 ICT 2024
+Username: johnDoe, Full Name: John Doe, UserType: Client, Status: Active, Logged in at: Fri Sep 13 17:21:21 ICT 2024

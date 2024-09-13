@@ -5,10 +5,7 @@ import Assignment.Transaction.SalesTransaction;
 import Assignment.Users.User;
 
 import java.io.*;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -16,8 +13,9 @@ import java.util.List;
 public class Employee extends User {
     private final int employeeID;
     private final String position;
-    private static final String transactionsTXTPath = "Assignment/Data/SalesTransaction/transaction.txt";
-    private static final String servicesFilePath = "Assignment/Data/Services/Service.txt";
+    private static final String transactionsTXTPath = "Assignment/Data/SalesTransaction/transaction_read.txt";
+    private static final String servicesFilePath = "Assignment/Data/Services/service_read.txt";
+    public static List<SalesTransaction> transactions = new ArrayList<>();
 
     public Employee(int employeeID, String username, String password, String fullName, Date dob, String address, String phoneNumber, String email, String userType, String status, String position) {
         super(username, password, fullName, dob, address, phoneNumber, email, userType, status);
@@ -83,6 +81,7 @@ public class Employee extends User {
 
 
 
+
     public List<SalesTransaction> readTransactionsFromCSV() {
         List<SalesTransaction> transactions = new ArrayList<>();
         String line;
@@ -108,11 +107,11 @@ public class Employee extends User {
                 LocalDate transactionDate = LocalDate.parse(data[3]);
                 double transactionAmount = Double.parseDouble(data[4]);
 
-// Assuming the CSV doesn't store `purchasedItems` and `discount`, you can initialize them as:
+        // Assuming the CSV doesn't store `purchasedItems` and `discount`, you can initialize them as:
                 ArrayList<Car> purchasedItems = new ArrayList<>();  // Empty list for now
                 double discount = 0.0;  // Default discount
 
-// Create SalesTransaction object
+                // Create SalesTransaction object
                 SalesTransaction transaction = new SalesTransaction(
                         transactionID,
                         transactionDate,

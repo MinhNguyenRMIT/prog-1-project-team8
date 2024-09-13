@@ -13,8 +13,11 @@ import Assignment.Transaction.SalesTransactionList;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import static Assignment.Users.Employee.Employee.transactions;
 
 public class Main {
     public static void main(String[] args) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
@@ -53,7 +56,7 @@ public class Main {
                 System.out.println("Login failed. Please try again.");
             }
 
-        } while (true);  // Keep running until the program is manually exited
+        } while (true);  // Keep running until the program is manually exite
     }
 
     public static void manager(Manager manager, CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager) throws IOException, ClassNotFoundException {
@@ -121,8 +124,7 @@ public class Main {
     public static void employee(Employee employee) {
         int choice;
         Scanner s = new Scanner(System.in);
-        List<SalesTransaction> transactions = employee.readTransactionsFromCSV();
-
+        List<SalesTransaction> transactionList = employee.readTransactionsFromCSV();
         do {
             System.out.println("You are logged in as: " + employee.getFullName());
             String position = employee.getPosition();
@@ -149,9 +151,9 @@ public class Main {
 
             if (position.equalsIgnoreCase("Sales")) {
                 switch (choice) {
-                    case 1 -> Employee.calculateRevenue(transactions, "day");
-                    case 2 -> Employee.calculateRevenue(transactions, "week");
-                    case 3 -> Employee.calculateRevenue(transactions, "month");
+                    case 1 -> Employee.calculateRevenue(transactionList, "day");
+                    case 2 -> Employee.calculateRevenue(transactionList, "week");
+                    case 3 -> Employee.calculateRevenue(transactionList, "month");
                 }
             } else if (position.equalsIgnoreCase("Mechanic")) {
                 switch (choice) {
