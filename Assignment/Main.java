@@ -187,7 +187,6 @@ public class Main {
             System.out.println("You are logged in as a Client");
             System.out.println("1: View client info");
             System.out.println("2: View Personal Log History");
-            System.out.println("3: View my transactions");
             System.out.println("3: LOGOUT");
             choice = s.nextInt();
             switch (choice) {
