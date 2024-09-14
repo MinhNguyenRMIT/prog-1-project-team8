@@ -254,3 +254,7 @@ Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Activ
 Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 01:24:56 ICT 2024
 Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 01:25:05 ICT 2024
 Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 01:25:08 ICT 2024
+Username: emp1, Full Name: John Smith, UserType: Employee, Status: Active, Logged in at: Sat Sep 14 09:44:05 ICT 2024
+Username: emp1, Full Name: John Smith, UserType: Employee, Status: Active, Logged in at: Sat Sep 14 09:44:06 ICT 2024
+Username: emp1, Full Name: John Smith, UserType: Employee, Status: Active, Logged in at: Sat Sep 14 09:44:07 ICT 2024
+Username: emp1, Full Name: John Smith, UserType: Employee, Status: Active, Logged in at: Sat Sep 14 09:44:12 ICT 2024

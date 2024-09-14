@@ -6,6 +6,7 @@ import Assignment.Users.User;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -133,7 +134,6 @@ public class Employee extends User {
         LocalDate now = LocalDate.now();
         long timeLimit;
 
-        // Set the time limit based on the period (similar to calculateRevenue)
         switch (period.toLowerCase()) {
             case "day":
                 timeLimit = 1;  // 1 day
@@ -145,28 +145,49 @@ public class Employee extends User {
                 timeLimit = 30; // Approximate month duration in days
                 break;
             default:
-                System.out.println("Invalid period. Please enter '1', '2', or '3'.");
+                System.out.println("Invalid period. Please enter 'day', 'week', or 'month'.");
                 return;
         }
 
-
         List<String> servicesWithinPeriod = new ArrayList<>();
+        String servicesFilePath = "Assignment/Data/Services/service_read.txt";
 
-        // Read the services.txt file
+
         try (BufferedReader br = new BufferedReader(new FileReader(servicesFilePath))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] data = line.split(" ");
+                line = line.trim();
 
-                // Assuming that the service date is in the second column (index 1)
-                LocalDate serviceDate = LocalDate.parse(data[1]);
+                // Check if the line is incomplete
+                while (line.contains("[") && !line.contains("]")) {
+                    // Read the next line and append it to the current line
+                    String nextLine = br.readLine();
+                    if (nextLine != null) {
+                        line += " " + nextLine.trim();  // Append the next line
+                    }
+                }
 
-                // Manually calculate the difference in days
-                long daysBetween = Math.abs(serviceDate.toEpochDay() - now.toEpochDay());
+                // Ignore lines that don't have at least 6 components (Service ID, Date, etc.)
+                if (line.isEmpty() || line.split(" ").length < 6) {
+                    System.err.println("Invalid line format: " + line);
+                    continue;
+                }
 
-                // Check if the service falls within the specified time limit
-                if (daysBetween <= timeLimit) {
-                    servicesWithinPeriod.add(line); // Add the service to the list
+                try {
+                    String[] data = line.split(" ", 6);
+
+                    // Parse the date in the second column (index 1)
+                    LocalDate serviceDate = LocalDate.parse(data[1]);
+                    long daysBetween = Math.abs(serviceDate.toEpochDay() - now.toEpochDay());
+
+                    // Check if the service falls within the specified time limit
+                    if (daysBetween <= timeLimit) {
+                        servicesWithinPeriod.add(line);
+                    }
+
+                } catch (DateTimeParseException e) {
+                    System.err.println("Invalid date format in line: " + line);
+                    continue;  // Skip this line if the date is invalid
                 }
             }
         } catch (IOException e) {
