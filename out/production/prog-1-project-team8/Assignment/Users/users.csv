@@ -1,0 +1,3 @@
+type,username,password,fullName,dob,address,phoneNumber,email,userType,status,additionalInfo
+Users.Client,abcd,1234,John Doe,1990-01-01,123 Main St,1234567890,john@example.com,Users.Client,Active,Gold
+Users.Employee,emp1,pass1,Jane Doe,1985-05-15,456 Main St,987654321,jane.doe@example.com,Users.Employee,Active,Salesperson

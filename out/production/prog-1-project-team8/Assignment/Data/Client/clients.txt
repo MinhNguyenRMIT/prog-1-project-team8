@@ -1,0 +1,4 @@
+clientID username password fullName dob address phoneNumber email userType status membership
+5001 johnDoe pass123 John Doe 1990-01-01 "123 Main St" 1234567890 john@example.com Client Active Gold
+5002 janeDoe pass456 Jane Doe 1992-11-20 "456 Elm St" 9876543210 jane@example.com Client Active Silver
+5003 aliceSmith pass789 Alice Smith 1985-03-15 "789 Pine St" 5556667777 alice@example.com Client Active Platinum

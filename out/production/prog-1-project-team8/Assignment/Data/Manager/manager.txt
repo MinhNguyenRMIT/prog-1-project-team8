@@ -1,0 +1,1 @@
+managerUser passManager John Manager 1970-05-15 "500 Management Blvd" 1239876540 manager@example.com Manager Active
