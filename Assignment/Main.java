@@ -25,19 +25,23 @@ public class Main {
         SalesTransactionList salesTransactionList = new SalesTransactionList();
         ServiceManager serviceManager = new ServiceManager();
         PartManager partManager = new PartManager();
-
         List<User> userList = User.loadAllUsers();
-
         start(carList, salesTransactionList, serviceManager, partManager, userList);
+
+
     }
 
     public static void start(CarList carList, SalesTransactionList salesTransactionList, ServiceManager serviceManager, PartManager partManager, List<User> userList) throws IOException, URISyntaxException, ParseException, ClassNotFoundException {
         Scanner s = new Scanner(System.in);
-
         System.out.println("---------------------------------------------------");
         System.out.println(" WELCOME TO THE AUTO136 SERVICE MANAGEMENT SYSTEM! ");
         System.out.println("---------------------------------------------------");
-
+        System.out.println("COSC2081 GROUP ASSIGNMENT  \n" +
+                "AUTO168 CAR DEALERSHIP MANAGEMENT SYSTEM \n" +
+                "Instructor: Mr. Minh Vu & Mr. Dung Nguyen \n" +
+                "NGUYEN HOANG MINH, S3I15233 \n" +
+                "POLINA RYBAK, S3969997 \n"+ "NGUYEN HUYNH TRIEU THINH, S3977756\n" +  "HUYNH PHAN ANH, S3891735"
+                );
         User loggedInUser = null;
         do {
             System.out.println("--------------");

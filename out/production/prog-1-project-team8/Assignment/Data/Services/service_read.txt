@@ -28,3 +28,8 @@
 1 2004-02-03 1 1 [1          Tire            Toyota          630             New        1 year     4.0        Check for defects
 , 2          Engine          BMW             678             Refurbish  3 years    0.0        Limited stock
 ] replace 0.0 
+1 2024-03-02 1 1 [1          Tire            Toyota          630             New        1 year     4.0        Check for defects
+] Replace 4.0 
+300 2024-01-20 1 2 [] replace 0.0 
+1 2024-05-05 2 2 [11         Tire            Honda           33              New        3 years    4.0        Limited stock
+] replace 4.0 

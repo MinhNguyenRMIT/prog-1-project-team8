@@ -1,14 +1,11 @@
 package Assignment.Services;
 
-import Assignment.Object.Car.Car;
 import Assignment.Part.AutoPart;
-import Assignment.Transaction.SalesTransaction;
 
 import java.time.LocalDate;
 import java.util.*;
 import java.io.*;
 
-import static Assignment.Part.AutoPart.partsList;
 import static Assignment.Part.PartManager.autoPartList;
 
 
@@ -106,10 +103,9 @@ public class ServiceManager implements Serializable {
     }
     //Read
     public static void viewServices() throws IOException, ClassNotFoundException {
-        String file = "AAssignment/Data/Services/Service.txt";
+        String file = "Assignment/Data/Services/Service.txt";
         File newFile = new File(file);
         ObjectInputStream ois = null;
-
         // Check if file exists and load services
         if (newFile.isFile()) {
             ois = new ObjectInputStream(new FileInputStream(file));
@@ -122,8 +118,26 @@ public class ServiceManager implements Serializable {
 
         ListIterator<Service> li = serviceList.listIterator();
         while (li.hasNext()) {
-            System.out.println(li.next());
+            Service service = li.next();
+//            System.out.println("This is the replace part for Client ID: " + service.getServiceId());
+            System.out.printf("%-10s %-13s %-10s %-10s %-10s %-10s %-10s\n" ,service.getServiceId(), service.getServiceDate(), service.getClientId(), service.getMechanicId(),
+                    service.getServiceType(), service.getServiceCost(), service.getNotes());
+
+            // Check if there are replaced parts for this service
+
+
+            if (replacedParts != null && !replacedParts.isEmpty()){
+                System.out.printf("%-10s %-10s %-15s %-10s %-10s %-10s %-10s\n", "partId", "partName", "manufacturer", "partNumber", "condition", "warranty", "partCost");
+                for (AutoPart autoPart : replacedParts){
+                    System.out.printf("%-10s %-10s %-15s %-10s %-10s %-10s %-10s\n", autoPart.getPartId(), autoPart.getPartName(), autoPart.getManufacturer(), autoPart.getPartNumber(),
+                            autoPart.getCondition(), autoPart.getCondition(), autoPart.getWarranty(), autoPart.getWarranty());
+                }
+            }
+            else {
+                System.out.println("No replace parts");
+            }
         }
+
     }
     // Delete Service by ID
     public static void deleteService() throws IOException {
@@ -171,7 +185,6 @@ public class ServiceManager implements Serializable {
         }
         System.out.println("This mechanic has made " + total);
     }
-
 }
 
 

@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39b00c64-6249-4408-9307-ba072dcf519b" name="Changes" comment="Merge remote-tracking branch 'origin/Minh' into thinh-branch" />
+    <list default="true" id="39b00c64-6249-4408-9307-ba072dcf519b" name="Changes" comment="Merge remote-tracking branch 'origin/Minh' into thinh-branch">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/Car/cars.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/Car/cars.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/Parts/autoparts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/Parts/autoparts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/SalesTransaction/transaction_read.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/SalesTransaction/transaction_read.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/Services/Service.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/Services/Service.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/Services/service_read.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/Services/service_read.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Data/userLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Data/userLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/Services/ServiceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/Services/ServiceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Car/cars.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Car/cars.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Parts/autoparts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Parts/autoparts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/SalesTransaction/transaction_read.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/SalesTransaction/transaction_read.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Services/Service.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Services/Service.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Services/service_read.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/Services/service_read.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/userLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Data/userLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Object/Car/CarList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/AutoPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/AutoPart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/AutoPartInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/AutoPartInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/PartManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Part/PartManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/ServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/ServiceInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/ServiceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Services/ServiceManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Transaction/SalesTransactionList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Client/ClientList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Client/ClientList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Employee/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Employee/EmployeeList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Employee/EmployeeList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/Manager/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prog-1-project-team8/Assignment/Users/User.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,12 +109,13 @@
     "Application.Main (5).executor": "Run",
     "Application.Main.executor": "Run",
     "Application.PartManager.executor": "Run",
+    "Application.ServiceManager.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main-test",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ankha/OneDrive/Desktop/ProjectSubmission/prog-1-project-team8",
+    "last_opened_file_path": "C:/Users/ankha/OneDrive/Desktop/FINALSubmission/prog-1-project-team8/Assignment/Data/Services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,6 +126,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ankha\OneDrive\Desktop\FINALSubmission\prog-1-project-team8\Assignment\Data\Services" />
+      <recent name="C:\Users\ankha\OneDrive\Desktop\FINALSubmission\prog-1-project-team8\Assignment\Data\Parts" />
       <recent name="C:\Users\ankha\OneDrive\Desktop\ProjectSubmission\prog-1-project-team8\Assignment\Data\Car" />
       <recent name="C:\Users\ankha\OneDrive\Desktop\ProjectSubmission\prog-1-project-team8\Assignment\Data\Parts" />
     </key>
@@ -102,13 +140,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Assignment.Object.Car.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Assignment.Object.Car.Main" />
-      <module name="prog-1-project-team8" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AutoPart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Assignment.Part.AutoPart" />
       <module name="prog-1-project-team8" />
@@ -131,13 +162,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="prog-1-project-team8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,13 +192,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Assignment.Services.ServiceManager" />
+      <module name="prog-1-project-team8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Assignment.Services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ServiceManager" />
         <item itemvalue="Application.CarList" />
         <item itemvalue="Application.PartManager" />
         <item itemvalue="Application.AutoPart" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -318,5 +355,20 @@
     <MESSAGE value="Updated with User methods" />
     <MESSAGE value="Merge remote-tracking branch 'origin/Minh' into thinh-branch" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/Minh' into thinh-branch" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Assignment/Transaction/SalesTransactionList.java</url>
+          <line>143</line>
+          <properties class="Assignment.Transaction.SalesTransactionList" method="saveTransaction">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
