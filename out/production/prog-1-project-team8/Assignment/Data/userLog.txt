@@ -331,3 +331,17 @@ Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Activ
 Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 13:23:33 ICT 2024
 Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 13:23:40 ICT 2024
 Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 13:23:58 ICT 2024
+Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 13:24:53 ICT 2024
+Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 13:25:02 ICT 2024
+Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 13:25:11 ICT 2024
+Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 13:25:24 ICT 2024
+Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 13:25:40 ICT 2024
+Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 13:25:48 ICT 2024
+Username: emp1, Full Name: John Smith, UserType: Employee, Status: Active, Logged in at: Sat Sep 14 17:09:29 ICT 2024
+Username: emp1, Full Name: John Smith, UserType: Employee, Status: Active, Logged in at: Sat Sep 14 17:10:46 ICT 2024
+Username: emp1, Full Name: John Smith, UserType: Employee, Status: Active, Logged in at: Sat Sep 14 17:10:47 ICT 2024
+Username: emp1, Full Name: John Smith, UserType: Employee, Status: Active, Logged in at: Sat Sep 14 17:10:48 ICT 2024
+Username: emp1, Full Name: John Smith, UserType: Employee, Status: Active, Logged in at: Sat Sep 14 17:10:50 ICT 2024
+Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 17:11:09 ICT 2024
+Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 17:11:10 ICT 2024
+Username: managerUser, Full Name: John Manager, UserType: Manager, Status: Active, Logged in at: Sat Sep 14 17:11:13 ICT 2024
